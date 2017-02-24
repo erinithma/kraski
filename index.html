@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог красок</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: { families: [ 'Roboto+Condensed:400,300,600,700:latin,cyrillic' ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })(); </script>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="row flex-container">
+                <div class="header_logo col-xs-9 col-sm-4 col-md-4 col-lg-4">
+                   <a href="#">
+                        <img src="assets/img/logo.png" alt="logo">
+                        <span>Ваши </span><span>Краски</span>
+                   </a>  
+                </div>
+                 <nav class="navbar col-xs-3 col-sm-8 col-md-8 col-lg-8">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target='.navbar-collapse'>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="collapse">
+                        <ul class="header-menu list-unstyled">
+                            <li><a href="/catalog.html">Каталог</a></li>
+                            <li><a href="#">Подбор краски</a></li>
+                            <li><a href="#">Как заказать</a></li>
+                            <li><a href="#">Медиа</a></li>
+                            <li><a href="#">Акции</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                        <div class="menu-cart-icon-container ajax-mode">
+                            <a href="#" class="cart-icon-link icon-type-ecommerce-basket">
+                                <i data-icon="m" class="icon-ecommerce-basket"></i>
+                                <span class="items-count hide-notification cart-items-0">0</span>
+                            </a>
+<!--
+                            <div class="lab-wc-mini-cart-contents">
+                                <div class="empty-loading-cart-contents">
+                                    Загрузка содержимого корзины...	</div>
+                            </div>
+-->
+                        </div>
+                        <div class="header-search-input">
+		                    <form role="search" method="get" action="https://">
+                                <div class="search-field">
+                                    <span>Поиск по сайту...</span>
+                                    <input type="search" value="" autocomplete="off" name="s" placeholder="Поиск по сайту..." />
+                                </div>
+                                <div class="search-icon">
+                                    <a href="#" data-animation="scale">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1417.3 1417.3" style="enable-background:new 0 0 1417.3 1417.3;" xml:space="preserve">
+                                            <style type="text/css">
+                                                .st0{display:none;}
+                                                .st1{display:inline;}
+                                            </style>
+                                            <g id="search-svg">
+                                                <path d="M976.2,925.2c90.6-98.1,147.1-229.4,147.1-374.1C1123.4,247.7,876.5,0,572.2,0S21.1,247.7,21.1,551.1
+                                                    s246.9,551.1,551.1,551.1c123.9,0,237.7-40.7,330-109.7l409.8,409.8c10,10,22.4,15,34.9,15s25.8-5,34.9-15
+                                                    c19.1-19.1,19.1-50.7,0-70.7L976.2,925.2z M120.8,551.1c0-248.6,202-451.4,451.4-451.4c248.6,0,451.4,202,451.4,451.4
+                                                    s-202,451.4-451.4,451.4S120.8,799.7,120.8,551.1z"/>
+                                            </g>
+                                            <g id="search-svg" class="st0">
+                                                <path class="st1" d="M976.2,925.2c90.6-98.1,147.1-229.4,147.1-374.1C1123.4,247.7,876.5,0,572.2,0S21.1,247.7,21.1,551.1
+                                                    s246.9,551.1,551.1,551.1c123.9,0,237.7-40.7,330-109.7l409.8,409.8c10,10,22.4,15,34.9,15s25.8-5,34.9-15
+                                                    c19.1-19.1,19.1-50.7,0-70.7L976.2,925.2z"/>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+		                    </form>
+	                    </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script> 
+    <script src="assets/js/bootstrap.min.js"></script> 
+</body>
+</html>
