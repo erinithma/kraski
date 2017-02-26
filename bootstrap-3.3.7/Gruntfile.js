@@ -34,7 +34,7 @@ module.exports = function (grunt) {
       arr[i] = path.join('./docs/assets', val);
     });
   });
-
+    
   // Project configuration.
   grunt.initConfig({
 
@@ -77,7 +77,21 @@ module.exports = function (grunt) {
         src: ['docs/assets/js/src/*.js', 'docs/assets/js/*.js', '!docs/assets/js/*.min.js']
       }
     },
+    
+    includereplace: {
+      dist: {
+        options: {
+          prefix: '@@',
+          suffix: ''
+        },
+        files: [
+            {src: '../layouts/index.html', dest: '../index.html'}
+            //{src: '../layouts/test.html', dest: '../test.html'}
+        ]
 
+      }
+    },
+      
     jscs: {
       options: {
         config: 'js/.jscsrc'
@@ -386,6 +400,10 @@ module.exports = function (grunt) {
       less: {
         files: 'less/**/*.less',
         tasks: 'less'
+      },
+      html: {
+          files: ['../blocks/*.html', '../layouts/*.html'],
+          tasks: 'includereplace'
       }
     },
 
@@ -428,12 +446,15 @@ module.exports = function (grunt) {
     }
 
   });
-
-
+    
   // These plugins provide necessary tasks.
   require('load-grunt-tasks')(grunt, { scope: 'devDependencies' });
   require('time-grunt')(grunt);
-
+    
+  grunt.loadNpmTasks('grunt-include-replace');  
+    
+  //grunt.registerTask('grunt-include-replace', ['includereplace']);  
+    
   // Docs HTML validation task
   grunt.registerTask('validate-html', ['jekyll:docs', 'htmllint']);
 
@@ -478,7 +499,7 @@ module.exports = function (grunt) {
   grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:theme', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyTheme']);
 
   // Full distribution task.
-  grunt.registerTask('dist', ['clean:dist', 'dist-css', 'copy:fonts', 'dist-js']);
+  grunt.registerTask('dist', ['clean:dist', 'dist-css', 'copy:fonts', 'dist-js', 'includereplace']);
 
   // Default task.
   grunt.registerTask('default', ['clean:dist', 'copy:fonts', 'test']);
