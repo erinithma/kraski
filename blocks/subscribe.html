@@ -1,20 +1,25 @@
 <div class=" container-grey">
 
 <div class="container">
-	<div class="row vcenter">
-		<div class="col-md-2">
+	<div class="row row-flex">
+		<div class="col-md-2 col-sm-12">
 			<h2>ПОДПИШИСЬ НА СКИДКИ</h2>
 		</div>
-		<div class="col-md-5">
+		<div class="col-md-5 col-sm-12">
 			<span>Специальные скидки для наших подписчиков.<br>Одно письмо в неделю</span>
 		</div>
-		<div class="col-md-5">
+		<div class="col-md-5 col-sm-12">
 			<form class="text-right">
-			<input class="email-field" type="email" name="email" placeholder="Ваш е-майл">
-			<button class="btn-orange" type="submit">Подписаться</button>
+				<input class="email-field" type="email" name="email" placeholder="Ваш е-майл">
+				<button class="btn-orange" type="submit">Подписаться</button>
 			</form>
 		</div>
 			<style>
+			.row-flex {
+				display: flex;
+				align-items: center;
+				flex-wrap: wrap;
+			}
 				.btn-orange {
 					background-color: #fd9444;
 					color: white;
@@ -35,6 +40,8 @@
 
 				.container-grey {
 					background-color: #efefef; 
+					padding-top: 30px;
+    				padding-bottom: 10px;
 				}
 
 				.vcenter {
