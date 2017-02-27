@@ -188,7 +188,7 @@ h4 {
         <div class=" container-grey">
 
 <div class="container">
-	<div class="row">
+	<div class="row vcenter">
 		<div class="col-md-2">
 			<h2>ПОДПИШИСЬ НА СКИДКИ</h2>
 		</div>
@@ -222,6 +222,42 @@ h4 {
 
 				.container-grey {
 					background-color: #efefef; 
+				}
+
+				.vcenter {
+					display: flex;
+					justify-content: flex-end;
+					align-items: center;
+				}
+
+				.row-eq-height {
+					display: -webkit-box;
+					display: -webkit-flex;
+					display: -ms-flexbox;
+					display: flex;
+				}
+
+				.container {
+					padding-right: 15px;
+					padding-left: 15px;
+				}
+
+				h4 {
+					margin-top: 25px;
+				}
+
+				.row {
+					margin-bottom: 20px;
+				}
+
+				.row .row {
+					margin-top: 10px;
+					margin-bottom: 0;
+				}
+
+				[class*="col-"] {
+					padding-top: 15px;
+					padding-bottom: 15px;
 				}
 
 			</style>
