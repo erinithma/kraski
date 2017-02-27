@@ -18,8 +18,6 @@
 }
 .header .flex-container {
     align-items: center;
-    display: -webkit-flex; /* Safari */
-    -webkit-align-items: center; /* Safari 7.0+ */
     display: flex;
     height: 130px;
     justify-content: flex-start;
@@ -70,7 +68,6 @@
     width: 0;
     height: 1px;
     background-color: #fd9444;
-    -webkit-transition: all .3s cubic-bezier(.175,.885,.32,1.075);
     transition: all .3s cubic-bezier(.175,.885,.32,1.075);
 }
 .header .header-menu a:hover:after {
@@ -105,7 +102,6 @@
     padding: 8px 6px;
     padding-left: 10px;
     top: 50%;
-    -webkit-transform: translateY(-58%);
     transform: translateY(-58%);
     visibility: hidden;
     opacity: 0;
@@ -118,7 +114,6 @@
 .header-search-input .search-field input {
     left: 0;
     top: 50%;
-    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     position: absolute;
     background: 0 0;
@@ -134,7 +129,6 @@
 .header-search-input .search-icon a svg {
     fill: #fd9444;
     width: 22px;
-    -webkit-transition: fill 150ms ease-in-out;
     transition: fill 150ms ease-in-out;
 }
 .header .menu-cart-icon-container {
@@ -164,8 +158,6 @@
     speak: none;
     font-size: 28px;
     line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     color: #fd9444;
 }
 .menu-cart-icon-container .cart-icon-link .items-count {
@@ -180,10 +172,6 @@
     line-height: 18px;
     margin-right: -2px;
     font-weight: 500;
-    -webkit-border-radius: 50%;
-    -webkit-background-clip: padding-box;
-    -moz-border-radius: 50%;
-    -moz-background-clip: padding;
     border-radius: 50%;
     background-clip: padding-box;
     width: 18px;

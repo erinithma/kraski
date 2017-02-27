@@ -85,8 +85,8 @@ module.exports = function (grunt) {
           suffix: ''
         },
         files: [
-            {src: '../layouts/index.html', dest: '../index.html'}
-            //{src: '../layouts/test.html', dest: '../test.html'}
+            {src: '../layouts/index.html', dest: '../index.html'},
+            {src: '../layouts/catalog.html', dest: '../catalog.html'}
         ]
 
       }
@@ -453,7 +453,7 @@ module.exports = function (grunt) {
     
   grunt.loadNpmTasks('grunt-include-replace');  
     
-  //grunt.registerTask('grunt-include-replace', ['includereplace']);  
+  grunt.registerTask('html', ['includereplace']);  
     
   // Docs HTML validation task
   grunt.registerTask('validate-html', ['jekyll:docs', 'htmllint']);
