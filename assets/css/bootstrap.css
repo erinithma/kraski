@@ -6845,4 +6845,41 @@ h4 {
   text-align: left;
   padding-bottom: 20px;
 }
+.product-card {
+  display: flex;
+  flex-flow: column nowrap;
+  box-sizing: border-box;
+  min-width: 260px;
+  min-height: 312px;
+  padding: 26px 28px;
+  background-color: #efefef;
+}
+.product-card:hover .product-card__text--small {
+  margin-top: -30px;
+  overflow: visible;
+  opacity: 1;
+}
+.product-card__text {
+  flex-grow: 2;
+}
+.product-card__text--small {
+  flex-grow: 1;
+  z-index: 2;
+  font-size: 12px;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+.product-card__picture {
+  align-self: center;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.product-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 20px;
+}
 /*# sourceMappingURL=bootstrap.css.map */
