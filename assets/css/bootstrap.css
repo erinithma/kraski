@@ -6742,6 +6742,9 @@ h4 {
 .image {
   margin-left: 12px;
 }
+.text-right-sort {
+  text-align: right;
+}
 .row-flex {
   display: flex;
   align-items: center;
@@ -6812,7 +6815,7 @@ h4 {
   }
 }
 .image-top {
-  padding-top: 10px;
+  margin-top: 10px;
 }
 .block-grey-color {
   background-color: #efefef;
