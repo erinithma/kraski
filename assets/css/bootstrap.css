@@ -6855,7 +6855,7 @@ h4 {
 .container-dark-grey {
   background-color: #303030;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 32px;
 }
 .materials-block {
   display: inline-block;
@@ -6876,5 +6876,11 @@ h4 {
 }
 .materials-block-line {
   padding-bottom: 55px;
+}
+.container__footer-info {
+  padding-top: 32px;
+  color: white;
+  font-size: 12px;
+  text-align: center;
 }
 /*# sourceMappingURL=bootstrap.css.map */
