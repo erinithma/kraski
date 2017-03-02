@@ -6772,6 +6772,11 @@ h4 {
     width: 49%;
   }
 }
+@media (max-width: 341px) {
+  .email-field {
+    width: 43%;
+  }
+}
 .container-grey {
   background-color: #efefef;
   padding-top: 30px;
@@ -6887,5 +6892,17 @@ h4 {
   color: white;
   font-size: 12px;
   text-align: center;
+}
+.sidebar {
+  height: 800px;
+}
+.search-field {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 15px;
+  border: none;
+  background-color: #efefef;
+  color: #303030;
+  width: 100%;
 }
 /*# sourceMappingURL=bootstrap.css.map */
