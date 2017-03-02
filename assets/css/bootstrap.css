@@ -6908,4 +6908,31 @@ h4 {
 .sidebar__filter {
   margin-top: 42px;
 }
+.sidebar__small-text {
+  font-size: 12px;
+  margin-top: 12px;
+  margin-left: 5px;
+}
+.btn-grey {
+  background-color: #333333;
+  color: white;
+  border: none;
+}
+.sidebar__filter-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sidebar__list {
+  list-style-type: none;
+  font-size: 16px;
+  margin-left: -30px;
+  margin-top: 22px;
+}
+.sidebar__list-element {
+  margin-bottom: 10px;
+}
+.sidebar__watched {
+  margin-top: 32px;
+}
 /*# sourceMappingURL=bootstrap.css.map */
