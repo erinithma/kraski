@@ -6896,7 +6896,7 @@ h4 {
 .sidebar {
   height: 800px;
 }
-.search-field {
+.sidebar__search-field {
   padding-top: 9px;
   padding-bottom: 9px;
   padding-left: 15px;
@@ -6904,5 +6904,8 @@ h4 {
   background-color: #efefef;
   color: #303030;
   width: 100%;
+}
+.sidebar__filter {
+  margin-top: 42px;
 }
 /*# sourceMappingURL=bootstrap.css.map */
