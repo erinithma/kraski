@@ -6954,4 +6954,21 @@ h4 {
 .container-location {
   margin-top: -21px;
 }
+.btn-white {
+  background-color: white;
+  color: #fd9444;
+  border: 1px solid #efefef;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  margin-top: -10px;
+  margin-bottom: 28px;
+}
+.btn-center {
+  text-align: center;
+}
+.btn-line {
+  border-bottom: 1px solid black;
+}
 /*# sourceMappingURL=bootstrap.css.map */
