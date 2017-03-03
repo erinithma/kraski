@@ -6893,9 +6893,6 @@ h4 {
   font-size: 12px;
   text-align: center;
 }
-.sidebar {
-  height: 800px;
-}
 .sidebar__search-field {
   padding-top: 9px;
   padding-bottom: 9px;
@@ -6905,7 +6902,7 @@ h4 {
   color: #303030;
   width: 100%;
   background-image: url('../../assets/img/search.png');
-  background-position: 98% center;
+  background-position: 94% center;
   background-repeat: no-repeat;
 }
 .sidebar__filter {
@@ -6953,5 +6950,8 @@ h4 {
 }
 .active {
   color: #fd9444;
+}
+.container-location {
+  margin-top: -21px;
 }
 /*# sourceMappingURL=bootstrap.css.map */
