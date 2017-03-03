@@ -6935,4 +6935,20 @@ h4 {
 .sidebar__watched {
   margin-top: 32px;
 }
+.sidebar__small-card {
+  background-color: #efefef;
+  width: 60px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  float: left;
+}
+.sidebar__small-card-text {
+  padding-top: 15px;
+}
+.active {
+  color: #fd9444;
+}
 /*# sourceMappingURL=bootstrap.css.map */
