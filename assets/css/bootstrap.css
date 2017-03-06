@@ -6854,11 +6854,6 @@ h4 {
   padding: 26px 28px;
   background-color: #efefef;
 }
-.product-card:hover .product-card__text--small {
-  margin-top: -30px;
-  overflow: visible;
-  opacity: 1;
-}
 .product-card__text {
   flex-grow: 2;
 }
@@ -6880,6 +6875,11 @@ h4 {
   align-items: center;
   justify-content: space-between;
   min-height: 20px;
+}
+.product-card:hover .product-card__text--small {
+  margin-top: -30px;
+  overflow: visible;
+  opacity: 1;
 }
 .container-dark-grey {
   background-color: #303030;
