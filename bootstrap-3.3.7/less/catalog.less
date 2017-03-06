@@ -4,28 +4,70 @@
 @active-color: #fd9444;
 
 
-.sidebar__search-field {
-	padding-top: 9px;
-	padding-bottom: 9px;
-	padding-left: 15px;
-	border: none;
-	background-color: @search-input-color;
-	color: @search-text-color;
-	width: 100%;
-	background-image: url('../../assets/img/search.png');
-	background-position: 94% center;
-	background-repeat: no-repeat;
-}
+.sidebar {
+	&__search-field {
+		padding-top: 9px;
+		padding-bottom: 9px;
+		padding-left: 15px;
+		border: none;
+		background-color: @search-input-color;
+		color: @search-text-color;
+		width: 100%;
+		background-image: url('../../assets/img/search.png');
+		background-position: 94% center;
+		background-repeat: no-repeat;
+	}
 
-.sidebar__filter {
-	margin-top: 42px;
-}
+	&__filter {
+		margin-top: 42px;
+	}
 
-.sidebar__small-text {
-	font-size: 12px;
-	margin-top: 12px;
-    margin-left: 5px;
-} 
+	&__small-text {
+		font-size: 12px;
+		margin-top: 12px;
+	    margin-left: 5px;
+	} 
+
+	&__filter-block {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__list {
+		list-style-type: none;
+		font-size: 16px;
+		margin-left: -30px;
+		margin-top: 22px;
+	}
+
+	&__list-element {
+		margin-bottom: 10px;
+	}
+
+	&__watched {
+		margin-top: 32px;
+	}
+
+	&__small-card {
+		background-color: @search-input-color;
+		width: 60px;
+		height: 72px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 15px;
+		float: left;
+	}
+
+	&__small-card-text {
+		padding-top: 15px;
+	}
+
+	&__list-text {
+		color: black;
+	}
+}
 
 .btn-grey {
 	background-color: @btn-grey-color;
@@ -33,41 +75,6 @@
 	border: none;
 }
 
-.sidebar__filter-block {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.sidebar__list {
-	list-style-type: none;
-	font-size: 16px;
-	margin-left: -30px;
-	margin-top: 22px;
-}
-
-.sidebar__list-element {
-	margin-bottom: 10px;
-}
-
-.sidebar__watched {
-	margin-top: 32px;
-}
-
-.sidebar__small-card {
-	background-color: @search-input-color;
-	width: 60px;
-	height: 72px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-right: 15px;
-	float: left;
-}
-
-.sidebar__small-card-text {
-	padding-top: 15px;
-}
 
 .active {
 	color: @active-color;
@@ -75,8 +82,4 @@
 
 .container-location {
 	margin-top: -21px;
-}
-
-.sidebar__list-text {
-	color: black;
 }

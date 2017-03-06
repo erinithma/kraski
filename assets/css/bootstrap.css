@@ -6662,7 +6662,7 @@ a:focus {
   position: relative;
   display: inline-block;
   float: right;
-  margin-top: -20px;
+  margin-top: -10px;
   margin-left: 40px;
   margin-right: 0;
   top: 5px;
@@ -6913,11 +6913,6 @@ h4 {
   margin-top: 12px;
   margin-left: 5px;
 }
-.btn-grey {
-  background-color: #333333;
-  color: white;
-  border: none;
-}
 .sidebar__filter-block {
   display: flex;
   align-items: center;
@@ -6948,14 +6943,19 @@ h4 {
 .sidebar__small-card-text {
   padding-top: 15px;
 }
+.sidebar__list-text {
+  color: black;
+}
+.btn-grey {
+  background-color: #333333;
+  color: white;
+  border: none;
+}
 .active {
   color: #fd9444;
 }
 .container-location {
   margin-top: -21px;
-}
-.sidebar__list-text {
-  color: black;
 }
 .btn-white {
   background-color: white;
