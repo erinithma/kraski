@@ -6710,6 +6710,31 @@ a:focus {
 .header .navbar-toggle .icon-bar {
   background: #fd9444;
 }
+.header_logo {
+  margin-top: 17px;
+}
+.header-menu {
+  margin-top: 36px;
+}
+.menu-cart-icon-container {
+  margin-top: 10px;
+}
+.header-search-input {
+  margin-top: 10px;
+}
+.navbar-toggle {
+  margin-top: 30px;
+}
+@media screen and (max-width: 336px) {
+  .navbar-toggle {
+    margin-top: 52px;
+  }
+}
+@media screen and (max-width: 403px) {
+  .navbar-toggle {
+    margin-top: 37px;
+  }
+}
 .vcenter {
   display: flex;
   justify-content: flex-end;
