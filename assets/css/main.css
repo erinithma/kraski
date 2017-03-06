@@ -1,0 +1,202 @@
+/*@import url('https://fonts.googleapis.com/css?family=Bad+Script|Lobster|Poiret+One&subset=cyrillic');*/
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+
+.logotype {
+	float: left;
+}
+
+
+.main_menu {
+	float: right;
+	position: relative;
+}
+
+/* Menu Button */
+.toggle-mnu {
+	display: block;
+	width: 32px;
+	height: 28px;
+	margin-top: 8px;
+}
+ 
+.toggle-mnu span:after, .toggle-mnu span:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 9px;
+}
+ 
+.toggle-mnu span:after {
+	top: 18px;
+}
+ 
+.toggle-mnu span {
+	position: relative;
+	display: block;
+}
+ 
+.toggle-mnu span, .toggle-mnu span:after, .toggle-mnu span:before {
+	width: 100%;
+	height: 2px;
+	background-color: #000;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	border-radius: 2px;
+}
+ 
+.toggle-mnu.on span {
+	background-color: transparent;
+}
+ 
+.toggle-mnu.on span:before {
+	-webkit-transform: rotate(45deg) translate(-1px, 0px);
+	-ms-transform: rotate(45deg) translate(-1px, 0px);
+	transform: rotate(45deg) translate(-1px, 0px);
+}
+ 
+.toggle-mnu.on span:after {
+	-webkit-transform: rotate(-45deg) translate(6px, -7px);
+	-ms-transform: rotate(-45deg) translate(6px, -7px);
+	transform: rotate(-45deg) translate(6px, -7px);
+}
+ 
+.toggle-mnu {
+	float: right;
+	position: relative;
+	z-index: 2;
+}
+ 
+/*Menu Button End*/
+
+#mobile-menu {
+	z-index: 2;
+}
+
+.header_head {
+	padding: 18px 0;
+	/*background: linear-gradient(to left, #EFEFBB, #D4D3DD);*/
+	background: white;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(255, 255, 255, 0.15); 
+}
+
+.main_menu .sf-menu {
+	margin: 8px 17px 0 0;
+}
+
+.main_menu .sf-menu li {
+	background-color: white;
+}
+
+.main_menu .sf-menu a {
+ transition: all .3s ease; 
+ color: black;
+ text-transform: uppercase;
+ font-size: 15px;
+}
+
+.main_menu .sf-menu a:hover {
+ color: grey;
+}
+
+.main_menu .sf-menu .active a {
+	color: grey;
+}
+
+.main_menu .sf-menu .active a:hover {
+	color: grey;
+}
+
+.search_header {
+	position: absolute;
+	right: 0;
+	left: 585px;
+	top: -2px;
+	padding-left: -6px;
+}
+
+.main_menu .sf-menu i {
+ transition: all .3s ease; 
+ color: black;
+ text-transform: uppercase;
+ font-size: 15px;
+}
+
+.main_menu .sf-menu i:hover {
+ color: grey;
+}
+
+.sf-menu li:hover {
+	background-color: #E0EAFC;
+}
+
+
+.main_menu .sf-menu .submenu li a {
+	padding: 10px 20px; 
+}
+
+/*.main_menu .sf-menu .submenu {
+	margin-top: 3px;
+}*/
+
+/* Menu Button */
+.main_menu_button {
+	background: transparent;
+	border: medium none;
+	font-size: 28px;
+	color: black;
+	float: right;
+	outline: none;
+}
+ 
+.main_menu_button:hover {
+	color: grey;
+	transition: all .3s ease;
+}
+/*Menu Button End*/
+
+.search_header a {
+	color: black;
+}
+
+.search_header a:hover {
+ transition: .3s ease; 
+ color: grey;
+}
+
+
+.search_popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 10002;
+	width: 84%;
+	margin-left: -42%;
+	height: 80px;
+	margin-top: -40px;
+}
