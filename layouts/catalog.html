@@ -15,10 +15,53 @@
 						<form class="sidebar__search">
 							<input class="sidebar__search-field" type="search" name="search" placeholder="Поиск по товарам">
 							<h3 class="sidebar__filter">Фильтр по цене</h3>
-							<img src="assets/img/Shape copy.png" width="260" height="17">
+							<style>
+							.reset {
+								display: inline;
+								border: none;
+								margin: 0;
+								padding: 0;
+							}
+							.ui-slider-handle {
+								border-radius: 50%;
+								top: -8px !important;
+							}
+
+							.ui-state-default,
+							.ui-state-active,
+							.ui-state-hover,
+							.ui-state-focus {
+								border: none !important;
+								background-color: #303030 !important;
+								
+							}
+
+							.ui-slider {
+								position: relative;
+								top: 4px;
+								height: 2px;
+								margin: 20px 0;
+							}
+
+							.ui-slider-range {
+								height: 2px !important;
+								background: #303030;
+							}
+
+							.ui-widget-content {
+								background: #efefef;
+								border: 1px solid transparent !important;
+							}
+							</style>
+
+							<!-- <img src="assets/img/Shape copy.png" width="260" height="17"> -->
+							<div>		
+								<div id="slider-range"></div>
+							</div>
+
 							<div class="sidebar__filter-block">
 								<p class="sidebar__small-text">
-									Цена: от 100 до 10000 руб.
+									Цена:&nbsp;<input type="text" id="amount" class="reset" readonly>
 								</p>
 								<button class="btn-grey" type="submit">ПРИМЕНИТЬ</button>
 							</div>

@@ -36,4 +36,23 @@
     <link rel="stylesheet" href="assets/css/superfish.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/media.css"> -->
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+          $( "#slider-range" ).slider({
+            range: true,
+            min: 100,
+            max: 10000,
+            values: [ 1500, 7000 ],
+            slide: function( event, ui ) {
+              $( "#amount" ).val( "от " + ui.values[ 0 ] + " до " + ui.values[ 1 ] + " руб.");
+            }
+          });
+          $( "#amount" ).val( "от " + $( "#slider-range" ).slider( "values", 0 ) +
+            " до " + $( "#slider-range" ).slider( "values", 1 ) + " руб.");
+        } );
+    </script>
 </head>
