@@ -7055,4 +7055,13 @@ h4 {
 .btn-line {
   border-bottom: 1px solid black;
 }
+.none-bottom {
+  margin-bottom: 0;
+}
+.product-card-location {
+  margin-top: -17px;
+}
+.product-card-location {
+  margin-top: -17px;
+}
 /*# sourceMappingURL=bootstrap.css.map */

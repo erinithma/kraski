@@ -215,7 +215,7 @@
   margin-right: 0;
 }.mm-panels > .mm-panel > .mm-listview {
   margin: 20px -20px;
-}.mm-panels > .mm-panel > .mm-listview:first-child,.mm-panels > .mm-panel > .mm-navbar+.mm-listview {
+}.mm-panels > .mm-panel > .mm-listview:first-child,.mm-panels > .mm-panel > .mm-navbar + .mm-listview {
   margin-top: -20px;
 }.mm-listview .mm-inset {
   padding: 0 10px 15px 40px;
@@ -1107,7 +1107,7 @@ html.mm-opened.mm-dragging .mm-menu,html.mm-opened.mm-dragging .mm-slideout {
   padding-left: 50px;
 }.mm-menu.mm-rtl em.mm-counter + a.mm-next + label.mm-check,.mm-menu.mm-rtl em.mm-counter + a.mm-next + label.mm-toggle {
   left: 100px;
-}.mm-menu.mm-rtl em.mm-counter + a.mm-next + label.mm-check+a,.mm-menu.mm-rtl em.mm-counter + a.mm-next + label.mm-check+span,.mm-menu.mm-rtl em.mm-counter + a.mm-next + label.mm-toggle+a,.mm-menu.mm-rtl em.mm-counter + a.mm-next + label.mm-toggle+span {
+}.mm-menu.mm-rtl em.mm-counter + a.mm-next + label.mm-check + a,.mm-menu.mm-rtl em.mm-counter + a.mm-next + label.mm-check + span,.mm-menu.mm-rtl em.mm-counter + a.mm-next + label.mm-toggle + a,.mm-menu.mm-rtl em.mm-counter + a.mm-next + label.mm-toggle + span {
   margin-left: 90px;
 }.mm-menu.mm-rtl .mm-panel[class*=mm-iconpanel-] {
   left: 0;
@@ -1243,10 +1243,10 @@ html.mm-opened.mm-dragging .mm-menu,html.mm-opened.mm-dragging .mm-slideout {
 }.mm-menu .mm-indexer a {
   color: rgba(0,0,0,.3);
 }
-.mm-menu.mm-hoverselected .mm-listview > li > a.mm-fullsubopen+a,.mm-menu.mm-hoverselected .mm-listview > li > a.mm-fullsubopen+span,.mm-menu.mm-hoverselected .mm-listview > li > a:not(.mm-fullsubopen),.mm-menu.mm-parentselected .mm-listview > li > a.mm-fullsubopen+a,.mm-menu.mm-parentselected .mm-listview > li > a.mm-fullsubopen+span,.mm-menu.mm-parentselected .mm-listview > li > a:not(.mm-fullsubopen) {
+.mm-menu.mm-hoverselected .mm-listview > li > a.mm-fullsubopen + a,.mm-menu.mm-hoverselected .mm-listview > li > a.mm-fullsubopen + span,.mm-menu.mm-hoverselected .mm-listview > li > a:not(.mm-fullsubopen),.mm-menu.mm-parentselected .mm-listview > li > a.mm-fullsubopen + a,.mm-menu.mm-parentselected .mm-listview > li > a.mm-fullsubopen + span,.mm-menu.mm-parentselected .mm-listview > li > a:not(.mm-fullsubopen) {
   -webkit-transition: background .4s ease;
           transition: background .4s ease;
-}.mm-menu.mm-hoverselected .mm-listview > li > a.mm-fullsubopen:hover+span,.mm-menu.mm-hoverselected .mm-listview > li > a:not(.mm-fullsubopen):hover,.mm-menu.mm-parentselected .mm-listview > li > a.mm-selected.mm-fullsubopen+a,.mm-menu.mm-parentselected .mm-listview > li > a.mm-selected.mm-fullsubopen+span,.mm-menu.mm-parentselected .mm-listview > li > a.mm-selected:not(.mm-fullsubopen) {
+}.mm-menu.mm-hoverselected .mm-listview > li > a.mm-fullsubopen:hover + span,.mm-menu.mm-hoverselected .mm-listview > li > a:not(.mm-fullsubopen):hover,.mm-menu.mm-parentselected .mm-listview > li > a.mm-selected.mm-fullsubopen + a,.mm-menu.mm-parentselected .mm-listview > li > a.mm-selected.mm-fullsubopen + span,.mm-menu.mm-parentselected .mm-listview > li > a.mm-selected:not(.mm-fullsubopen) {
   background: rgba(255,255,255,.5);
 }
 input.mm-check,input.mm-toggle {
@@ -1307,7 +1307,7 @@ input.mm-check,input.mm-toggle {
   padding-right: 50px;
 }em.mm-counter + a.mm-next + label.mm-check,em.mm-counter + a.mm-next + label.mm-toggle {
   right: 100px;
-}em.mm-counter + a.mm-next + label.mm-check+a,em.mm-counter + a.mm-next + label.mm-check+span,em.mm-counter + a.mm-next + label.mm-toggle+a,em.mm-counter + a.mm-next + label.mm-toggle+span {
+}em.mm-counter + a.mm-next + label.mm-check + a,em.mm-counter + a.mm-next + label.mm-check + span,em.mm-counter + a.mm-next + label.mm-toggle + a,em.mm-counter + a.mm-next + label.mm-toggle + span {
   margin-right: 90px;
 }.mm-menu label.mm-toggle {
   background: rgba(0,0,0,.1);
@@ -1563,17 +1563,17 @@ input.mm-check,input.mm-toggle {
   -webkit-flex: 1 1 0;
       -ms-flex: 1 1 0;
           flex: 1 1 0;
-}.mm-menu .mm-panels > .mm-panel.mm-justified-listview > .mm-listview > li:not(.mm-divider)>a:not(.mm-next),.mm-menu .mm-panels > .mm-panel.mm-justified-listview > .mm-listview > li:not(.mm-divider)>span,.mm-menu.mm-justified-listview .mm-panels > .mm-panel > .mm-listview > li:not(.mm-divider)>a:not(.mm-next),.mm-menu.mm-justified-listview .mm-panels > .mm-panel > .mm-listview > li:not(.mm-divider)>span {
+}.mm-menu .mm-panels > .mm-panel.mm-justified-listview > .mm-listview > li:not(.mm-divider) > a:not(.mm-next),.mm-menu .mm-panels > .mm-panel.mm-justified-listview > .mm-listview > li:not(.mm-divider) > span,.mm-menu.mm-justified-listview .mm-panels > .mm-panel > .mm-listview > li:not(.mm-divider) > a:not(.mm-next),.mm-menu.mm-justified-listview .mm-panels > .mm-panel > .mm-listview > li:not(.mm-divider) > span {
   height: 100%;
   box-sizing: border-box;
-}.mm-menu .mm-panels > .mm-panel.mm-justified-listview > .mm-listview > li:not(.mm-divider) > a:not(.mm-next):before,.mm-menu .mm-panels > .mm-panel.mm-justified-listview > .mm-listview > li:not(.mm-divider)>span:before,.mm-menu.mm-justified-listview .mm-panels > .mm-panel > .mm-listview > li:not(.mm-divider) > a:not(.mm-next):before,.mm-menu.mm-justified-listview .mm-panels > .mm-panel > .mm-listview > li:not(.mm-divider)>span:before {
+}.mm-menu .mm-panels > .mm-panel.mm-justified-listview > .mm-listview > li:not(.mm-divider) > a:not(.mm-next):before,.mm-menu .mm-panels > .mm-panel.mm-justified-listview > .mm-listview > li:not(.mm-divider) > span:before,.mm-menu.mm-justified-listview .mm-panels > .mm-panel > .mm-listview > li:not(.mm-divider) > a:not(.mm-next):before,.mm-menu.mm-justified-listview .mm-panels > .mm-panel > .mm-listview > li:not(.mm-divider) > span:before {
   display: inline-block;
   width: 0;
   height: 100%;
   vertical-align: middle;
   content: '';
 }
-.mm-listview.mm-multiline > li .mm-listview > li.mm-multiline>a,.mm-listview.mm-multiline > li .mm-listview > li.mm-multiline>span,.mm-menu.mm-multiline .mm-listview > li > a,.mm-menu.mm-multiline .mm-listview > li > span {
+.mm-listview.mm-multiline > li .mm-listview > li.mm-multiline > a,.mm-listview.mm-multiline > li .mm-listview > li.mm-multiline > span,.mm-menu.mm-multiline .mm-listview > li > a,.mm-menu.mm-multiline .mm-listview > li > span {
   text-overflow: clip;
   white-space: normal;
 }
@@ -1743,7 +1743,7 @@ html.mm-pagedim #mm-blocker,html.mm-pagedim-black #mm-blocker,html.mm-pagedim-wh
   background: rgba(255,255,255,.3);
 }.mm-menu.mm-theme-dark .mm-indexer a,.mm-menu.mm-theme-dark .mm-noresultsmsg {
   color: rgba(255,255,255,.4);
-}.mm-menu.mm-hoverselected.mm-theme-dark .mm-listview > li > a.mm-fullsubopen:hover+span,.mm-menu.mm-hoverselected.mm-theme-dark .mm-listview > li > a:not(.mm-fullsubopen):hover,.mm-menu.mm-parentselected.mm-theme-dark .mm-listview > li > a.mm-selected.mm-fullsubopen+a,.mm-menu.mm-parentselected.mm-theme-dark .mm-listview > li > a.mm-selected.mm-fullsubopen+span,.mm-menu.mm-parentselected.mm-theme-dark .mm-listview > li > a.mm-selected:not(.mm-fullsubopen) {
+}.mm-menu.mm-hoverselected.mm-theme-dark .mm-listview > li > a.mm-fullsubopen:hover + span,.mm-menu.mm-hoverselected.mm-theme-dark .mm-listview > li > a:not(.mm-fullsubopen):hover,.mm-menu.mm-parentselected.mm-theme-dark .mm-listview > li > a.mm-selected.mm-fullsubopen + a,.mm-menu.mm-parentselected.mm-theme-dark .mm-listview > li > a.mm-selected.mm-fullsubopen + span,.mm-menu.mm-parentselected.mm-theme-dark .mm-listview > li > a.mm-selected:not(.mm-fullsubopen) {
   background: rgba(0,0,0,.1);
 }.mm-menu.mm-theme-dark label.mm-toggle {
   background: rgba(0,0,0,.15);
@@ -1779,7 +1779,7 @@ html.mm-pagedim #mm-blocker,html.mm-pagedim-black #mm-blocker,html.mm-pagedim-wh
   background: rgba(0,0,0,.05);
 }.mm-menu.mm-theme-white .mm-indexer a,.mm-menu.mm-theme-white .mm-noresultsmsg {
   color: rgba(0,0,0,.3);
-}.mm-menu.mm-hoverselected.mm-theme-white .mm-listview > li > a.mm-fullsubopen:hover+span,.mm-menu.mm-hoverselected.mm-theme-white .mm-listview > li > a:not(.mm-fullsubopen):hover,.mm-menu.mm-parentselected.mm-theme-white .mm-listview > li > a.mm-selected.mm-fullsubopen+a,.mm-menu.mm-parentselected.mm-theme-white .mm-listview > li > a.mm-selected.mm-fullsubopen+span,.mm-menu.mm-parentselected.mm-theme-white .mm-listview > li > a.mm-selected:not(.mm-fullsubopen) {
+}.mm-menu.mm-hoverselected.mm-theme-white .mm-listview > li > a.mm-fullsubopen:hover + span,.mm-menu.mm-hoverselected.mm-theme-white .mm-listview > li > a:not(.mm-fullsubopen):hover,.mm-menu.mm-parentselected.mm-theme-white .mm-listview > li > a.mm-selected.mm-fullsubopen + a,.mm-menu.mm-parentselected.mm-theme-white .mm-listview > li > a.mm-selected.mm-fullsubopen + span,.mm-menu.mm-parentselected.mm-theme-white .mm-listview > li > a.mm-selected:not(.mm-fullsubopen) {
   background: rgba(0,0,0,.05);
 }.mm-menu.mm-theme-white label.mm-toggle {
   background: rgba(0,0,0,.1);
@@ -1808,7 +1808,7 @@ html.mm-pagedim #mm-blocker,html.mm-pagedim-black #mm-blocker,html.mm-pagedim-wh
   background: rgba(255,255,255,.2);
 }.mm-menu.mm-theme-black label.mm-check:before {
   border-color: rgba(255,255,255,.6);
-}.mm-menu.mm-hoverselected.mm-theme-black .mm-listview > li > a.mm-fullsubopen:hover+span,.mm-menu.mm-hoverselected.mm-theme-black .mm-listview > li > a:not(.mm-fullsubopen):hover,.mm-menu.mm-keyboardfocus a:focus,.mm-menu.mm-parentselected.mm-theme-black .mm-listview > li > a.mm-selected.mm-fullsubopen+a,.mm-menu.mm-parentselected.mm-theme-black .mm-listview > li > a.mm-selected.mm-fullsubopen+span,.mm-menu.mm-parentselected.mm-theme-black .mm-listview > li > a.mm-selected:not(.mm-fullsubopen) {
+}.mm-menu.mm-hoverselected.mm-theme-black .mm-listview > li > a.mm-fullsubopen:hover + span,.mm-menu.mm-hoverselected.mm-theme-black .mm-listview > li > a:not(.mm-fullsubopen):hover,.mm-menu.mm-keyboardfocus a:focus,.mm-menu.mm-parentselected.mm-theme-black .mm-listview > li > a.mm-selected.mm-fullsubopen + a,.mm-menu.mm-parentselected.mm-theme-black .mm-listview > li > a.mm-selected.mm-fullsubopen + span,.mm-menu.mm-parentselected.mm-theme-black .mm-listview > li > a.mm-selected:not(.mm-fullsubopen) {
   background: rgba(255,255,255,.3);
 }.mm-menu.mm-shadow-page.mm-theme-black:after {
   display: none;
