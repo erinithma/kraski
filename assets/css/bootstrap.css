@@ -6927,7 +6927,6 @@ h4 {
 }
 .materials-main-block {
   border-bottom: 1px solid #575757;
-  font-family: 'Roboto', sans-serif !important;
 }
 .materials-block-line {
   padding-bottom: 55px;
@@ -6937,7 +6936,6 @@ h4 {
   color: white;
   font-size: 12px;
   text-align: center;
-  font-family: 'Roboto', sans-serif !important;
 }
 .sidebar__search-field {
   padding-top: 9px;

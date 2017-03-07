@@ -1,163 +1,158 @@
 /*@import url('https://fonts.googleapis.com/css?family=Bad+Script|Lobster|Poiret+One&subset=cyrillic');*/
 *::-webkit-input-placeholder {
-	color: #666;
-	opacity: 1;
+  color: #666;
+  opacity: 1;
 }
 *:-moz-placeholder {
-	color: #666;
-	opacity: 1;
+  color: #666;
+  opacity: 1;
 }
 *::-moz-placeholder {
-	color: #666;
-	opacity: 1;
+  color: #666;
+  opacity: 1;
 }
 *:-ms-input-placeholder {
-	color: #666;
-	opacity: 1;
+  color: #666;
+  opacity: 1;
 }
 
-body input:focus:required:invalid,
-body textarea:focus:required:invalid {
-	
-}
-body input:required:valid,
-body textarea:required:valid {
-	
-}
+
+
 
 .logotype {
-	float: left;
+  float: left;
 }
 
 
 .main_menu {
-	float: right;
-	position: relative;
+  position: relative;
+  float: right;
 }
 
 /* Menu Button */
 .toggle-mnu {
-	display: block;
-	width: 32px;
-	height: 28px;
-	margin-top: 8px;
+  display: block;
+  width: 32px;
+  height: 28px;
+  margin-top: 8px;
 }
- 
+
 .toggle-mnu span:after, .toggle-mnu span:before {
-	content: "";
-	position: absolute;
-	left: 0;
-	top: 9px;
+  position: absolute;
+  top: 9px;
+  left: 0;
+  content: "";
 }
- 
+
 .toggle-mnu span:after {
-	top: 18px;
+  top: 18px;
 }
- 
+
 .toggle-mnu span {
-	position: relative;
-	display: block;
+  position: relative;
+  display: block;
 }
- 
+
 .toggle-mnu span, .toggle-mnu span:after, .toggle-mnu span:before {
-	width: 100%;
-	height: 2px;
-	background-color: #000;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	border-radius: 2px;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  border-radius: 2px;
+  -webkit-transition: all .3s;
+          transition: all .3s;
+
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
- 
+
 .toggle-mnu.on span {
-	background-color: transparent;
+  background-color: transparent;
 }
- 
+
 .toggle-mnu.on span:before {
-	-webkit-transform: rotate(45deg) translate(-1px, 0px);
-	-ms-transform: rotate(45deg) translate(-1px, 0px);
-	transform: rotate(45deg) translate(-1px, 0px);
+  -webkit-transform: rotate(45deg) translate(-1px, 0px);
+      -ms-transform: rotate(45deg) translate(-1px, 0px);
+          transform: rotate(45deg) translate(-1px, 0px);
 }
- 
+
 .toggle-mnu.on span:after {
-	-webkit-transform: rotate(-45deg) translate(6px, -7px);
-	-ms-transform: rotate(-45deg) translate(6px, -7px);
-	transform: rotate(-45deg) translate(6px, -7px);
+  -webkit-transform: rotate(-45deg) translate(6px, -7px);
+      -ms-transform: rotate(-45deg) translate(6px, -7px);
+          transform: rotate(-45deg) translate(6px, -7px);
 }
- 
+
 .toggle-mnu {
-	float: right;
-	position: relative;
-	z-index: 2;
+  position: relative;
+  z-index: 2;
+  float: right;
 }
- 
+
 /*Menu Button End*/
 
 #mobile-menu {
-	z-index: 2;
+  z-index: 2;
 }
 
 .header_head {
-	padding: 18px 0;
-	/*background: linear-gradient(to left, #EFEFBB, #D4D3DD);*/
-	background: white;
-	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(255, 255, 255, 0.15); 
+  padding: 18px 0;
+  /*background: linear-gradient(to left, #EFEFBB, #D4D3DD);*/
+  background: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .2), 0 1px 0 rgba(255, 255, 255, .15);
 }
 
 .main_menu .sf-menu {
-	margin: 8px 17px 0 0;
+  margin: 8px 17px 0 0;
 }
 
 .main_menu .sf-menu li {
-	background-color: white;
+  background-color: white;
 }
 
 .main_menu .sf-menu a {
- transition: all .3s ease; 
- color: black;
- text-transform: uppercase;
- font-size: 15px;
+  font-size: 15px;
+  color: black;
+  text-transform: uppercase;
+  transition: all .3s ease;
 }
 
 .main_menu .sf-menu a:hover {
- color: grey;
+  color: grey;
 }
 
 .main_menu .sf-menu .active a {
-	color: grey;
+  color: grey;
 }
 
 .main_menu .sf-menu .active a:hover {
-	color: grey;
+  color: grey;
 }
 
 .search_header {
-	position: absolute;
-	right: 0;
-	left: 585px;
-	top: -2px;
-	padding-left: -6px;
+  position: absolute;
+  top: -2px;
+  right: 0;
+  left: 585px;
+  padding-left: -6px;
 }
 
 .main_menu .sf-menu i {
- transition: all .3s ease; 
- color: black;
- text-transform: uppercase;
- font-size: 15px;
+  font-size: 15px;
+  color: black;
+  text-transform: uppercase;
+  transition: all .3s ease;
 }
 
 .main_menu .sf-menu i:hover {
- color: grey;
+  color: grey;
 }
 
 .sf-menu li:hover {
-	background-color: #E0EAFC;
+  background-color: #e0eafc;
 }
 
 
 .main_menu .sf-menu .submenu li a {
-	padding: 10px 20px; 
+  padding: 10px 20px;
 }
 
 /*.main_menu .sf-menu .submenu {
@@ -166,37 +161,37 @@ body textarea:required:valid {
 
 /* Menu Button */
 .main_menu_button {
-	background: transparent;
-	border: medium none;
-	font-size: 28px;
-	color: black;
-	float: right;
-	outline: none;
+  float: right;
+  font-size: 28px;
+  color: black;
+  background: transparent;
+  border: medium none;
+  outline: none;
 }
- 
+
 .main_menu_button:hover {
-	color: grey;
-	transition: all .3s ease;
+  color: grey;
+  transition: all .3s ease;
 }
 /*Menu Button End*/
 
 .search_header a {
-	color: black;
+  color: black;
 }
 
 .search_header a:hover {
- transition: .3s ease; 
- color: grey;
+  color: grey;
+  transition: .3s ease;
 }
 
 
 .search_popup {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	z-index: 10002;
-	width: 84%;
-	margin-left: -42%;
-	height: 80px;
-	margin-top: -40px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10002;
+  width: 84%;
+  height: 80px;
+  margin-top: -40px;
+  margin-left: -42%;
 }
