@@ -14,8 +14,19 @@
 }
 
 .header-container{
+    position: relative;
+}
+
+.header-container::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 15px;
+    width: 98%;
     border-bottom: 1px solid #000;
 }
+
 .header .flex-container {
     align-items: center;
     display: flex;

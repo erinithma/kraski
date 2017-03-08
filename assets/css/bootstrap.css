@@ -6543,6 +6543,15 @@ a:focus {
   font-style: normal;
 }
 .header-container {
+  position: relative;
+}
+.header-container::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 15px;
+  width: 98%;
   border-bottom: 1px solid #000;
 }
 .header .flex-container {
@@ -6859,17 +6868,21 @@ h4 {
   min-height: 312px;
   padding: 26px 28px;
   background-color: #efefef;
+  transition: background-color 0.5s ease-in-out;
 }
 .product-card__text {
   flex-grow: 2;
 }
 .product-card__text--small {
+  color: #a2a2a2;
   z-index: 2;
+  margin-top: -30px;
   font-size: 12px;
   height: 0;
   overflow: hidden;
   opacity: 0;
   font-family: 'Roboto', sans-serif !important;
+  transition: all 0.5s ease-in-out;
 }
 .product-card__picture {
   align-self: center;
@@ -6885,21 +6898,18 @@ h4 {
   overflow: hidden;
   opacity: 0;
   z-index: 2;
+  transition: all 0.5s ease-in-out;
 }
 .product-card:hover .product-card__text--small {
-  margin-top: -30px;
   overflow: visible;
   opacity: 1;
-  transition: all 0.5s ease-in-out;
 }
 .product-card:hover {
   background-color: #f6f8f8;
-  transition: all 0.5s ease-in-out;
 }
 .product-card:hover .product-card__footer {
   overflow: visible;
   opacity: 1;
-  transition: all 0.5s ease-in-out;
 }
 .container-dark-grey {
   background-color: #303030;
@@ -6977,6 +6987,7 @@ h4 {
 }
 .sidebar__watched {
   margin-top: 32px;
+  margin-bottom: 23px;
 }
 .sidebar__small-card {
   background-color: #efefef;
@@ -6993,11 +7004,13 @@ h4 {
 }
 .sidebar__list-text {
   color: black;
+  font-size: 14px;
 }
 .btn-grey {
   background-color: #333333;
   color: white;
   border: none;
+  padding-top: 3px;
 }
 .active {
   color: #fd9444;
@@ -7048,12 +7061,23 @@ h4 {
   margin-top: -10px;
   margin-bottom: 28px;
   font-family: 'Roboto', sans-serif !important;
+  position: relative;
+  top: -10px;
 }
 .btn-center {
   text-align: center;
 }
 .btn-line {
-  border-bottom: 1px solid black;
+  position: relative;
+}
+.btn-line::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  width: 98%;
+  border-bottom: 1px solid #000;
 }
 .none-bottom {
   margin-bottom: 0;

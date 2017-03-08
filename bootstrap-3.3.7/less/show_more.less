@@ -13,12 +13,26 @@
 	margin-top: -10px;
 	margin-bottom: 28px;
 	font-family: 'Roboto', sans-serif !important;
+	
+	position: relative;
+	top: -10px;
 }
+
 
 .btn-center {
 	text-align: center;
 }
 
 .btn-line {
-	border-bottom: 1px solid black;
+	// border-bottom: 1px solid black;
+	position: relative;
+}
+.btn-line::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 15px;
+    width: 98%;
+    border-bottom: 1px solid #000;
 }
