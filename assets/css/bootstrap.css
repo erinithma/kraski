@@ -7074,7 +7074,7 @@ h4 {
   display: block;
   content: "";
   position: absolute;
-  bottom: 15px;
+  bottom: -15px;
   left: 15px;
   width: 98%;
   border-bottom: 1px solid #000;
