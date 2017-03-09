@@ -46,6 +46,10 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
+        function resizeTextField(field) {
+            field.css("width", field.val().length * 8 - 3);
+        }
+
         $( function() {
           $( "#slider-range" ).slider({
             range: true,
@@ -53,14 +57,18 @@
             max: 10000,
             values: [ 1500, 7000 ],
             slide: function( event, ui ) {
-              $( "#amount" ).val( "от " + ui.values[ 0 ] + " до " + ui.values[ 1 ] + " руб.");
+              $("#amountFrom").val(ui.values[0]);
+              resizeTextField($("#amountFrom"));
+              $("#amountTo").val(ui.values[1]);
+              resizeTextField($("#amountTo"));
             }
           });
-          $( "#amount" ).val( "от " + $( "#slider-range" ).slider( "values", 0 ) +
-            " до " + $( "#slider-range" ).slider( "values", 1 ) + " руб.");
+          $("#amountFrom").val($( "#slider-range" ).slider("values", 0));
+          resizeTextField($("#amountFrom"));
+          $("#amountTo").val($( "#slider-range" ).slider("values", 1));
+          resizeTextField($("#amountTo"));
         } );
     </script>
-    
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <script src="assets/js/bootstrap.min.js"></script>
 </head>
@@ -184,11 +192,13 @@
 							</div>
 							<div class="sidebar__filter-block">
 								<p class="sidebar__small-text">
-									Цена:&nbsp;<input type="text" id="amount" class="reset" readonly>
+									Цена:<br>от 
+									<input type="text" id="amountFrom" class="reset" readonly> до 
+									<input type="text" id="amountTo" class="reset" readonly> руб.
 								</p>
 								<button class="btn-grey" type="submit">ПРИМЕНИТЬ</button>
 							</div>
-						</form>	
+						</form>
 						<h3>Категории</h3>
 							<ul class="sidebar__list">
 								<li class="sidebar__list-element"><a class="sidebar__list-text" href="#">Краски для колеровки</a></li>
