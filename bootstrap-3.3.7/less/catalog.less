@@ -4,6 +4,27 @@
 @active-color: #fd9444;
 
 
+.search-form {
+	position: relative;
+
+	.search-button {
+		display: inline-block;
+		line-height: 1;
+		position: absolute;
+		top: 8px;
+		right: 8px;
+		width: 23px;
+		margin: 0;
+		padding: 0;
+		border: none;
+		height: 23px;
+		background: url('../../assets/img/search.png');
+		background-repeat: no-repeat;
+		z-index: 3;
+		outline: none;
+	}
+}
+
 .sidebar {
 	&__search-field {
 		padding-top: 9px;
@@ -13,9 +34,6 @@
 		background-color: @search-input-color;
 		color: @search-text-color;
 		width: 100%;
-		background-image: url('../../assets/img/search.png');
-		background-position: 94% center;
-		background-repeat: no-repeat;
 		font-family: 'Roboto', sans-serif !important;
 		font-size: 14px;
 	}
