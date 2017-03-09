@@ -46,10 +46,6 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
-        function resizeTextField(field) {
-            field.css("width", field.val().length * 8 - 3);
-        }
-
         $( function() {
           $( "#slider-range" ).slider({
             range: true,
@@ -58,15 +54,15 @@
             values: [ 1500, 7000 ],
             slide: function( event, ui ) {
               $("#amountFrom").val(ui.values[0]);
-              resizeTextField($("#amountFrom"));
+              $("#amountFromView").html(ui.values[0]);
               $("#amountTo").val(ui.values[1]);
-              resizeTextField($("#amountTo"));
+              $("#amountToView").html(ui.values[1]);
             }
           });
           $("#amountFrom").val($( "#slider-range" ).slider("values", 0));
-          resizeTextField($("#amountFrom"));
+          $("#amountFromView").html($( "#slider-range" ).slider("values", 0));
           $("#amountTo").val($( "#slider-range" ).slider("values", 1));
-          resizeTextField($("#amountTo"));
+          $("#amountToView").html($( "#slider-range" ).slider("values", 1));
         } );
     </script>
     <link rel="stylesheet" href="assets/css/bootstrap.css">
@@ -193,8 +189,11 @@
 							<div class="sidebar__filter-block">
 								<p class="sidebar__small-text">
 									Цена:<br>от 
-									<input type="text" id="amountFrom" class="reset" readonly> до 
-									<input type="text" id="amountTo" class="reset" readonly> руб.
+									<span type="text" id="amountFromView"></span> до 
+									<span type="text" id="amountToView"></span> руб.
+									
+									<input type="text" id="amountFrom" class="hidden" readonly>
+									<input type="text" id="amountTo" class="hidden" readonly>
 								</p>
 								<button class="btn-grey" type="submit">ПРИМЕНИТЬ</button>
 							</div>

@@ -22,8 +22,11 @@
 							<div class="sidebar__filter-block">
 								<p class="sidebar__small-text">
 									Цена:<br>от 
-									<input type="text" id="amountFrom" class="reset" readonly> до 
-									<input type="text" id="amountTo" class="reset" readonly> руб.
+									<span type="text" id="amountFromView"></span> до 
+									<span type="text" id="amountToView"></span> руб.
+									
+									<input type="text" id="amountFrom" class="hidden" readonly>
+									<input type="text" id="amountTo" class="hidden" readonly>
 								</p>
 								<button class="btn-grey" type="submit">ПРИМЕНИТЬ</button>
 							</div>
