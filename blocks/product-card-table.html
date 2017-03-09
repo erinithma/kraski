@@ -1,6 +1,12 @@
 <div class="container">
 	<div class="row">
-		
+		<div class="col-md-12">
+			<a class="square-button square-button--active" href="#">Технические характеристики</a>
+			<a class="square-button" href="#">Область применения</a>
+			<a class="square-button" href="#">Свойства</a>
+			<a class="square-button" href="#">Рекомендации по применению</a>
+			<a class="square-button" href="#">Советы экспертов</a>
+		</div>
 	</div>
 	<table class="table table-striped">
 		<tr>
@@ -74,6 +80,26 @@
 		}
 		td:nth-child(odd) {
 			padding-left: 48px !important;
+		}
+
+		.square-button {
+			display: inline-block;
+			line-height: 1;
+			border: 1px solid #f6f8f8;
+			padding: 15px 30px;
+			margin-right: 5px;
+			margin-bottom: 10px;
+			color: #6d6d6d;
+			font-size: 14px;
+		}
+
+		.square-button::last-child {
+			margin-right: 0;
+		}
+
+		.square-button--active {
+			background-color: #f6f8f8;
+			color: #6d6d6d;
 		}
 	</style>
 </div>
