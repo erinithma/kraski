@@ -7191,9 +7191,10 @@ td:nth-child(odd) {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
 }
 .big-vendor__info {
-  margin-top: 25px;
+  margin-top: 20px;
 }
 .big-vendor__button {
   outline: none;
@@ -7206,5 +7207,8 @@ td:nth-child(odd) {
   padding-top: 5px;
   padding-left: 12px;
   padding-right: 12px;
+}
+.small-describing {
+  font-family: 'Roboto', Arial, sans-serif !important;
 }
 /*# sourceMappingURL=bootstrap.css.map */
