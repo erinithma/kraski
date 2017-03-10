@@ -7236,4 +7236,14 @@ td:nth-child(odd) {
   color: #fd9444;
   margin-left: 20px;
 }
+.main-characteristics {
+  margin-top: 15px;
+}
+.main-characteristics__common {
+  color: #909090;
+  font-size: 12px;
+}
+.main-characteristics__color {
+  margin-left: 66px;
+}
 /*# sourceMappingURL=bootstrap.css.map */
