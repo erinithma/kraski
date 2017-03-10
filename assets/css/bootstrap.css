@@ -7135,6 +7135,9 @@ td:nth-child(odd) {
   background-color: #f6f8f8;
   color: #6d6d6d;
 }
+.square-bottom {
+  margin-bottom: -12px;
+}
 .breadcrumbs {
   list-style-type: none;
   margin: 0;
