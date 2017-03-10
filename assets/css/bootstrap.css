@@ -7224,4 +7224,16 @@ td:nth-child(odd) {
 .small-grey-block__bottom {
   padding-bottom: 10px;
 }
+.price-block {
+  font-size: 24px;
+  margin-top: 25px;
+}
+.price-block__old {
+  text-decoration: line-through;
+  color: #c5c5c5;
+}
+.price-block__new {
+  color: #fd9444;
+  margin-left: 20px;
+}
 /*# sourceMappingURL=bootstrap.css.map */
