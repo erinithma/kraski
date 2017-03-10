@@ -7147,7 +7147,6 @@ td:nth-child(odd) {
   margin-top: 20px;
 }
 .big-vendor__button {
-  outline: none;
   border: none;
   background-color: #575757;
   color: white;
@@ -7195,5 +7194,34 @@ td:nth-child(odd) {
 }
 .main-characteristics__color {
   margin-left: 66px;
+}
+.options {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 12px;
+  color: #909090;
+}
+.options__item {
+  display: inline-flex;
+  flex-flow: column nowrap;
+  width: 78px;
+}
+.options__select {
+  position: relative;
+  left: -4px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #575757;
+}
+.button-add-to-cart {
+  background-color: #fd9444;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 14px;
+  padding-right: 22px;
+  padding-left: 22px;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 /*# sourceMappingURL=bootstrap.css.map */

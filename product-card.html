@@ -150,10 +150,25 @@
 				<span class="price-block__old">480 руб.</span>
 				<span class="price-block__new">420 руб.</span>
 			</div>
-			<div class="main-characteristics small-describing">
-				<span class="main-characteristics__volume main-characteristics__common">Объем</span>
-				<span class="main-characteristics__color main-characteristics__common">Цвет</span>
-			</div>
+			<form class="options">
+				<label class="options__item">
+					Объем
+					<select class="options__select" name="volume" id="volume">
+						<option>300 мл.</option>
+						<option>400 мл.</option>
+						<option>800 мл.</option>
+					</select>
+				</label>
+				<label class="options__item">
+					Цвет
+					<select class="options__select" name="color" id="color">
+						<option>Белый</option>
+						<option>Черный</option>
+						<option>Охра</option>
+					</select>
+				</label>
+				<button class="button-add-to-cart small-describing" type="submit">ДОБАВИТЬ В КОРЗИНУ</button>
+			</form>
 		</div>
 	</div>	
 </div>
