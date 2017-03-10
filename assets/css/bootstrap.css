@@ -7144,6 +7144,8 @@ td:nth-child(odd) {
   padding: 0;
   margin-bottom: -7px;
   margin-top: -3px;
+  font-family: 'Roboto', Arial, sans-serif !important;
+  font-size: 12px;
 }
 .breadcrumbs > li {
   margin: 0;
@@ -7153,5 +7155,31 @@ td:nth-child(odd) {
   content: "/";
   display: inline;
   margin: 0 3px;
+}
+.big-card {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.big-card__image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 358px;
+  height: 358px;
+  background-color: #efefef;
+}
+.big-card__blocks {
+  flex-basis: 92px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.big-card__block {
+  width: 82px;
+  height: 82px;
+  background-color: #efefef;
+}
+.big-block__info {
+  margin-top: 0px;
 }
 /*# sourceMappingURL=bootstrap.css.map */
