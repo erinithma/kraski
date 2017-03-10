@@ -7211,4 +7211,17 @@ td:nth-child(odd) {
 .small-describing {
   font-family: 'Roboto', Arial, sans-serif !important;
 }
+.small-grey-block {
+  width: 100%;
+  min-height: 105px;
+  background-color: #efefef;
+  margin-top: 25px;
+  font-size: 13px;
+}
+.small-grey-block__describing-location {
+  padding-top: 15px;
+}
+.small-grey-block__bottom {
+  padding-bottom: 10px;
+}
 /*# sourceMappingURL=bootstrap.css.map */
