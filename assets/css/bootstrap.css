@@ -7135,4 +7135,20 @@ td:nth-child(odd) {
   background-color: #f6f8f8;
   color: #6d6d6d;
 }
+.breadcrumbs {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: -7px;
+  margin-top: -3px;
+}
+.breadcrumbs > li {
+  margin: 0;
+  display: inline;
+}
+.breadcrumbs > li + li::before {
+  content: "/";
+  display: inline;
+  margin: 0 3px;
+}
 /*# sourceMappingURL=bootstrap.css.map */

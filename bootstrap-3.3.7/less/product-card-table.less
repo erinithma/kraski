@@ -5,9 +5,11 @@ td {
 	font-family: 'Roboto', Arial, sans-serif;
 	font-size: 12px;
 }
+
 td:nth-child(odd) {
 	padding-left: 48px !important;
 }
+
 .square-button {
 	display: inline-block;
 	line-height: 1;
@@ -17,11 +19,33 @@ td:nth-child(odd) {
 	margin-bottom: 10px;
 	color: #6d6d6d;
 	font-size: 14px;
+
+	&::last-child {
+		margin-right: 0;
+	}
 }
-.square-button::last-child {
-	margin-right: 0;
-}
+
 .square-button--active {
 	background-color: #f6f8f8;
 	color: #6d6d6d;
+}
+
+.breadcrumbs {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: -7px;
+	margin-top: -3px;
+
+	&> li {
+		margin: 0;
+		display: inline;
+
+		&+ li::before {
+			content: "/";
+			display: inline;
+			margin: 0 3px;
+		}
+	}
+
 }
