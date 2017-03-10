@@ -7179,7 +7179,32 @@ td:nth-child(odd) {
   height: 82px;
   background-color: #efefef;
 }
+.big-block {
+  display: flex;
+  justify-content: space-between;
+}
 .big-block__info {
   margin-top: 0px;
+}
+.big-vendor {
+  font-family: 'Roboto', Arial, sans-serif !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.big-vendor__info {
+  margin-top: 25px;
+}
+.big-vendor__button {
+  outline: none;
+  border: none;
+  background-color: #575757;
+  color: white;
+  font-family: 'RobotoCondensed', Arial, sans-serif !important;
+  font-size: 12px;
+  padding-bottom: 2px;
+  padding-top: 5px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 /*# sourceMappingURL=bootstrap.css.map */
