@@ -1,65 +1,65 @@
 <head>
-    <meta charset="UTF-8">
-    <title>Каталог красок</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href="assets/img/logo.png">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    
+	<meta charset="UTF-8">
+	<title>Каталог красок</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/png" href="assets/img/logo.png">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	
+	<script type="text/javascript">
+		WebFontConfig = {
+			google: { families: [ 'Roboto+Condensed:400,300,600,700:latin,cyrillic' ] }
+		};
+		(function() {
+			var wf = document.createElement('script');
+			wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+			wf.type = 'text/javascript';
+			wf.async = 'true';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(wf, s);
+		})();
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
-    <script type="text/javascript">
-      WebFontConfig = {
-        google: { families: [ 'Roboto+Condensed:400,300,600,700:latin,cyrillic' ] }
-      };
-      (function() {
-        var wf = document.createElement('script');
-        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-        wf.type = 'text/javascript';
-        wf.async = 'true';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(wf, s);
-      })();
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  
-    <!-- <script src="assets/js/jquery.plugin.js"></script>
-    <script src="assets/js/jquery.countdown.min.js"></script>
-    <script src="assets/js/jquery.countdown-ru.js"></script>
-    <script src="assets/js/superfish.min.js"></script>
-    <script src="assets/js/hoverIntent.js"></script>
-    <script src="assets/js/jquery.mmenu.all.min.js"></script> 
-    <script src="assets/js/jquery.mmenu.min.js"></script>
-    <script src="assets/js/common.js"></script> -->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+		$( function() {
+			$( "#slider-range" ).slider({
+				range: true,
+				min: 100,
+				max: 10000,
+				values: [ 1500, 7000 ],
+				slide: function( event, ui ) {
+					$("#amountFrom").val(ui.values[0]);
+					$("#amountFromView").html(ui.values[0]);
+					$("#amountTo").val(ui.values[1]);
+					$("#amountToView").html(ui.values[1]);
+				}
+			});
+			$("#amountFrom").val($("#slider-range").slider("values", 0));
+			$("#amountFromView").html($("#slider-range").slider("values", 0));
+			$("#amountTo").val($("#slider-range").slider("values", 1));
+			$("#amountToView").html($("#slider-range").slider("values", 1));
+		});
+	</script>
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<script src="assets/js/bootstrap.min.js"></script>
 
-
-    <!-- <link rel="stylesheet" href="assets/css/jquery.mmenu.all.css">
-    <link rel="stylesheet" href="assets/css/megafish.css">
-    <link rel="stylesheet" href="assets/css/superfish.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/media.css"> -->
-
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-        $( function() {
-          $( "#slider-range" ).slider({
-            range: true,
-            min: 100,
-            max: 10000,
-            values: [ 1500, 7000 ],
-            slide: function( event, ui ) {
-              $("#amountFrom").val(ui.values[0]);
-              $("#amountFromView").html(ui.values[0]);
-              $("#amountTo").val(ui.values[1]);
-              $("#amountToView").html(ui.values[1]);
-            }
-          });
-          $("#amountFrom").val($( "#slider-range" ).slider("values", 0));
-          $("#amountFromView").html($( "#slider-range" ).slider("values", 0));
-          $("#amountTo").val($( "#slider-range" ).slider("values", 1));
-          $("#amountToView").html($( "#slider-range" ).slider("values", 1));
-        } );
-    </script>
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <script src="assets/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="assets/css/jquery.mmenu.all.css">
+	<script type="text/javascript" src="assets/js/jquery.mmenu.all.min.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function( $ ) {
+			$("#menu").mmenu({
+				"extensions": [
+					"pagedim-black"
+				],
+                "navbar": {
+                    "title": "Ваши краски"
+                }
+			}, {
+                clone: true
+            });
+		});
+	</script>
 </head>
