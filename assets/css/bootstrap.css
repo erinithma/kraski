@@ -7100,6 +7100,7 @@ h4 {
 }
 .none-bottom {
   margin-bottom: 0;
+  margin-top: -5px;
 }
 .product-card-location {
   margin-top: -17px;
