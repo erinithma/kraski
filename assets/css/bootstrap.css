@@ -7114,6 +7114,9 @@ td:nth-child(odd) {
   display: inline;
   margin: 0 3px;
 }
+.big-card-container {
+  margin-top: 20px;
+}
 .big-card {
   display: flex;
   flex-flow: column nowrap;
