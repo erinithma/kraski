@@ -6735,6 +6735,107 @@ h4 {
   font-family: 'Roboto', sans-serif !important;
   font-size: 14px;
 }
+.sidebar__search-field {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 15px;
+  border: none;
+  outline: none;
+  background-color: #efefef;
+  color: #303030;
+  width: 100%;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 14px;
+}
+.sidebar__filter {
+  margin-top: 42px;
+}
+.sidebar__small-text {
+  font-size: 12px;
+  margin-top: 12px;
+  margin-left: 5px;
+  font-family: 'Roboto', sans-serif !important;
+}
+.sidebar__filter-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sidebar__list {
+  list-style-type: none;
+  font-size: 16px;
+  margin-left: -30px;
+  margin-top: 22px;
+  font-family: 'Roboto', sans-serif !important;
+}
+.sidebar__list-element {
+  margin-bottom: 10px;
+}
+.sidebar__watched {
+  margin-top: 32px;
+  margin-bottom: 23px;
+}
+.sidebar__small-card {
+  background-color: #efefef;
+  width: 60px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  float: left;
+}
+.sidebar__small-card-text {
+  padding-top: 15px;
+}
+.sidebar__list-text {
+  color: black;
+  font-size: 14px;
+}
+.btn-grey {
+  background-color: #333333;
+  color: white;
+  border: none;
+  padding-top: 3px;
+}
+.active {
+  color: #fd9444;
+}
+.container-location {
+  margin-top: -21px;
+}
+.reset {
+  display: inline;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.ui-slider-handle {
+  border-radius: 50%;
+  outline: none;
+  top: -8px !important;
+}
+.ui-state-default,
+.ui-state-active,
+.ui-state-hover,
+.ui-state-focus {
+  border: none !important;
+  background-color: #303030 !important;
+}
+.ui-slider {
+  position: relative;
+  top: 4px;
+  height: 2px;
+  margin: 20px 0;
+}
+.ui-slider-range {
+  height: 2px !important;
+  background: #303030;
+}
+.ui-widget-content {
+  background: #efefef;
+  border: 1px solid transparent !important;
+}
 .row-flex {
   display: flex;
   align-items: center;
@@ -6902,9 +7003,6 @@ h4 {
   flex-flow: row nowrap;
   align-items: center;
 }
-.search-form .sidebar__search-field {
-  outline: none;
-}
 .search-form .search-button {
   display: inline-block;
   line-height: 1;
@@ -6918,106 +7016,6 @@ h4 {
   background-position: center;
   background-repeat: no-repeat;
   outline: none;
-}
-.sidebar__search-field {
-  padding-top: 9px;
-  padding-bottom: 9px;
-  padding-left: 15px;
-  border: none;
-  background-color: #efefef;
-  color: #303030;
-  width: 100%;
-  font-family: 'Roboto', sans-serif !important;
-  font-size: 14px;
-}
-.sidebar__filter {
-  margin-top: 42px;
-}
-.sidebar__small-text {
-  font-size: 12px;
-  margin-top: 12px;
-  margin-left: 5px;
-  font-family: 'Roboto', sans-serif !important;
-}
-.sidebar__filter-block {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.sidebar__list {
-  list-style-type: none;
-  font-size: 16px;
-  margin-left: -30px;
-  margin-top: 22px;
-  font-family: 'Roboto', sans-serif !important;
-}
-.sidebar__list-element {
-  margin-bottom: 10px;
-}
-.sidebar__watched {
-  margin-top: 32px;
-  margin-bottom: 23px;
-}
-.sidebar__small-card {
-  background-color: #efefef;
-  width: 60px;
-  height: 72px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 15px;
-  float: left;
-}
-.sidebar__small-card-text {
-  padding-top: 15px;
-}
-.sidebar__list-text {
-  color: black;
-  font-size: 14px;
-}
-.btn-grey {
-  background-color: #333333;
-  color: white;
-  border: none;
-  padding-top: 3px;
-}
-.active {
-  color: #fd9444;
-}
-.container-location {
-  margin-top: -21px;
-}
-.reset {
-  display: inline;
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-.ui-slider-handle {
-  border-radius: 50%;
-  outline: none;
-  top: -8px !important;
-}
-.ui-state-default,
-.ui-state-active,
-.ui-state-hover,
-.ui-state-focus {
-  border: none !important;
-  background-color: #303030 !important;
-}
-.ui-slider {
-  position: relative;
-  top: 4px;
-  height: 2px;
-  margin: 20px 0;
-}
-.ui-slider-range {
-  height: 2px !important;
-  background: #303030;
-}
-.ui-widget-content {
-  background: #efefef;
-  border: 1px solid transparent !important;
 }
 .btn-white {
   background-color: white;
