@@ -6589,7 +6589,7 @@ a:focus {
   padding: 0;
   margin-bottom: 20px;
 }
-.header__menu ul li::after {
+.header__menu ul li:not(.multi)::after {
   content: "";
   position: absolute;
   bottom: -3px;
@@ -6598,7 +6598,10 @@ a:focus {
   transition: width .4s;
   border-bottom: 1px solid #fd9444;
 }
-.header__menu ul li:hover::after {
+.header__menu ul li:not(.multi):hover::after {
+  width: 100%;
+}
+.header__menu ul li:not(.multi).active::after {
   width: 100%;
 }
 .header__menu ul li + li {
@@ -6607,9 +6610,6 @@ a:focus {
 .header__menu ul li a {
   color: #444444;
   font-size: 16px;
-}
-.header__menu ul li.active::after {
-  width: 100%;
 }
 .header__menu ul li.multi > * + * {
   margin-left: 20px;
