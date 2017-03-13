@@ -87,7 +87,8 @@ module.exports = function (grunt) {
         files: [
             {src: '../layouts/index.html', dest: '../index.html'},
             {src: '../layouts/catalog.html', dest: '../catalog.html'},
-            {src: '../layouts/product-card.html', dest: '../product-card.html'}
+            {src: '../layouts/product-card.html', dest: '../product-card.html'},
+            {src: '../layouts/contacts.html', dest: '../contacts.html'}
         ]
 
       }
