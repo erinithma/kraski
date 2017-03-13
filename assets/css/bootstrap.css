@@ -6974,12 +6974,6 @@ h4 {
 .materials-block-line {
   padding-bottom: 55px;
 }
-.container__footer-info {
-  padding-top: 32px;
-  color: white;
-  font-size: 12px;
-  text-align: center;
-}
 .search-form {
   display: flex;
   flex-flow: row nowrap;
@@ -7213,5 +7207,117 @@ input[type=number]::-webkit-inner-spin-button {
   position: absolute;
   right: 0;
   top: 0;
+}
+.container-dark-grey {
+  background-color: #303030;
+  padding-top: 50px;
+  padding-bottom: 32px;
+}
+.materials-block {
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+}
+@media (max-width: 381px) {
+}
+.materials-block-color {
+  color: white;
+}
+.materials-block-color:hover {
+  color: #fd9444;
+}
+.materials-main-block {
+  border-bottom: 1px solid #575757;
+}
+.materials-block-line {
+  padding-bottom: 55px;
+}
+.container__footer-info {
+  color: white;
+  font-size: 12px;
+  text-align: right;
+}
+.materials-footer {
+  font-size: 12px;
+}
+.materials-footer .materials-block-color {
+  display: inline-block;
+  line-height: 1.25;
+}
+.materials-footer .materials-block-color + .materials-block-color {
+  margin-left: 10px;
+}
+.company-info {
+  margin-top: 20px;
+}
+.company-info__menu {
+  list-style-type: none;
+  padding: 0;
+  font-size: 16px;
+}
+.company-info__color {
+  color: #575757;
+}
+.company-info__bottom {
+  margin-bottom: 5px;
+}
+.banner {
+  min-height: 312px;
+  background-color: #efefef;
+  border-radius: 4px;
+  margin-top: 40px;
+}
+.company-description {
+  font-family: 'Roboto', Arial, sans-serif !important;
+}
+.company-description__text {
+  font-size: 14px;
+}
+.company-description__goal {
+  margin-bottom: 26px;
+}
+.company-example {
+  display: inline-block;
+}
+.company-example__photo {
+  border-radius: 50%;
+}
+.contacts-map__header {
+  padding: 0;
+}
+.contacts-map__info {
+  list-style-type: none;
+  margin-bottom: 15px;
+}
+.contacts-map__address-color {
+  display: inline;
+  color: #b1b1b1;
+  font-size: 14px;
+}
+.map {
+  background-color: #fd9444;
+  min-height: 300px;
+  box-sizing: border-box;
+}
+.bottom-line--grey {
+  background-color: #575757;
+}
+.card {
+  text-align: center;
+}
+.card__circle {
+  display: inline-block;
+  line-height: 1;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fd9444;
+  margin: 30px 0;
+}
+.card__text {
+  color: #b1b1b1;
+}
+.article__image {
+  margin-top: 27px;
 }
 /*# sourceMappingURL=bootstrap.css.map */
