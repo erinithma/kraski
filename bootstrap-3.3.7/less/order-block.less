@@ -17,4 +17,72 @@
 		font-family: 'Roboto Condensed', Arial, sans-serif;
 		font-size: 14px;
 	}
+
+	&__delivery {
+		padding-top: 32px;
+	}
+}
+
+.orange-color {
+	color: @orange-color;
+	text-decoration: underline;
+}
+
+.characters {
+	font-size: 12px;
+	font-family: 'Roboto', Arial, sans-serif;
+	font-weight: normal;
+	margin-top: 40px;
+    margin-left: 8px;
+}
+
+.radio {
+	vertical-align: top;
+	width: 17px;
+	height: 17px;
+	margin: 0 3px 0 0;
+}
+
+.radio + label {
+	cursor: pointer;
+}
+
+.radio:not(checked) {
+	position: absolute;
+	opacity: 0;
+}
+
+.radio:not(checked) + label {
+	position: relative;
+	padding: 0 0 0 35px;
+}
+
+.radio:not(checked) + label:before {
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: 0;
+	width: 22px;
+	height: 22px;
+	border: 1px solid #CDD1DA;
+	border-radius: 50%; 
+	background: #FFF;
+}
+
+.radio:not(checked) + label:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 6px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: @orange-color;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+	opacity: 0;
+	transition: all .2s;
+}
+
+.radio:checked + label:after {
+	opacity: 1;
 }
