@@ -7484,7 +7484,13 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .order-pay__location {
   margin-top: 36px;
-  margin-left: -22px;
+  margin-left: -15px;
+}
+.order-pay__grey {
+  color: #acacac;
+}
+.order-pay__bold {
+  font-weight: bold;
 }
 .table-border {
   border-top: 1px solid #ccc;
