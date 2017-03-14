@@ -7369,6 +7369,11 @@ input[type=number]::-webkit-inner-spin-button {
   padding-left: 20px;
   padding-right: 20px;
 }
+.product-parts__list {
+  font-family: 'RobotoCondensed', Arial, sans-serif;
+  color: #b5b5b5;
+  font-size: 14px !important;
+}
 .font-color {
   color: #a2a2a2;
   font-size: 16px;
@@ -7385,6 +7390,7 @@ input[type=number]::-webkit-inner-spin-button {
   margin-top: 70px;
 }
 .container-img {
+  background-image: url(../../assets/img/paint-brush.png);
   background-color: #efefef;
   height: 225px;
 }
