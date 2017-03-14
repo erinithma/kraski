@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<title>Каталог красок</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/png" href="assets/img/logo.png">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	
+	<script type="text/javascript">
+		WebFontConfig = {
+			google: { families: [ 'Roboto+Condensed:400,300,600,700:latin,cyrillic' ] }
+		};
+		(function() {
+			var wf = document.createElement('script');
+			wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+			wf.type = 'text/javascript';
+			wf.async = 'true';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(wf, s);
+		})();
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+		$( function() {
+			$( "#slider-range" ).slider({
+				range: true,
+				min: 100,
+				max: 10000,
+				values: [ 1500, 7000 ],
+				slide: function( event, ui ) {
+					$("#amountFrom").val(ui.values[0]);
+					$("#amountFromView").html(ui.values[0]);
+					$("#amountTo").val(ui.values[1]);
+					$("#amountToView").html(ui.values[1]);
+				}
+			});
+			$("#amountFrom").val($("#slider-range").slider("values", 0));
+			$("#amountFromView").html($("#slider-range").slider("values", 0));
+			$("#amountTo").val($("#slider-range").slider("values", 1));
+			$("#amountToView").html($("#slider-range").slider("values", 1));
+		});
+	</script>
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<script src="assets/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="assets/css/jquery.mmenu.all.css">
+	<script type="text/javascript" src="assets/js/jquery.mmenu.all.min.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function( $ ) {
+			$("#menu").mmenu({
+				"extensions": [
+					"pagedim-black"
+				],
+                "navbar": {
+                    "title": "Ваши краски"
+                }
+			}, {
+                clone: true
+            });
+		});
+	</script>
+</head>
+    <body>
+        <div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-10 col-sm-4 col-md-4">
+                <a href="index.html">
+                    <img src="assets/img/logo.png" alt="Ваши краски">
+                    <span class="header__sign">
+                        <span>Ваши</span> <span>краски</span>
+                    </span>
+                </a>
+            </div>
+            <div class="col-md-8 header__menu">
+                <nav id="menu">
+                    <ul>
+                        <li class="active"><a>Каталог</a></li>
+                        <li><a href="#">Подбор краски</a></li>
+                        <li><a href="#">Как заказать</a></li>
+                        <li><a href="#">Медиа</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li class="multi">
+                            <a class="cart" href="#">
+                                <span data-icon="m"></span>
+                                <span class="cart__counter">0</span>
+                            </a>
+                            <a href="#" data-icon="a"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__menu-button col-xs-2">
+                <a class="hamburger" href="#menu">
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                </a>
+            </div>
+            <div class="bottom-line-container col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="bottom-line"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+	<div class="">
+		
+	</div>
+</div>
+        <div class="container-img">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 location-block">
+				<span class="size">Удобная доставка и оплата</span>
+				<p class="font-color">
+					Доставим заказ по Москве в течение суток
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+        <div class="container-dark-grey">
+	<div class="container">
+		<div class="row materials-main-block">
+			<div class="col-md-12 materials-block">
+				<a href="#" class="materials-block-color">Краски для фасадов</a>
+				<a href="#" class="materials-block-left materials-block-color">Краски для колеровки</a>
+				<a href="#" class="materials-block-left materials-block-color">Краски для стен и потолков</a>
+				<a href="#" class="materials-block-left materials-block-color">Лаки</a>
+				<a href="#" class="materials-block-left materials-block-color">Грунтовки и эмали</a>
+				<a href="#" class="materials-block-left materials-block-color">Шпатлевки</a>
+				<a href="#" class="materials-block-left materials-block-color">Мастика и герметики</a>
+				<a href="#" class="materials-block-left materials-block-color">Монтажная пена</a>
+			</div>
+			<div class="col-md-12 materials-block materials-block-line">
+				<a href="#" class="materials-block-color">Огнезащитные краски и составы</a>
+				<a href="#" class="materials-block-left materials-block-color">Декоративные штукатурки</a>
+				<a href="#" class="materials-block-left materials-block-color">Инсектициды</a>
+				<a href="#" class="materials-block-left materials-block-color">Антисептики</a>
+				<a href="#" class="materials-block-left materials-block-color">Клеи</a>
+				<a href="#" class="materials-block-left materials-block-color">Защитно-декоративные составы</a>
+				<a href="#" class="materials-block-left materials-block-color">Прочие составы</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 materials-footer">
+				<a href="#" class="materials-block-color">Главная страница</a>
+				<a href="#" class="materials-block-color">Каталог</a>
+				<a href="#" class="materials-block-color">Как заказать</a>
+				<a href="#" class="materials-block-color">Акции</a>
+				<a href="#" class="materials-block-color">Медиа</a>
+				<a href="#" class="materials-block-color">Контакты</a>
+				<a href="#" class="materials-block-color">Профиль</a>
+				<a href="#" class="materials-block-color">Корзина</a>
+			</div>
+			<div class="col-md-3 col-md-offset-3">
+				<p class="container__footer-info">
+					&copy; Копирайты 2017. Телефон, адрес.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+    </body>
+</html>

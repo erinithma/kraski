@@ -7369,4 +7369,23 @@ input[type=number]::-webkit-inner-spin-button {
   padding-left: 20px;
   padding-right: 20px;
 }
+.font-color {
+  color: #a2a2a2;
+  font-size: 16px;
+  font-family: 'Roboto', Arial, sans-serif;
+  margin-top: 5px;
+}
+.size {
+  color: #5c5c5c;
+  font-size: 18px;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+.location-block {
+  text-align: center;
+  margin-top: 70px;
+}
+.container-img {
+  background-color: #efefef;
+  height: 225px;
+}
 /*# sourceMappingURL=bootstrap.css.map */
