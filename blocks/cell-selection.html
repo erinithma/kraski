@@ -21,43 +21,63 @@
 			</ul>
 		</div>
 		<div class="col-md-9">
-			<div class="cell-selection">
-				<a class="cell-selection__block" href="#">Краска</a>
-				<a class="cell-selection__block" href="#">Лаки</a>
-				<a class="cell-selection__block" href="#">Грунтовки</a>
-				<a class="cell-selection__block" href="#">Герметики</a>
-				<a class="cell-selection__block" href="#">Эмали</a>
-				<a class="cell-selection__block" href="#">Мастика</a>
-				<a class="cell-selection__block" href="#">Биозащита</a>
-				<a class="cell-selection__block" href="#">Инсектициды</a>
-				<a class="cell-selection__block" href="#">Клеи</a>
-				<a class="cell-selection__block" href="#">Шпатлевки</a>
-				<a class="cell-selection__block" href="#">Монтажная пена</a>
-				<a class="cell-selection__block" href="#">Антисептики</a>
-				<a class="cell-selection__block" href="#">Защитно-декоративные составы</a>
-				<a class="cell-selection__block" href="#">Декоративные штукатурки</a>
-			</div>
-			<div class="cell-selection">
-				<a class="cell-selection__block" href="#">Стены</a>
-				<a class="cell-selection__block" href="#">Потолок</a>
-				<a class="cell-selection__block" href="#">Обои</a>
-				<a class="cell-selection__block" href="#">Детская/Гостиная</a>
-				<a class="cell-selection__block" href="#">Кухня/Ванная</a>
-				<a class="cell-selection__block" href="#">Цоколь</a>
-				<a class="cell-selection__block" href="#">Фасад</a>
-				<a class="cell-selection__block" href="#">Крыша</a>
-			</div>
-			<div class="cell-selection">
-				<a class="cell-selection__block" href="#">Минеральные поверхности</a>
-				<a class="cell-selection__block" href="#">Дерево</a>
-				<a class="cell-selection__block" href="#">Металл</a>
-				<a class="cell-selection__block" href="#">Ржавчина</a>
-				<a class="cell-selection__block" href="#">Другая краска (колеровка)</a>
-			</div>
-			<div class="cell-selection">
-				<a class="cell-selection__block" href="#">DALI</a>
-				<a class="cell-selection__block" href="#">Экодом</a>
-			</div>
+			<form>
+				<div class="cell-selection">
+					<a class="cell-selection__block" href="#">Краска</a>
+					<a class="cell-selection__block" href="#">Лаки</a>
+					<a class="cell-selection__block" href="#">Грунтовки</a>
+					<a class="cell-selection__block" href="#">Герметики</a>
+					<a class="cell-selection__block" href="#">Эмали</a>
+					<a class="cell-selection__block" href="#">Мастика</a>
+					<a class="cell-selection__block" href="#">Биозащита</a>
+					<a class="cell-selection__block" href="#">Инсектициды</a>
+					<a class="cell-selection__block" href="#">Клеи</a>
+					<a class="cell-selection__block" href="#">Шпатлевки</a>
+					<a class="cell-selection__block" href="#">Монтажная пена</a>
+					<a class="cell-selection__block" href="#">Антисептики</a>
+					<a class="cell-selection__block" href="#">Защитно-декоративные составы</a>
+					<a class="cell-selection__block" href="#">Декоративные штукатурки</a>
+				</div>
+				<div class="cell-selection">
+					<a class="cell-selection__block" href="#">Стены</a>
+					<a class="cell-selection__block" href="#">Потолок</a>
+					<a class="cell-selection__block" href="#">Обои</a>
+					<a class="cell-selection__block" href="#">Детская/Гостиная</a>
+					<a class="cell-selection__block" href="#">Кухня/Ванная</a>
+					<a class="cell-selection__block" href="#">Цоколь</a>
+					<a class="cell-selection__block" href="#">Фасад</a>
+					<a class="cell-selection__block" href="#">Крыша</a>
+				</div>
+				<div class="cell-selection">
+					<a class="cell-selection__block" href="#">Минеральные поверхности</a>
+					<a class="cell-selection__block" href="#">Дерево</a>
+					<a class="cell-selection__block" href="#">Металл</a>
+					<a class="cell-selection__block" href="#">Ржавчина</a>
+					<a class="cell-selection__block" href="#">Другая краска (колеровка)</a>
+				</div>
+				<div class="cell-selection">
+					<a class="cell-selection__block" href="#">DALI</a>
+					<a class="cell-selection__block" href="#">Экодом</a>
+				</div>
+					<label class="cell-selection__item">
+						Цвет
+						<select class="cell-selection__select" name="color" id="color">
+							<option>Белый</option>
+							<option>Черный</option>
+							<option>Охра</option>
+						</select>
+					</label>
+					<label class="cell-selection__item">
+						Температура применения
+						<select class="cell-selection__select" name="to" id="temperature">
+							<option>20 C°</option>
+							<option>-20 C°</option>
+							<option>40 C°</option>
+							<option>-40 C°</option>
+						</select>
+					</label>
+					<button class="cell-selection__button one-font" type="submit">Обновить результат</button>
+			</form>
 		</div>
 	</div>
 </div>

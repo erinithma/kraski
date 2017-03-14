@@ -7338,4 +7338,10 @@ input[type=number]::-webkit-inner-spin-button {
 .product-selection__numbers {
   padding-left: 30px;
 }
+.cell-selection__button {
+  background-color: white;
+  color: #fd9444;
+  border: 1px solid #efefef;
+  padding: 12px 40px;
+}
 /*# sourceMappingURL=bootstrap.css.map */
