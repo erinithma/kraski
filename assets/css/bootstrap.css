@@ -7328,4 +7328,14 @@ input[type=number]::-webkit-inner-spin-button {
   margin-top: 52px;
   text-align: right;
 }
+.product-selection__list {
+  font-weight: bold;
+  padding: 0;
+}
+.product-selection__location {
+  padding: 0;
+}
+.product-selection__numbers {
+  padding-left: 30px;
+}
 /*# sourceMappingURL=bootstrap.css.map */
