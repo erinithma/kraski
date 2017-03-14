@@ -92,7 +92,8 @@ module.exports = function (grunt) {
             {src: '../layouts/product-selection.html', dest: '../product-selection.html'},
             {src: '../layouts/address.html', dest: '../address.html'},
             {src: '../layouts/news.html', dest: '../news.html'},
-            {src: '../layouts/cart.html', dest: '../cart.html'}
+            {src: '../layouts/cart.html', dest: '../cart.html'},
+            {src: '../layouts/order.html', dest: '../order.html'}
         ]
 
       }

@@ -7394,4 +7394,19 @@ input[type=number]::-webkit-inner-spin-button {
   background-color: #efefef;
   height: 225px;
 }
+.order-make__field {
+  width: 100%;
+  margin-top: 7px;
+  border-radius: 1px !important;
+  height: 38px;
+  font-size: 12px;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+.order-make__name {
+  margin-bottom: 30px;
+}
+.order-make__delivery-text {
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  font-size: 14px;
+}
 /*# sourceMappingURL=bootstrap.css.map */
