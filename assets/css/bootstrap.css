@@ -7478,6 +7478,7 @@ input[type=number]::-webkit-inner-spin-button {
 .order-pay {
   border: 1px solid #ccc;
   margin-top: 90px;
+  min-height: 403px;
 }
 .order-pay__list {
   padding-left: 10px;
@@ -7497,5 +7498,18 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .text-top-location {
   margin-top: -55px;
+}
+.orange-button-location {
+  background-color: #fd9444;
+  color: white;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  margin-top: 30px;
+}
+.main-bottom-location {
+  margin-bottom: 260px;
 }
 /*# sourceMappingURL=bootstrap.css.map */
