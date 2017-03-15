@@ -7619,4 +7619,28 @@ input[type=number]::-webkit-inner-spin-button {
 .category--enamels {
   background-image: url(../img/main-page/enamels.jpg);
 }
+.divider {
+  position: relative;
+}
+.divider__text {
+  display: inline-block;
+  line-height: 1;
+  margin: 0 auto;
+  padding: 16px 25px;
+  border: 1px solid #575757;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: #575757;
+  background-color: white;
+  text-transform: uppercase;
+}
+.divider__line {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  right: 15px;
+  z-index: -1;
+  height: 1px;
+  margin-top: -1px;
+  border-bottom: 1px solid #575757;
+}
 /*# sourceMappingURL=bootstrap.css.map */
