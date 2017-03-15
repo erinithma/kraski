@@ -7783,6 +7783,9 @@ input[type=number]::-webkit-inner-spin-button {
   content: " р.";
   display: inline;
 }
+.advantages {
+  margin-bottom: 50px;
+}
 .advantage {
   text-align: center;
 }
