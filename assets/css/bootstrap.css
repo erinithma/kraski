@@ -7303,21 +7303,6 @@ input[type=number]::-webkit-inner-spin-button {
 .bottom-line--grey {
   background-color: #575757;
 }
-.card {
-  text-align: center;
-}
-.card__circle {
-  display: inline-block;
-  line-height: 1;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #fd9444;
-  margin: 30px 0;
-}
-.card__text {
-  color: #b1b1b1;
-}
 .article__image {
   margin-top: 27px;
 }
@@ -7810,5 +7795,24 @@ input[type=number]::-webkit-inner-spin-button {
 .special-offer__price::after {
   content: " р.";
   display: inline;
+}
+.advantage {
+  text-align: center;
+}
+.advantage__circle {
+  display: inline-block;
+  line-height: 1;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fd9444;
+  margin: 30px 0;
+}
+.advantage__circle--empty {
+  background: none;
+  border: 2px solid #575757;
+}
+.advantage__text {
+  color: #b1b1b1;
 }
 /*# sourceMappingURL=bootstrap.css.map */
