@@ -4,6 +4,7 @@
 @badge-orange: #fd9444;
 @transition-duration: .3s;
 @transition-duration--long: .5s;
+@transition-delay: .1s;
 @card-padding: 37px;
 
 .catalog-item-card {
@@ -12,7 +13,6 @@
     min-height: 431px;
     padding: @card-padding;
     background-color: @card-dark;
-    transition: background-color @transition-duration;
     
     &__bottom {
         position: absolute;
@@ -96,17 +96,17 @@
             text-transform: uppercase;
         }
     }
-    
-    &:hover {
-        background-color: @card-bright;
-    }
 }
 
 // animations
 
 .catalog-item-card--with-animations {
+    
+    transition: background-color @transition-duration;
+    transition-delay: @transition-delay;
+    
     * {
-        transition-delay: .2s;
+        transition-delay: @transition-delay;
     }
     
     .catalog-item-card__heading {
@@ -132,6 +132,10 @@
         transition-duration: @transition-duration--long;
         transition-timing-function: cubic-bezier(.175,.885,.32,1.075);
     }
+}
+
+.catalog-item-card--with-animations:hover {
+    background-color: @card-bright;
 }
 
 .catalog-item-card--with-animations:hover .catalog-item-card__heading {

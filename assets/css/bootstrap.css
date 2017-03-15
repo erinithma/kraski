@@ -7634,7 +7634,6 @@ input[type=number]::-webkit-inner-spin-button {
   min-height: 431px;
   padding: 37px;
   background-color: #efefef;
-  transition: background-color 0.3s;
 }
 .catalog-item-card__bottom {
   position: absolute;
@@ -7704,11 +7703,12 @@ input[type=number]::-webkit-inner-spin-button {
   background-color: #fc583b;
   text-transform: uppercase;
 }
-.catalog-item-card:hover {
-  background-color: #f6f8f8;
+.catalog-item-card--with-animations {
+  transition: background-color 0.3s;
+  transition-delay: 0.1s;
 }
 .catalog-item-card--with-animations * {
-  transition-delay: .2s;
+  transition-delay: 0.1s;
 }
 .catalog-item-card--with-animations .catalog-item-card__heading {
   position: relative;
@@ -7730,6 +7730,9 @@ input[type=number]::-webkit-inner-spin-button {
   transition-property: opacity;
   transition-duration: 0.5s;
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.075);
+}
+.catalog-item-card--with-animations:hover {
+  background-color: #f6f8f8;
 }
 .catalog-item-card--with-animations:hover .catalog-item-card__heading {
   top: -10px;
