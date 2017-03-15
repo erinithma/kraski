@@ -7578,6 +7578,11 @@ input[type=number]::-webkit-inner-spin-button {
   margin-top: 10px;
   margin-bottom: 10px;
   outline-color: #fd9444;
+  transition: all 250ms ease-in-out;
+}
+.reg-form__button:hover {
+  background-color: #de8026;
+  transition: all 250ms ease-in-out;
 }
 .form-control {
   display: block;
