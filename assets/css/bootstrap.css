@@ -7515,9 +7515,9 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .big-offer__container {
   position: relative;
+  width: 100%;
   padding-left: 5%;
   padding-right: 5%;
-  border: 15px solid white;
   background-color: #efefef;
   background-image: url(../img/main-page/background.jpg);
   background-size: contain;
@@ -7572,5 +7572,51 @@ input[type=number]::-webkit-inner-spin-button {
   font-family: "Roboto", "Arial", sans-serif;
   color: #6c6c6c;
   font-size: 12px;
+}
+.category {
+  position: relative;
+  display: block;
+  height: 200px;
+  background-color: #efefef;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+.category__name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  line-height: 1.25;
+  padding: 17px 47px;
+  background-color: white;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  color: #575757;
+}
+.category__name--narrow {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.category__quantity {
+  color: #a2a2a2;
+}
+.category__quantity::before {
+  content: "(";
+  display: inline;
+}
+.category__quantity::after {
+  content: ")";
+  display: inline;
+}
+.category--paints {
+  background-image: url(../img/main-page/paints.jpg);
+}
+.category--plasters {
+  background-image: url(../img/main-page/plasters.jpg);
+}
+.category--enamels {
+  background-image: url(../img/main-page/enamels.jpg);
 }
 /*# sourceMappingURL=bootstrap.css.map */

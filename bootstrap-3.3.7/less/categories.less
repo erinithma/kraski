@@ -1,0 +1,56 @@
+.category {
+    position: relative;
+    display: block;
+    height: 200px;
+    
+    background-color: #efefef;
+    background-repeat: no-repeat;
+    background-position: right center;
+    
+    &__name {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: inline-block;
+        line-height: 1.25;
+        padding: 17px 47px;
+        background-color: white;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+        
+        font-family: "Roboto", "Arial", sans-serif;
+        font-size: 16px;
+        color: #575757;
+        
+        &--narrow {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    
+    &__quantity {
+        color: #a2a2a2;
+        
+        &::before {
+            content: "(";
+            display: inline;
+        }
+        
+        &::after {
+            content: ")";
+            display: inline;
+        }
+    }
+    
+    &--paints {
+        background-image: url(../img/main-page/paints.jpg);
+    }
+    
+    &--plasters {
+        background-image: url(../img/main-page/plasters.jpg);
+    }
+    
+    &--enamels {
+        background-image: url(../img/main-page/enamels.jpg);
+    }
+}
