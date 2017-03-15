@@ -7514,6 +7514,10 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .login-form {
   border: 1px solid #eee;
+  margin-left: 15px;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-top: inherit;
 }
 .login-form__fields {
   display: flex;
@@ -7522,6 +7526,13 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .login-form__fields > label {
   flex-grow: 2;
+}
+.login-form__label {
+  font-weight: normal;
+}
+.login-form__bottom {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
 }
 .form-control {
   display: block;
