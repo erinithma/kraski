@@ -7529,6 +7529,10 @@ input[type=number]::-webkit-inner-spin-button {
   align-items: baseline;
   margin-bottom: 20px;
 }
+.login-form__href {
+  float: right;
+  margin-top: 20px;
+}
 .login-form__fields > label {
   flex-grow: 2;
 }
