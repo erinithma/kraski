@@ -7513,7 +7513,7 @@ input[type=number]::-webkit-inner-spin-button {
   margin-bottom: 260px;
 }
 .form-location {
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 80px;
 }
 .login-form {
@@ -7538,6 +7538,7 @@ input[type=number]::-webkit-inner-spin-button {
 .login-form__bottom {
   border-bottom: 1px solid #eee;
   padding-bottom: 15px;
+  font-family: 'Roboto Condensed', 'Roboto', Arial, sans-serif !important;
 }
 .reg-form {
   border: 1px solid #eee;
@@ -7561,6 +7562,7 @@ input[type=number]::-webkit-inner-spin-button {
 .reg-form__bottom {
   border-bottom: 1px solid #eee;
   padding-bottom: 15px;
+  font-family: 'Roboto Condensed', 'Roboto', Arial, sans-serif !important;
 }
 .form-control {
   display: block;
@@ -7592,5 +7594,12 @@ input[type=number]::-webkit-inner-spin-button {
   font-weight: normal;
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 12px;
+}
+.family-block {
+  font-size: 14px;
+  font-family: 'Roboto', Arial, sans-serif !important;
+}
+.main-family-block {
+  margin-top: -8px;
 }
 /*# sourceMappingURL=bootstrap.css.map */
