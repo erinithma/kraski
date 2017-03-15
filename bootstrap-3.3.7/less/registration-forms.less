@@ -89,7 +89,7 @@
     font-weight: normal;
 }
 
-.ch-input{
+.ch-input {
     border: none;
     border-bottom: 1px solid #eee;
     border-radius: 0;
@@ -101,6 +101,13 @@
         box-shadow: none;
         border-color: @orange-color;
     }
+}
+
+.ch-input::-moz-selection { 
+	background-color: @orange-color;
+}
+.ch-input::selection { 
+	background-color: @orange-color;
 }
 
 .form-group {

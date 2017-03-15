@@ -7601,6 +7601,12 @@ input[type=number]::-webkit-inner-spin-button {
   box-shadow: none;
   border-color: #fd9444;
 }
+.ch-input::-moz-selection {
+  background-color: #fd9444;
+}
+.ch-input::selection {
+  background-color: #fd9444;
+}
 .form-group {
   text-align: left;
   margin-bottom: 15px;
