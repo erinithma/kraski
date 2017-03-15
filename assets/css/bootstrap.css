@@ -7232,45 +7232,6 @@ input[type=number]::-webkit-inner-spin-button {
   right: 0;
   top: 0;
 }
-.container-dark-grey {
-  background-color: #303030;
-  padding-top: 50px;
-  padding-bottom: 32px;
-}
-.materials-block {
-  display: inline-block;
-  align-items: center;
-  text-align: center;
-}
-@media (max-width: 381px) {
-}
-.materials-block-color {
-  color: white;
-}
-.materials-block-color:hover {
-  color: #fd9444;
-}
-.materials-main-block {
-  border-bottom: 1px solid #575757;
-}
-.materials-block-line {
-  padding-bottom: 55px;
-}
-.container__footer-info {
-  color: white;
-  font-size: 12px;
-  text-align: right;
-}
-.materials-footer {
-  font-size: 12px;
-}
-.materials-footer .materials-block-color {
-  display: inline-block;
-  line-height: 1.25;
-}
-.materials-footer .materials-block-color + .materials-block-color {
-  margin-left: 10px;
-}
 .company-info {
   margin-top: 20px;
 }
