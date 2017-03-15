@@ -6743,9 +6743,13 @@ h4 {
   height: 38px;
   margin: 0;
   padding: 0;
+  padding-right: 8px;
   border: none;
   background-color: #efefef;
   outline: none;
+}
+.sidebar__search-button > [class^="icon-"] {
+  font-size: 22px;
 }
 .sidebar__filter {
   margin-top: 42px;

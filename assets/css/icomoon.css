@@ -56,7 +56,7 @@
 
 .icon-search:hover:before {
   content: "\e904";
-  color: #e8e5e7;
+  color: white;
 }
 
 .icon-search--orange:before {
