@@ -7643,4 +7643,117 @@ input[type=number]::-webkit-inner-spin-button {
   margin-top: -1px;
   border-bottom: 1px solid #575757;
 }
+.catalog-item-card {
+  display: block;
+  position: relative;
+  min-height: 431px;
+  padding: 37px;
+  background-color: #efefef;
+  transition: background-color 0.3s;
+}
+.catalog-item-card__bottom {
+  position: absolute;
+  left: 37px;
+  right: 37px;
+  bottom: 37px;
+}
+.catalog-item-card__heading {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: #575757;
+  font-size: 16px;
+}
+.catalog-item-card__description {
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #a2a2a2;
+  font-size: 12px;
+}
+.catalog-item-card__picture {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.catalog-item-card__price {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: #575757;
+  font-size: 16px;
+}
+.catalog-item-card__price::before {
+  content: "ОТ ";
+  display: inline;
+}
+.catalog-item-card__price::after {
+  content: " Р.";
+  display: inline;
+}
+.catalog-item-card__footer {
+  display: flex;
+  justify-content: space-between;
+}
+.catalog-item-card__add-to-cart {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+}
+.catalog-item-card__add-to-cart > [class^="icon-"] {
+  font-size: 20px;
+}
+.catalog-item-card__badge {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 70px;
+  height: 70px;
+  padding-top: 26px;
+  text-align: center;
+  border-radius: 50%;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: white;
+  font-size: 14px;
+  background-color: #fd9444;
+  pointer-events: none;
+}
+.catalog-item-card__badge--hit {
+  background-color: #fc583b;
+  text-transform: uppercase;
+}
+.catalog-item-card:hover {
+  background-color: #f6f8f8;
+}
+.catalog-item-card--with-animations * {
+  transition-delay: .2s;
+}
+.catalog-item-card--with-animations .catalog-item-card__heading {
+  position: relative;
+  top: 0;
+  transition-property: top;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.075);
+}
+.catalog-item-card--with-animations .catalog-item-card__description {
+  position: relative;
+  top: 0;
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.075);
+}
+.catalog-item-card--with-animations .catalog-item-card__footer {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.075);
+}
+.catalog-item-card--with-animations:hover .catalog-item-card__heading {
+  top: -10px;
+}
+.catalog-item-card--with-animations:hover .catalog-item-card__description {
+  top: -10px;
+  opacity: 1;
+}
+.catalog-item-card--with-animations:hover .catalog-item-card__footer {
+  opacity: 1;
+}
 /*# sourceMappingURL=bootstrap.css.map */

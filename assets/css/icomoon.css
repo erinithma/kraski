@@ -79,6 +79,16 @@
   color: #ffa776;
 }
 
+.icon-shopping-cart--grey:before {
+  content: "\e908";
+  color: #575757;
+}
+
+.icon-shopping-cart--grey:hover:before {
+  content: "\e908";
+  color: #ffa776;
+}
+
 .icon-success:before {
   content: "\e90a";
   color: #575757;
