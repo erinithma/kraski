@@ -116,23 +116,34 @@
 </div>
 
         <div class="container">
-	<div class="row">
-		<div class="col-md-6 col-sm-6 login-form">
+	<div class="row form-location">
+		<div class="col-md-5 col-sm-5 login-form">
 			<form method="POST" class="login-form-message">
 				<h4 class="login-form__bottom">Вход</h4>
 					<div class="form-group login-form__fields">
 						<label for="input-login" class="login-form__label">Логин*</label>
-						<input type="text" class="form-control ch-input" id="input-login">
+						<input type="email" class="form-control ch-input" id="input-login" required>
 					</div>
 					<div class="form-group login-form__fields">
 						<label for="input-password" class="login-form__label">Пароль*</label>
-						<input type="text" class="form-control ch-input" id="input-password">
+						<input type="password" class="form-control ch-input" id="input-password" required>
 					</div>
 			</form>
 		</div>
-		
-		<div class="col-md-6 col-sm-6">
-			
+		<div class="col-md-1">
+		</div>
+		<div class="col-md-5 reg-form">
+			<form method="POST" class="reg-form-message">
+				<h4 class="reg-form__bottom">Регистрация</h4>
+					<div class="form-group reg-form__fields">
+						<label for="input-login" class="reg-form__label">Логин*</label>
+						<input type="email" class="form-control ch-input" id="input-login" required>
+					</div>
+					<div class="form-group reg-form__fields">
+						<label for="input-password" class="reg-form__label">Пароль*</label>
+						<input type="password" class="form-control ch-input" id="input-password" required>
+					</div>
+			</form>
 		</div>
 	</div>
 </div>

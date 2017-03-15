@@ -1,6 +1,10 @@
+.form-location {
+	margin-top: 40px;
+	margin-bottom: 80px;
+}
 
 .login-form {
-	border: 1px solid #eee;
+	border: 1px solid #ccc;
 	margin-left: 15px;
 	margin-right: 15px;
 	padding-left: 26px;
@@ -22,7 +26,35 @@
 	}
 
 	&__bottom {
-		border-bottom: 1px solid #eee;
+		border-bottom: 1px solid #ccc;
+		padding-bottom: 15px;
+	}
+}
+
+.reg-form {
+	border: 1px solid #ccc;
+	margin-left: 15px;
+	margin-right: 15px;
+	padding-left: 26px;
+	padding-right: 26px;
+    padding-top: inherit;
+
+	&__fields {
+		display: flex;
+		align-items: baseline;
+		margin-bottom: 20px;
+	}
+
+	&__fields > label {
+		flex-grow: 2;
+	}
+
+	&__label {
+		font-weight: normal;
+	}
+
+	&__bottom {
+		border-bottom: 1px solid #ccc;
 		padding-bottom: 15px;
 	}
 }
@@ -41,7 +73,7 @@
 
 .ch-input{
     border: none;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #ccc;
     border-radius: 0;
     box-shadow: none;
     font-weight: 600;

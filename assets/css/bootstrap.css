@@ -7512,8 +7512,12 @@ input[type=number]::-webkit-inner-spin-button {
 .main-bottom-location {
   margin-bottom: 260px;
 }
+.form-location {
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
 .login-form {
-  border: 1px solid #eee;
+  border: 1px solid #ccc;
   margin-left: 15px;
   margin-right: 15px;
   padding-left: 26px;
@@ -7532,7 +7536,30 @@ input[type=number]::-webkit-inner-spin-button {
   font-weight: normal;
 }
 .login-form__bottom {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+}
+.reg-form {
+  border: 1px solid #ccc;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-top: inherit;
+}
+.reg-form__fields {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+.reg-form__fields > label {
+  flex-grow: 2;
+}
+.reg-form__label {
+  font-weight: normal;
+}
+.reg-form__bottom {
+  border-bottom: 1px solid #ccc;
   padding-bottom: 15px;
 }
 .form-control {
@@ -7547,7 +7574,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .ch-input {
   border: none;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #ccc;
   border-radius: 0;
   box-shadow: none;
   font-weight: 600;
