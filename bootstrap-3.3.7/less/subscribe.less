@@ -1,74 +1,78 @@
-@orange-button-color: #fd9444;
-@container-grey-color: #efefef;
-@text-color-subscribe: #a6a6a6;
-
-.row-flex {
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-}
-
-.btn-orange {
-	background-color: @orange-button-color;
-	color: white;
-	border: none;
-	padding-left: 35px;
-	padding-right: 35px;
-	padding-top: 9px;
-	padding-bottom: 9px;
-}
-
-.email-field {
-	padding-top: 9px;
-	padding-bottom: 9px;
-	padding-left: 15px;
-	width: 56%;
-	border: none;
-	margin-right: 10px;
-	@media (max-width: 992px) {
-		width: 49%;
-	}
-	@media (max-width: 341px) {
-	    width: 43%;
-	}
-}
-
-.container-grey {
-	background-color: @container-grey-color; 
-	margin-top: 30px;
-	padding-bottom: 10px;
-}
-
-.vcenter {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-}
-
-.row-eq-height {
-	display: flex;
-}
-
-.container {
-	padding-right: 15px;
-	padding-left: 15px;
-}
-
-h4 {
-	margin-top: 25px;
-}
-
-[class*="col-"] {
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
-
-.subscribe-text-color {
-	color: @text-color-subscribe;
-}
-
-.subscribe-text {
-	@media (max-width: 1199px) {
-		text-align: center;
-	}
+.subscribe {
+    
+    background-color: #efefef;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+    &__heading {
+        margin: 0;
+        font-family: "Roboto", "Arial", sans-serif;
+        color: #575757;
+        font-size: 24px;
+        line-height: 1.5;
+        text-transform: uppercase;
+    }
+    
+    &__text {
+        margin-top: 16px;
+        margin-bottom: 0;
+        font-family: "Roboto", "Arial", sans-serif;
+        color: #a2a2a2;
+        font-size: 16px;
+        
+        @media screen and (max-width: @screen-md-min) {
+            margin-top: 5px;
+        }
+    }
+    
+    &__form-container {
+        text-align: right;
+        
+        @media screen and (max-width: @screen-md-min) {
+            text-align: center;
+        }
+    }
+    
+    &__form {
+        margin-top: 17px;
+        
+        @media screen and (max-width: @screen-md-min) {
+            margin-top: 0;
+        }
+    }
+    
+    &__field {
+        margin-right: 10px;
+        padding: 9px 15px;
+        border: none;
+        font-family: "Roboto", "Arial", sans-serif;
+        color: #8d8d8d;
+        font-size: 14px;
+        background-color: white;
+        
+        @media screen and (min-width: @screen-lg-min) {
+            min-width: 240px;
+        }
+    }
+    
+    &__button {
+        padding: 9px 40px;
+        border: none;
+        font-family: "Roboto", "Arial", sans-serif;
+        color: white;
+        font-size: 14px;
+        background-color: #fd9444;
+        
+        transition: background-color .3s;
+        
+        &:hover {
+            background-color: #ffa776;
+        }
+        
+        @media screen and (max-width: @screen-lg-min) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
 }

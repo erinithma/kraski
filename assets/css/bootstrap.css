@@ -6840,68 +6840,77 @@ h4 {
   background: #efefef;
   border: 1px solid transparent !important;
 }
-.row-flex {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.btn-orange {
-  background-color: #fd9444;
-  color: white;
-  border: none;
-  padding-left: 35px;
-  padding-right: 35px;
-  padding-top: 9px;
-  padding-bottom: 9px;
-}
-.email-field {
-  padding-top: 9px;
-  padding-bottom: 9px;
-  padding-left: 15px;
-  width: 56%;
-  border: none;
-  margin-right: 10px;
-}
-@media (max-width: 992px) {
-  .email-field {
-    width: 49%;
-  }
-}
-@media (max-width: 341px) {
-  .email-field {
-    width: 43%;
-  }
-}
-.container-grey {
+.subscribe {
   background-color: #efefef;
-  margin-top: 30px;
-  padding-bottom: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
-.vcenter {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+.subscribe__heading {
+  margin: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #575757;
+  font-size: 24px;
+  line-height: 1.5;
+  text-transform: uppercase;
 }
-.row-eq-height {
-  display: flex;
+.subscribe__text {
+  margin-top: 16px;
+  margin-bottom: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #a2a2a2;
+  font-size: 16px;
 }
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
+@media screen and (max-width: 992px) {
+  .subscribe__text {
+    margin-top: 5px;
+  }
 }
-h4 {
-  margin-top: 25px;
+.subscribe__form-container {
+  text-align: right;
 }
-[class*="col-"] {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-.subscribe-text-color {
-  color: #a6a6a6;
-}
-@media (max-width: 1199px) {
-  .subscribe-text {
+@media screen and (max-width: 992px) {
+  .subscribe__form-container {
     text-align: center;
+  }
+}
+.subscribe__form {
+  margin-top: 17px;
+}
+@media screen and (max-width: 992px) {
+  .subscribe__form {
+    margin-top: 0;
+  }
+}
+.subscribe__field {
+  margin-right: 10px;
+  padding: 9px 15px;
+  border: none;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #8d8d8d;
+  font-size: 14px;
+  background-color: white;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__field {
+    min-width: 240px;
+  }
+}
+.subscribe__button {
+  padding: 9px 40px;
+  border: none;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: white;
+  font-size: 14px;
+  background-color: #fd9444;
+  transition: background-color 0.3s;
+}
+.subscribe__button:hover {
+  background-color: #ffa776;
+}
+@media screen and (max-width: 1200px) {
+  .subscribe__button {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 .product-card {
