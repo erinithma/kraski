@@ -7514,7 +7514,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .form-location {
   margin-top: 30px;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 }
 .login-form {
   border: 1px solid #eee;
@@ -7531,7 +7531,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .login-form__href {
   float: right;
-  margin-top: 20px;
+  margin-top: 28px;
 }
 .login-form__fields > label {
   flex-grow: 2;
@@ -7543,6 +7543,14 @@ input[type=number]::-webkit-inner-spin-button {
   border-bottom: 1px solid #eee;
   padding-bottom: 15px;
   font-family: 'Roboto Condensed', 'Roboto', Arial, sans-serif !important;
+}
+.login-form__checkbox {
+  font-size: 12px;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: normal;
+  margin-top: 8px;
+  margin-left: 10px;
+  position: absolute;
 }
 .reg-form {
   border: 1px solid #eee;
@@ -7583,6 +7591,7 @@ input[type=number]::-webkit-inner-spin-button {
   margin-bottom: 10px;
   outline-color: #fd9444;
   transition: all 250ms ease-in-out;
+  margin-top: 17px;
 }
 .reg-form__button:hover {
   background-color: #de8026;
@@ -7627,6 +7636,33 @@ input[type=number]::-webkit-inner-spin-button {
   font-weight: normal;
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 12px;
+}
+input[type=checkbox] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border: 1px solid #CCC;
+  border-radius: 2px;
+  background-color: #fcfbfb;
+  display: inline-block;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+  color: #fd9444;
+  box-sizing: content-box;
+}
+input[type="checkbox"]:checked {
+  background-color: #fd9444;
+  border-radius: 10px;
+  border: 1px solid #CCC;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+  color: #fd9444;
+  cursor: pointer;
+}
+input[type="checkbox"]:focus {
+  outline: 0 none;
+  border-radius: 10px;
+  box-shadow: none;
 }
 .family-block {
   font-size: 14px;
