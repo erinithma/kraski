@@ -1,0 +1,74 @@
+.big-offer {
+    
+    &__container {
+        position: relative;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        background-color: #efefef;
+        background-image: url(../img/main-page/background.jpg);
+        background-size: contain;
+        
+        .line {
+            position: absolute;
+            top: 17px;
+            bottom: 17px;
+            left: 17px;
+            right: 17px;
+            border: 1px solid white;
+        }
+    }
+    
+    &__content {
+        padding-top: 130px;
+        padding-bottom: 23px;
+    }
+    
+    &__heading {
+        font-family: "Roboto Condensed", "Arial", sans-serif;
+        color: #575757;
+        text-transform: uppercase;
+    }
+    
+    &__text {
+        margin-top: 15px;
+        font-family: "Roboto", "Arial", sans-serif;
+        color: #a2a2a2;
+        font-size: 18px;
+    }
+    
+    &__button {
+        display: inline-block;
+        line-height: 1;
+        margin-top: 35px;
+        padding: 27px 65px;
+        color: white;
+        text-transform: uppercase;
+        background-color: #fd9444;
+        
+        transition: background-color .3s;
+        
+        &:hover {
+            color: white;
+            background-color: #ffa776;
+        }
+    }
+    
+    &__image {
+        box-sizing: border-box;
+        max-width: 100%;
+        height: auto;
+        padding: 18px;
+    }
+    
+    &__footer {
+        margin-bottom: 17px;
+    }
+    
+}
+
+.small-text {
+    font-family: "Roboto", "Arial", sans-serif;
+    color: #6c6c6c;
+    font-size: 12px;
+}

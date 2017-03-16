@@ -1,47 +1,56 @@
-@container-dark-grey: #303030;
-@orange-button-color: #fd9444;
-@white: white;
-
-.container-dark-grey {
-	background-color: @container-dark-grey; 
-	padding-top: 50px;
-	padding-bottom: 32px;
+.footer {
+    padding-top: 30px;
+    background-color: #303030;
+    
+    &__links {
+        padding: 0;
+        list-style-type: none;
+        text-align: center;
+        
+        //пробелы между ссылками
+        font-size: 100px;
+        line-height: 0;
+    }
+    
+    &__nav {
+        padding: 0;
+        list-style-type: none;
+        
+        //пробелы между ссылками
+        font-size: 80px;
+        line-height: 0;
+    }
+    
+    &__link {
+        display: inline-block;
+        line-height: 3;
+        font-size: 14px;
+        
+        a {
+            font-family: "Roboto", "Arial", sans-serif;
+            color: white;
+        }
+        
+        &--small {
+            margin: 0;
+            font-size: 12px;
+        }
+    }
+    
+    &__line {
+        height: 1px;
+        margin-top: -1px;
+        border-bottom: 1px solid #efefef;
+    }
+    
+    &__copyright-container {
+        text-align: right;
+    }
+    
+    &__copyright {
+        font-family: "Roboto", "Arial", sans-serif;
+        color: white;
+        font-size: 12px;
+        line-height: 3;
+    }
 }
-
-.materials-block {
-	display: inline-block;
-	align-items: center;
-    text-align: center;
-}
-
-.materials-block-left {
-	margin-left: 35px;
-	@media (max-width: 381px) {
-		margin-left: 20px;
-	}
-}
-
-.materials-block-color {
-	color: @white;
-}
-
-.materials-block-color:hover {
-	color: @orange-button-color;
-}
-
-.materials-main-block {
-	border-bottom: 1px solid #575757;
-	// font-family: 'Roboto', sans-serif !important;
-}
-
-.materials-block-line {
-    padding-bottom: 55px;
-}
-
-// .container__footer-info {
-// 	padding-top: 32px;
-// 	color: @white;
-// 	font-size: 12px;
-// 	text-align: center;
-// 	// font-family: 'Roboto', sans-serif !important;
-// }

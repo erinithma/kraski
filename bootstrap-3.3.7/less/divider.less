@@ -1,0 +1,28 @@
+@divider-grey: #575757;
+
+.divider {
+    position: relative;
+    
+    &__text {
+        display: inline-block;
+        line-height: 1;
+        margin: 0 auto;
+        padding: 16px 25px;
+        border: 1px solid @divider-grey;
+        font-family: "Roboto Condensed", "Arial", sans-serif;
+        color: @divider-grey;
+        background-color: white;
+        text-transform: uppercase;
+    }
+    
+    &__line {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        right: 15px;
+        z-index: -1;
+        height: 1px;
+        margin-top: -1px;
+        border-bottom: 1px solid @divider-grey;
+    }
+}
