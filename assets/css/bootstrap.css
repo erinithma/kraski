@@ -6981,19 +6981,20 @@ h4 {
   padding: 0;
   list-style-type: none;
   text-align: center;
-  font-size: 100px;
-  line-height: 0;
+  font-size: 0;
+  word-spacing: 20px;
 }
 .footer__nav {
   padding: 0;
   list-style-type: none;
-  font-size: 80px;
-  line-height: 0;
+  font-size: 0;
+  word-spacing: 15px;
 }
 .footer__link {
   display: inline-block;
   line-height: 3;
   font-size: 14px;
+  word-spacing: initial;
 }
 .footer__link a {
   font-family: "Roboto", "Arial", sans-serif;
