@@ -48,12 +48,23 @@
         
         li {
             display: inline-block;
-            width: 10px;
-            height: 10px;
-            background-color: red;
+//            background-color: red;
+            
+            font-family: 'icomoon' !important;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            
+            &:before {
+                content: "\e903";
+                color: #fd9444;
+            }
             
             &+ li {
-                margin-left: 3px;
+                margin-left: 5px;
             }
         }
     }
@@ -63,7 +74,10 @@
     &__rating[data-count="3"] > li:nth-child(-n+3),
     &__rating[data-count="4"] > li:nth-child(-n+4),
     &__rating[data-count="5"] > li:nth-child(-n+5) {
-        background-color: green;
+        
+        &:before {
+            content: "\e901";
+        }
     }
 }
 

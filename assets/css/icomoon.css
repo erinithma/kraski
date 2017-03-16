@@ -28,7 +28,21 @@
 
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
-  transition: color .3s;
+  transition: all .3s;
+}
+
+.icon-star:before {
+    content: "\e901";
+    color: #fd9444;
+}
+
+.icon-star:hover:before {
+    content: "\e903";
+}
+
+.icon-star--empty:before {
+    content: "\e901";
+    color: #fd9444;
 }
 
 .icon-cancel:before {
