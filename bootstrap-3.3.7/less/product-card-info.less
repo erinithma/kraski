@@ -40,6 +40,31 @@
 	&__info {
 		margin-top: 0px;
 	}
+    
+    &__rating {
+        display: flex;
+        padding: 0;
+        list-style-type: none;
+        
+        li {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            
+            &+ li {
+                margin-left: 3px;
+            }
+        }
+    }
+    
+    &__rating[data-count="1"] > li:nth-child(-n+1),
+    &__rating[data-count="2"] > li:nth-child(-n+3),
+    &__rating[data-count="3"] > li:nth-child(-n+3),
+    &__rating[data-count="4"] > li:nth-child(-n+4),
+    &__rating[data-count="5"] > li:nth-child(-n+5) {
+        background-color: green;
+    }
 }
 
 .big-vendor {

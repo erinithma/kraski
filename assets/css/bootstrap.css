@@ -7120,6 +7120,27 @@ td:nth-child(odd) {
 .big-block__info {
   margin-top: 0px;
 }
+.big-block__rating {
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+}
+.big-block__rating li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+}
+.big-block__rating li + li {
+  margin-left: 3px;
+}
+.big-block__rating[data-count="1"] > li:nth-child(-n+1),
+.big-block__rating[data-count="2"] > li:nth-child(-n+3),
+.big-block__rating[data-count="3"] > li:nth-child(-n+3),
+.big-block__rating[data-count="4"] > li:nth-child(-n+4),
+.big-block__rating[data-count="5"] > li:nth-child(-n+5) {
+  background-color: green;
+}
 .big-vendor {
   font-family: 'Roboto', Arial, sans-serif !important;
   display: flex;
