@@ -94,7 +94,10 @@ module.exports = function (grunt) {
             {src: '../layouts/news.html', dest: '../news.html'},
             {src: '../layouts/cart.html', dest: '../cart.html'},
             {src: '../layouts/order.html', dest: '../order.html'},
-            {src: '../layouts/registration-autotication.html', dest: '../registration-autotication.html'}
+            {src: '../layouts/registration-autotication.html', dest: '../registration-autotication.html'},
+            {src: '../layouts/account-profile.html', dest: '../account-profile.html'},
+            {src: '../layouts/account-profile-address.html', dest: '../account-profile-address.html'},
+            {src: '../layouts/account-profile-settings.html', dest: '../account-profile-settings.html'}
         ]
 
       }

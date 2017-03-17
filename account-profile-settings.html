@@ -116,66 +116,73 @@
 </div>
 
         <div class="container">
-	<div class="row main-bottom-location">
-		<div class="col-md-5 order-make">
-			<h3 class="order-make__name">Оформление заказа</h3>
-			<input class="form-control order-make__field" type="text" name="name_user" placeholder="Фамилия, Имя*" required autofocus>
-			<input class="form-control order-make__field" type="email" name="email" placeholder="E-mail*" required>
-			<input class="form-control order-make__field" type="phone" name="phone" placeholder="Телефон*" required>
-			<div class="order-make__delivery">
-				<span class="order-make__delivery-text">Доставка</span><br>
-				<input type="radio" class="radio" id="radio">
-				<label class="characters" for="radio">Яндекс. Доставка <a class="orange-color characters" href="#">выбрать точку</a></label>
+	<div class="row user-profile">
+		<div class="col-md-3">
+			<div class="row user-profile__border">
+				<div class="col-md-4">
+					<img class="user-profile__avatar" src="assets/img/profile.png" width="64" height="64" alt="">
+				</div>
+				<div class="col-md-8">
+					<div class="user-profile__info">
+						<a class="user-profile__name" href="account-profile.html">honest.square</a><br>
+						<a class="user-profile__logout" href="index.html">Logout</a>
+					</div>
+				</div>
 			</div>
-			<div class="order-make__address">
-				<input class="form-control order-make__field" type="text" name="town_user" placeholder="Город*" required autofocus>
-				<input class="form-control order-make__field" type="text" name="street_user" placeholder="Улица*" required>
-				<input class="form-control order-make__field" type="text" name="address_user" placeholder="Дом, квартира*" required>
-			</div>
-			<p class="order-make__address-location">
-				<a class="order-make__address order-make__delivery-text" href="#">Создать аккаунт?</a>
-			</p>
+			<nav class="user-profile__navigation">
+				<ul class="user-profile__list">
+					<li class="user-profile__link user-profile__right-border">
+						<a class="user-profile__link-color" href="account-profile.html">Мои заказы</a>
+					</li>
+					<li class="user-profile__link user-profile__right-border">
+						<a class="user-profile__link-color" href="account-profile-address.html">Адрес доставки</a>
+					</li>
+					<li class="user-profile__link">
+						<a class="active" href="account-profile-settings.html">Настройки профиля</a>
+					</li>
+					<li class="user-profile__link user-profile__right-border">
+						<a class="user-profile__link-color" href="index.html">Выйти</a>
+					</li>
+				</ul>
+			</nav>
 		</div>
-		<div class="col-md-7 order-pay">
-			<div class="row">
-				<div class="col-md-2">
-					<span class="order-make__delivery-text order-pay__list">Ваш заказ:</span>
-				</div>
-				<div class="col-md-10">
-					<table class="table table-border order-pay__location">
-						<tr>
-							<td>Пропитка для камня гидрофобизирующая </td>
-							<td class="order-pay__grey">(белая, 1.5л)</td>
-							<td>10 000 &#8381;</td>
-						</tr>
-						<tr class="table-border">
-							<td>Пропитка для камня гидрофобизирующая </td>
-							<td></td>
-							<td>4 500 &#8381;</td>
-						</tr>
-						<tr class="table-border">
-							<td>Пропитка для камня гидрофобизирующая </td>
-							<td></td>
-							<td>11 400 &#8381;</td>
-						</tr>
-						<tr class="table-border">
-							<td></td>
-							<td class="order-pay__grey">ИТОГО:</td>
-							<td class="order-pay__bold">25 900 &#8381;</td>
-						</tr>
-					</table>
-				</div>
+		<div class="col-md-9">
+			<div class="user-profile__order-info">
+				<h3>Мой аккаунт</h3>
+				<p class="user-profile__font">
+					Редактируйте данные своей учетной записи или изменяйте пароль.
+				</p>
 			</div>
-			<div class="row">
-				<div class="col-md-3 text-top-location">
-					<span class="order-make__delivery-text order-pay__list">Способ оплаты:</span>
+			<form method="POST" class="settings-form">
+				<div class="form-group settings-form__fields">
+					<label for="input-name-settings" class="settings-form__label">Имя*</label>
+					<input name="edit_user-name" type="text" class="form-control ch-input" id="input-name-settings">
 				</div>
-				<div class="col-md-9">
-					
+				<div class="form-group settings-form__fields">
+					<label for="input-surname-settings" class="reg-form__label">Фамилия*</label>
+					<input name="edit_surname" type="password" class="form-control ch-input" id="input-surname-settings">
 				</div>
-			</div>
+				<div class="form-group settings-form__fields">
+					<label for="input-login-reg" class="reg-form__label">Логин*</label>
+					<input name="login_user" type="email" class="form-control ch-input" id="input-login-reg" value="hello@gmail.com">
+				</div>
+				<h4 class="settings-form__heading-location">Изменение пароля <span class="settings-form__empty-text"> (оставьте поле пустым, чтобы сохранить информацию без изменений)</span></h4>
+				<div class="form-group settings-form__fields">
+					<label for="input-current-settings" class="settings-form__label">Текущий*</label>
+					<input name="edit_current-password" type="password" class="form-control ch-input" id="input-current-settings">
+				</div>
+				<div class="form-group settings-form__fields">
+					<label for="input-new-settings" class="settings-form__label">Новый*</label>
+					<input name="edit_new-password" type="password" class="form-control ch-input" id="input-new-settings">
+				</div>
+				<div class="form-group settings-form__fields">
+					<label for="input-new-confirm-settings" class="settings-form__label">Подтверждение*</label>
+					<input name="edit_new-confirm-password" type="password" class="form-control ch-input" id="input-new-confirm-settings">
+				</div>
+				<button class="settings-form__button" type="submit">Сохранить изменения</button>
+			</form>
+			<a class="settings-form__back" href="account-profile.html">&laquo;Вернуться назад</a>
 		</div>
-		<button type="submit" class="orange-button-location">Завершить заказ</button>
 	</div>
 </div>
         <div class="footer">
