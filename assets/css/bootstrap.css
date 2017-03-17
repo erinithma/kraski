@@ -7414,6 +7414,9 @@ h4 {
   text-align: right;
   margin-bottom: 50px;
 }
+.cart__summary {
+  text-transform: uppercase;
+}
 .cart-table__heading > .cart-table__column {
   border-top: none;
 }
@@ -7434,6 +7437,11 @@ h4 {
 }
 @media screen and (max-width: 992px) {
   .cart-table__price-container {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .cart-table__spacer {
     display: none;
   }
 }

@@ -56,6 +56,10 @@
         text-align: right;
         margin-bottom: 50px;
     }
+    
+    &__summary {
+        text-transform: uppercase;
+    }
 }
 
 .cart-table {
@@ -84,6 +88,12 @@
     }
     
     &__price-container {
+        @media screen and (max-width: @screen-md-min) {
+            display: none;
+        }
+    }
+    
+    &__spacer {
         @media screen and (max-width: @screen-md-min) {
             display: none;
         }
