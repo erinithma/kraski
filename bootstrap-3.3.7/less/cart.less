@@ -83,6 +83,12 @@
         }
     }
     
+    &__price-container {
+        @media screen and (max-width: @screen-md-min) {
+            display: none;
+        }
+    }
+    
     &__price::after {
         content: "	\20bd";
         display: inline;

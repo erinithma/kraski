@@ -7432,6 +7432,11 @@ h4 {
 .cart-table__text--orange {
   color: #ff9438;
 }
+@media screen and (max-width: 992px) {
+  .cart-table__price-container {
+    display: none;
+  }
+}
 .cart-table__price::after {
   content: "	\20bd";
   display: inline;
