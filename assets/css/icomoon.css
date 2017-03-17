@@ -1,26 +1,27 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?tl1ddq');
-  src:  url('../fonts/icomoon.eot?tl1ddq#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?tl1ddq') format('truetype'),
-    url('../fonts/icomoon.woff?tl1ddq') format('woff'),
-    url('../fonts/icomoon.svg?tl1ddq#icomoon') format('svg');
-  font-weight: normal;
   font-style: normal;
+  font-weight: normal;
+
+  src: url('../fonts/icomoon.eot?tl1ddq');
+  src: url('../fonts/icomoon.eot?tl1ddq#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?tl1ddq') format('truetype'),
+  url('../fonts/icomoon.woff?tl1ddq') format('woff'),
+  url('../fonts/icomoon.svg?tl1ddq#icomoon') format('svg');
 }
 
 [class^="icon-"],
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: none;
   font-size: 24px;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
-  text-transform: none;
   line-height: 1;
+  text-transform: none;
 
+  speak: none;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -32,22 +33,22 @@
 }
 
 .icon-star:before {
-    content: "\e901";
-    color: #fd9444;
+  color: #fd9444;
+  content: "\e901";
 }
 
 .icon-star:hover:before {
-    content: "\e903";
+  content: "\e903";
 }
 
 .icon-star--empty:before {
-    content: "\e901";
-    color: #fd9444;
+  color: #fd9444;
+  content: "\e901";
 }
 
 .icon-cancel:before {
-  content: "\e900";
   color: #575757;
+  content: "\e900";
 }
 
 .icon-cancel:hover:before {
@@ -55,8 +56,8 @@
 }
 
 .icon-down-arrow:before {
-  content: "\e902";
   color: #575757;
+  content: "\e902";
 }
 
 .icon-down-arrow:hover:before {
@@ -64,51 +65,51 @@
 }
 
 .icon-search:before {
-  content: "\e904";
   color: #575757;
+  content: "\e904";
 }
 
 .icon-search:hover:before {
-  content: "\e904";
   color: white;
+  content: "\e904";
 }
 
 .icon-search--orange:before {
-  content: "\e904";
   color: #fd9444;
+  content: "\e904";
 }
 
 .icon-search--orange:hover:before {
-  content: "\e904";
   color: #ffa776;
+  content: "\e904";
 }
 
 .icon-shopping-cart:before {
-  content: "\e908";
   color: #fd9444;
+  content: "\e908";
 }
 
 .icon-shopping-cart:hover:before {
-  content: "\e908";
   color: #ffa776;
+  content: "\e908";
 }
 
 .icon-shopping-cart--grey:before {
-  content: "\e908";
   color: #575757;
+  content: "\e908";
 }
 
 .icon-shopping-cart--grey:hover:before {
-  content: "\e908";
   color: #ffa776;
+  content: "\e908";
 }
 
 .icon-success:before {
-  content: "\e90a";
   color: #575757;
+  content: "\e90a";
 }
 
 .icon-success:hover:before {
-  content: "\e90a";
   color: #e8e5e7;
+  content: "\e90a";
 }
