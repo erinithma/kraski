@@ -115,134 +115,226 @@
     </div>
 </div>
 
-        <div class="container">
-	<div class="row">
-		<div class="col-md-7">
-			<h3>Подбор краски и других составов</h3>
-			<span class="one-font">Ответьте на вопросы ниже и получите список решений, подходящих именно для вашего дома</span>
-		</div>
-		<div class="col-md-5 right-location">
-			<span class="one-font">Найдено 26 результатов</span>
-		</div>
-	</div>
-	<div class="row product-selection">
-		<div class="col-md-3 product-selection__location">
-			<ul class="product-selection__list one-font">
-				<ol class="product-selection__numbers" type="1">
-					<li>Что вас интересует?</li>
-					<li>Что нужно покрасить?</li>
-					<li>Материал для покраски:</li>
-					<li>Материал для покраски:</li>
-					<li>Дополнительные параметры:</li>
-				</ol>
-			</ul>
-		</div>
-		<div class="col-md-9 cell-selection one-font">
-			<a class="cell-selection cell-selection--active" href="#">Технические характеристики</a>
-			<a class="cell-selection" href="#">Область применения</a>
-			<a class="cell-selection" href="#">Свойства</a>
-			<a class="cell-selection" href="#">Рекомендации по применению</a>
-			<a class="cell-selection" href="#">Советы экспертов</a>
-		</div>
-			<!-- <a class="cell-selection__block cell-selection__orange" href="#">Краска</a>
-			<a class="cell-selection__block cell-selection__grey" href="#">Лаки</a>
-			<a class="cell-selection__block cell-selection__grey" href="#">Грунтовки</a>
-			<a class="cell-selection__block cell-selection__grey" href="#">Герметики</a>
-			<a class="cell-selection__block cell-selection__grey" href="#">Эмали</a>
-			<a class="cell-selection__block cell-selection__grey" href="#">Мастика</a>
-			<a class="cell-selection__block cell-selection__grey" href="#">Биозащита</a>
-			<a class="cell-selection__block cell-selection__grey" href="#">Инсектициды</a>
-			<a class="cell-selection__block cell-selection__grey" href="#">Клеи</a>
-			<a class="cell-selection__block cell-selection__grey" href="#">Шпатлевки</a>
-			<a class="cell-selection__block cell-selection__grey" href="#">Монтажная пена</a>
-			<a class="cell-selection__block cell-selection__grey" href="#">Антисептики</a>
-			<a class="cell-selection__block cell-selection__grey" href="#">Защитно-декоративные составы</a>
-			<a class="cell-selection__block cell-selection__grey" href="#">Декоративные штукатурки</a> -->
-		</div>
-	</div>
+        <div class="cell-selection">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="cell-selection__heading">
+                    Подбор краски и других составов
+                </h2>
+                <div class="cell-selection__justifier">
+                    <p class="cell-selection__text">
+                        Ответьте на вопросы ниже и получите список решений, подходящих именно для вашего дома.
+                    </p>
+                    <p class="cell-selection__text">
+                        Найдено 26 результатов
+                    </p>
+                </div>
+            </div>
+            
+            <form class="cell-selecton__filters" action="#">
+                <div class="filter-group">
+                    <div class="col-md-3">
+                        <h4 class="filter-group__heading">
+                            1. Что вас интересует?
+                        </h4>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="filter-group__filters">
+                            <label class="filter-group__filter">
+                                <input class="filter-group__radio" type="radio" name="interest" value="paint" checked>
+                                <span class="filter-group__label">Краска</span>
+                            </label>
+                            <label class="filter-group__filter">
+                                <input class="filter-group__radio" type="radio" name="interest" value="lacquer">
+                                <span class="filter-group__label">Лаки</span>
+                            </label>
+                            <label class="filter-group__filter">
+                                <input class="filter-group__radio" type="radio" name="interest" value="primer">
+                                <span class="filter-group__label">Грунтовки</span>
+                            </label>
+                            <label class="filter-group__filter">
+                                <input class="filter-group__radio" type="radio" name="interest" value="hermetics">
+                                <span class="filter-group__label">Герметики</span>
+                            </label>
+                            <label class="filter-group__filter">
+                                <input class="filter-group__radio" type="radio" name="interest" value="enamel">
+                                <span class="filter-group__label">Эмали</span>
+                            </label>
+                            <label class="filter-group__filter">
+                                <input class="filter-group__radio" type="radio" name="interest" value="mastic">
+                                <span class="filter-group__label">Мастика</span>
+                            </label>
+                            <label class="filter-group__filter">
+                                <input class="filter-group__radio" type="radio" name="interest" value="bio-protection">
+                                <span class="filter-group__label">Биозащита</span>
+                            </label>
+                            <label class="filter-group__filter">
+                                <input class="filter-group__radio" type="radio" name="interest" value="insecticide">
+                                <span class="filter-group__label">Инсектициды</span>
+                            </label>
+                            <label class="filter-group__filter">
+                                <input class="filter-group__radio" type="radio" name="interest" value="glue">
+                                <span class="filter-group__label">Клеи</span>
+                            </label>
+                            <label class="filter-group__filter">
+                                <input class="filter-group__radio" type="radio" name="interest" value="putty">
+                                <span class="filter-group__label">Шпатлевки</span>
+                            </label>
+                            <label class="filter-group__filter">
+                                <input class="filter-group__radio" type="radio" name="interest" value="foam">
+                                <span class="filter-group__label">Монтажная пена</span>
+                            </label>
+                            <label class="filter-group__filter">
+                                <input class="filter-group__radio" type="radio" name="interest" value="antiseptic">
+                                <span class="filter-group__label">Антисептики</span>
+                            </label>
+                            <label class="filter-group__filter">
+                                <input class="filter-group__radio" type="radio" name="interest" value="decorative">
+                                <span class="filter-group__label">Защитно-декоративные составы</span>
+                            </label>
+                            <label class="filter-group__filter">
+                                <input class="filter-group__radio" type="radio" name="interest" value="plaster">
+                                <span class="filter-group__label">Декоративные штукатурки</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <div class="col-md-3">
+                        <h4 class="filter-group__heading">
+                            2. Что нужно покрасить?
+                        </h4>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="filter-group__filters">
+                            <label class="filter-group__filter">
+                                <input class="filter-group__radio" type="radio" name="what" value="walls" checked>
+                                <span class="filter-group__label">Стены</span>
+                            </label>
+                            <label class="filter-group__filter">
+                                <input class="filter-group__radio" type="radio" name="what" value="ceiling">
+                                <span class="filter-group__label">Потолок</span>
+                            </label>
+                            <label class="filter-group__filter">
+                                <input class="filter-group__radio" type="radio" name="what" value="wallpaper">
+                                <span class="filter-group__label">Обои</span>
+                            </label>
+                            <label class="filter-group__filter">
+                                <input class="filter-group__radio" type="radio" name="what" value="hall">
+                                <span class="filter-group__label">Детская / Гостиная</span>
+                            </label>
+                            <label class="filter-group__filter">
+                                <input class="filter-group__radio" type="radio" name="what" value="kitchen">
+                                <span class="filter-group__label">Кухня / Ванная</span>
+                            </label>
+                            <label class="filter-group__filter">
+                                <input class="filter-group__radio" type="radio" name="what" value="plinth">
+                                <span class="filter-group__label">Цоколь</span>
+                            </label>
+                            <label class="filter-group__filter">
+                                <input class="filter-group__radio" type="radio" name="what" value="facade">
+                                <span class="filter-group__label">Фасад</span>
+                            </label>
+                            <label class="filter-group__filter">
+                                <input class="filter-group__radio" type="radio" name="what" value="roof">
+                                <span class="filter-group__label">Крыша</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <div class="col-md-3">
+                        <h4 class="filter-group__heading">
+                            3. Материал для покраски
+                        </h4>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="filter-group__filters">
+                            <label class="filter-group__filter">
+                                <input class="filter-group__radio" type="radio" name="material" value="mineral" checked>
+                                <span class="filter-group__label">Минеральные поверхности</span>
+                            </label>
+                            <label class="filter-group__filter">
+                                <input class="filter-group__radio" type="radio" name="material" value="wood">
+                                <span class="filter-group__label">Дерево</span>
+                            </label>
+                            <label class="filter-group__filter">
+                                <input class="filter-group__radio" type="radio" name="material" value="metal">
+                                <span class="filter-group__label">Металл</span>
+                            </label>
+                            <label class="filter-group__filter">
+                                <input class="filter-group__radio" type="radio" name="material" value="rust">
+                                <span class="filter-group__label">Ржавчина</span>
+                            </label>
+                            <label class="filter-group__filter">
+                                <input class="filter-group__radio" type="radio" name="material" value="paint">
+                                <span class="filter-group__label">Другая краска (колеровка)</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <div class="col-md-3">
+                        <h4 class="filter-group__heading">
+                            4. Производитель
+                        </h4>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="filter-group__filters">
+                            <label class="filter-group__filter">
+                                <input class="filter-group__checkbox" type="checkbox" name="manufacturer" value="dali" checked>
+                                <span class="filter-group__label filter-group__label--checkbox">DALI</span>
+                            </label>
+                            <label class="filter-group__filter">
+                                <input class="filter-group__checkbox" type="checkbox" name="manufacturer" value="ecodom">
+                                <span class="filter-group__label filter-group__label--checkbox">Экодом</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <div class="col-md-3">
+                        <span class="filter-group__heading">
+                            5. Дополнительные параметры
+                        </span>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="filter-group__filters">
+                            <label class="filter-group__small">
+                                Цвет
+                                <select class="filter-group__select" name="color">
+                                    <option value="white">Белый</option>
+                                    <option value="blue">Синий</option>
+                                    <option value="orange">Оранжевый</option>
+                                </select>
+                            </label>
+                            <label class="filter-group__small">
+                                Температура применения
+                                <select class="filter-group__select" name="temperature">
+                                    <option value="white">Белый</option>
+                                    <option value="blue">Синий</option>
+                                    <option value="orange">Оранжевый</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-12 filter-group__button-container">
+                    <button class="filter-group__button">
+                        Обновить результат
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-				<!-- <div class="row">
-				<div class="col-md-12 cell-selection">
-					<a class="cell-selection__block cell-selection__orange" href="#">Стены</a>
-					<a class="cell-selection__block cell-selection__grey" href="#">Потолок</a>
-					<a class="cell-selection__block cell-selection__grey" href="#">Обои</a>
-					<a class="cell-selection__block cell-selection__grey" href="#">Детская/Гостиная</a>
-					<a class="cell-selection__block cell-selection__grey" href="#">Кухня/Ванная</a>
-					<a class="cell-selection__block cell-selection__grey" href="#">Цоколь</a>
-					<a class="cell-selection__block cell-selection__grey" href="#">Фасад</a>
-					<a class="cell-selection__block cell-selection__grey" href="#">Крыша</a>
-				</div>
-				</div>
-				<div class="row">
-				<div class="col-md-12 cell-selection">
-					<a class="cell-selection__block cell-selection__orange" href="#">Минеральные поверхности</a>
-					<a class="cell-selection__block cell-selection__grey" href="#">Дерево</a>
-					<a class="cell-selection__block cell-selection__grey" href="#">Металл</a>
-					<a class="cell-selection__block cell-selection__grey" href="#">Ржавчина</a>
-					<a class="cell-selection__block cell-selection__grey" href="#">Другая краска (колеровка)</a>
-				</div>
-				</div>
-				<div class="row">
-				<div class="col-md-12 cell-selection">
-					<a class="cell-selection__block cell-selection__grey" href="#">DALI</a>
-					<a class="cell-selection__block cell-selection__grey" href="#">Экодом</a>
-				</div>
-				</div>
-					<label class="cell-selection__item">
-						Цвет
-						<select class="cell-selection__select" name="color" id="color">
-							<option>Белый</option>
-							<option>Черный</option>
-							<option>Охра</option>
-						</select>
-					</label>
-					<label class="cell-selection__item">
-						Температура применения
-						<select class="cell-selection__select" name="to" id="temperature">
-							<option>20 C°</option>
-							<option>-20 C°</option>
-							<option>40 C°</option>
-							<option>-40 C°</option>
-						</select>
-					</label>
-					<button class="cell-selection__button one-font" type="submit">Обновить результат</button> -->
-	
         <div class="container">
 	<div class="row">
 		<div class="col-md-3 col-xs-12 col-sm-4">
