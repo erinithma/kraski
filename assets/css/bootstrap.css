@@ -7332,6 +7332,7 @@ h4 {
 }
 .cell-selection__justifier {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .cell-selection__justifier > * {
@@ -7404,6 +7405,7 @@ h4 {
   padding-left: 0;
 }
 .filter-group__button {
+  margin-bottom: 30px;
   padding: 11px 30px;
   border: 1px solid #efefef;
   font-family: "Roboto", "Arial", sans-serif;
