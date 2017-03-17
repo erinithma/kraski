@@ -6620,12 +6620,12 @@ a:focus {
 .bottom-line {
   border-bottom: 1px solid black;
 }
-.cart {
+.cart-icon {
   position: relative;
   width: 64px;
   height: 40px;
 }
-.cart__counter {
+.cart-icon__counter {
   position: absolute;
   padding: 0 6px;
   color: #fff;
@@ -6637,13 +6637,13 @@ a:focus {
   background-color: #898989;
 }
 @media (max-width: 768px) {
-  .cart__counter {
+  .cart-icon__counter {
     right: 6px;
     top: 7px;
   }
 }
 @media (min-width: 769px) {
-  .cart__counter {
+  .cart-icon__counter {
     right: -8px;
     top: -12px;
   }
@@ -7039,14 +7039,14 @@ h4 {
 .product-card-location {
   margin-top: -17px;
 }
-td {
+.product-card-table td {
   border: none !important;
   padding-top: 14px !important;
   padding-bottom: 14px !important;
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 12px;
 }
-td:nth-child(odd) {
+.product-card-table td:nth-child(odd) {
   padding-left: 48px !important;
 }
 .square-button {
@@ -7243,7 +7243,7 @@ td:nth-child(odd) {
   padding-top: 15px;
   margin-left: 5px;
 }
-input[type=number] {
+.big-card__input {
   height: 50px;
   font-size: 14px;
   padding: 0 8px;
@@ -7255,7 +7255,7 @@ input[type=number] {
   text-align: center;
   position: relative;
 }
-input[type=number]::-webkit-inner-spin-button {
+.big-card__input::-webkit-inner-spin-button {
   height: 100%;
   width: 30px;
   position: absolute;
@@ -7369,30 +7369,128 @@ input[type=number]::-webkit-inner-spin-button {
   padding-left: 20px;
   padding-right: 20px;
 }
-.product-parts__list {
-  font-family: 'RobotoCondensed', Arial, sans-serif;
-  color: #b5b5b5;
-  font-size: 14px !important;
+.cart__heading {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: #575757;
+  font-size: 24px;
 }
-.font-color {
+.cart__promo {
+  margin-right: 4px;
+  padding: 12px 12px;
+  border: 1px solid #ddd;
+  font-family: "Roboto", "Arial", sans-serif;
   color: #a2a2a2;
-  font-size: 16px;
-  font-family: 'Roboto', Arial, sans-serif;
-  margin-top: 5px;
+  font-size: 14px;
+  outline: none;
 }
-.size {
-  color: #5c5c5c;
-  font-size: 18px;
-  font-family: 'Roboto', Arial, sans-serif;
+.cart__promo:focus {
+  box-shadow: 0 0 4px #ff9438;
 }
-.location-block {
+.cart__button {
+  padding: 13px 20px;
+  border: none;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #a2a2a2;
+  font-size: 14px;
+  background: #f6f8f8;
+  transition: all .3s;
+  outline: none;
+}
+.cart__button:hover {
+  color: white;
+  background: #ff9438;
+}
+.cart__button:focus {
+  box-shadow: 0 0 4px #ff9438;
+}
+.cart__button--orange {
+  background: #ff9438;
+  color: white;
+}
+.cart__button--orange:hover {
+  background: #ffa776;
+}
+.cart__submit-container {
+  text-align: right;
+  margin-bottom: 50px;
+}
+.cart-table__heading > .cart-table__column {
+  border-top: none;
+}
+.cart-table__heading > .cart-table__column:first-child {
   text-align: center;
-  margin-top: 70px;
 }
-.container-img {
-  background-image: url(../../assets/img/paint-brush.png);
+.cart-table__text {
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #575757;
+  font-size: 14px;
+  font-weight: normal;
+}
+.cart-table__text--grey {
+  color: #a2a2a2;
+}
+.cart-table__text--orange {
+  color: #ff9438;
+}
+.cart-table__price::after {
+  content: "	\20bd";
+  display: inline;
+}
+.cart-table__row:last-child > .cart-table__column {
+  border-bottom: 1px solid #ddd;
+}
+.cart-table__column {
+  vertical-align: middle !important;
+}
+.cart-table__button {
+  display: inline-block;
+  line-height: 1;
+  padding: 0;
+  margin-top: 6px;
+  background: none;
+  border: none;
+  outline: none;
+}
+.cart-table__button:focus {
+  text-shadow: 0 0 4px #ff9438;
+}
+.cart-table__button > [class^="icon-"] {
+  font-size: 14px;
+}
+.cart-table__button-container {
+  text-align: center;
+}
+.cart-table__picture {
+  max-width: 100%;
+  height: auto;
+}
+.cart-table__picture-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 72px;
   background-color: #efefef;
-  height: 225px;
+}
+.cart-table__quantity {
+  max-width: 75px;
+  min-height: 35px;
+  padding: 0;
+  border: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: #575757;
+  font-size: 14px;
+  text-align: center;
+  background-color: #f6f8f8;
+  outline: none;
+}
+.cart-table__quantity:focus {
+  box-shadow: 0 0 4px #ff9438;
+}
+.cart-table__options {
+  border-top: 20px solid white;
+  border-bottom: 20px solid white;
+  box-shadow: 0 11px 0 #ddd, 0 -11px 0 #ddd;
 }
 .order-make__field {
   width: 90%;
