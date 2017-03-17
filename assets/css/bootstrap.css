@@ -7497,6 +7497,27 @@ h4 {
   border-bottom: 20px solid white;
   box-shadow: 0 11px 0 #ddd, 0 -11px 0 #ddd;
 }
+.cart-offer {
+  background-color: #efefef;
+  background-image: url(../img/offer-background.png);
+  background-repeat: repeat;
+}
+.cart-offer__container {
+  padding-top: 70px;
+  min-height: 226px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.cart-offer__heading {
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #575757;
+  font-size: 18px;
+}
+.cart-offer__text {
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #a2a2a2;
+  font-size: 16px;
+}
 .order-make__field {
   width: 90%;
   margin-top: 7px;
