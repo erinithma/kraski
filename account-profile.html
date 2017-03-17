@@ -2,9 +2,9 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> 
+<!--[if gt IE 8]><!-->
 <html> <!--<![endif]-->
-<head>
+    <head>
 	<meta charset="UTF-8">
 	<title>Каталог красок</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -92,11 +92,9 @@
                         <li><a href="#">Акции</a></li>
                         <li><a href="address.html">Контакты</a></li>
                         <li class="multi">
-
-                            <a class="cart-icon" href="cart.html">
-
+                            <a class="cart" href="cart.html">
                                 <span class="icon-shopping-cart"></span>
-                                <span class="cart-icon__counter">0</span>
+                                <span class="cart__counter">0</span>
                             </a>
                             <span class="icon-search--orange"></span>
                         </li>
@@ -118,100 +116,50 @@
 </div>
 
         <div class="container">
-	<div class="row main-family-block">
-		<div class="col-md-12">
-			<h3>Регистрация или вход</h3>
-			<span class="family-block">Управляйте своей учетной записью и смотрите ваши заказы</span>
+	<div class="row user-profile">
+		<div class="col-md-3">
+			<div class="row user-profile__border">
+				<div class="col-md-4">
+					<img class="user-profile__avatar" src="assets/img/profile.png" width="64" height="64" alt="">
+				</div>
+				<div class="col-md-8">
+					<div class="user-profile__info">
+						<a class="user-profile__name" href="account-profile.html">honest.square</a><br>
+						<a class="user-profile__logout" href="index.html">Logout</a>
+					</div>
+				</div>
+			</div>
+			<nav class="user-profile__navigation">
+				<ul class="user-profile__list">
+					<li class="user-profile__link user-profile__orders">
+						<a class="active" href="account-profile.html">Мои заказы</a>
+					</li>
+					<li class="user-profile__link user-profile__right-border">
+						<a class="user-profile__link-color" href="account-profile-address.html">Адрес доставки</a>
+					</li>
+					<li class="user-profile__link user-profile__right-border">
+						<a class="user-profile__link-color" href="account-profile-settings.html">Настройки профиля</a>
+					</li>
+					<li class="user-profile__link user-profile__right-border">
+						<a class="user-profile__link-color" href="index.html">Выйти</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="col-md-9">
+			<div class="user-profile__order-info">
+				<h3>Мои заказы</h3>
+				<p class="user-profile__font">
+					Ваши последние заказы отображены в таблице ниже.
+				</p>
+			</div>
+			<div class="user-profile__message">
+				<span class="user-profile__small-text">Ни одного заказа еще не было создано.</span>
+				<a class="user-profile__shopping-button" href="catalog.html">За покупками!</a>
+			</div>
 		</div>
 	</div>
 </div>
-        <div class="container">
-	<div class="row form-location">
-		<div class="col-md-5 login-form">
-			<form method="POST" class="login-form-message">
-				<h4 class="login-form__bottom">Вход</h4>
-					<div class="form-group login-form__fields">
-						<label for="input-login" class="login-form__label">Логин*</label>
-						<input type="email" class="form-control ch-input" id="input-login" required>
-					</div>
-					<div class="form-group login-form__fields">
-						<label for="input-password" class="login-form__label">Пароль*</label>
-						<input type="password" class="form-control ch-input" id="input-password" required>
-					</div>
-					<input type="checkbox" class="checkbox" id="checkbox">
-					<label class="login-form__checkbox" for="checkbox">Запомнить меня</label><br>
-					<button class="reg-form__button" type="submit">Войти</button>
-					<a class="active login-form__href" href="#">Забыли ваш пароль?</a>
-			</form>
-		</div>
-		<div class="col-md-1">
-		</div>
-		<div class="col-md-5 reg-form">
-			<form method="POST" class="reg-form-message">
-				<h4 class="reg-form__bottom">Регистрация</h4>
-					<div class="form-group reg-form__fields">
-						<label for="input-login-reg" class="reg-form__label">Логин*</label>
-						<input name="login_user" type="email" class="form-control ch-input" id="input-login-reg" required>
-					</div>
-					<div class="form-group reg-form__fields">
-						<label for="input-password-reg" class="reg-form__label">Пароль*</label>
-						<input name="reg_user" type="password" class="form-control ch-input" id="input-password-reg" required>
-					</div>
-					<button class="reg-form__button" type="submit">Зарегистрироваться</button>
-			</form>
-		</div>
-	</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-				<!-- <div class="bordered-block with-form-labels" data-mh="my-account-blocks">
-					<h2>Регистрация</h2>
-					<div class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide form-group absolute">
-						<div class="placeholder"><label for="username">E-mail <span class="required">*</span></label>
-						</div>
-						<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" value="">
-					</div>
-					<div class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide form-group absolute">
-						<div class="placeholder"><label for="password">Пароль <span class="required">*</span></label>
-						</div>
-						<input class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password" id="password">
-					</div>
-					<p class="form-row remember-me-row">
-						<input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="72d4d4ffaf">
-						<input type="hidden" name="_wp_http_referer" value="/shop/my-account/">
-						<input class="woocommerce-Input woocommerce-Input--checkbox replaced-checkboxes" name="rememberme" type="checkbox" id="rememberme" value="forever">
-						<label for="rememberme" class="inline">Запомнить меня</label>
-					</p>
-					<div class="clear"></div>
-					<input type="submit" class="woocommerce-Button button btn btn-primary" name="login" value="Зарегистрироваться">
-					<p class="woocommerce-LostPassword lost_password pull-right">
-						<a href="https://demo.kaliumtheme.com/shop/my-account/lost-password/">Забыли пароль?</a>
-					</p>
-				</div> -->
         <div class="footer">
     <div class="container">
         <div class="row">
