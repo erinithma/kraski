@@ -33,13 +33,23 @@
 			<div class="user-profile__order-info">
 				<h3>Адрес доставки</h3>
 				<p class="user-profile__font">
-					Следующий адрес будет использоваться на странице оформления заказа по умолчанию.
+					Здесь вы можете редактировать информацию адреса доставки.
 				</p>
 			</div>
-			<div class="user-profile__edit-address">
-				<span class="user-profile__grey-color">Вы еще не указали адрес доставки.</span>
-				<a class="user-profile__edit-button" href="account-profile-edit-address.html">Редактировать адрес</a>
-			</div>
+			<form method="POST" class="edit-address-form">
+				<div class="edit-address-form__edit-shipping-address">
+					<input type="text" name="first_user_name" class="edit-address-form__field" placeholder="Имя" required autofocus>
+					<input type="text" name="last_user_name" class="edit-address-form__field" placeholder="Фамилия" required>
+					<input type="text" name="company_name" class="edit-address-form__field" placeholder="Название компании" required>
+					<input type="text" name="country_user" class="edit-address-form__field" placeholder="Страна" required>
+					<input type="text" name="address_user" class="edit-address-form__field" placeholder="Адрес" required>
+					<input type="text" name="city_user" class="edit-address-form__field" placeholder="Город" required>
+					<input type="text" name="county_user" class="edit-address-form__field" placeholder="Округ" required>
+					<input type="text" name="postcode_user" class="edit-address-form__field" placeholder="Почтовый индекс" required>
+				</div>
+				<button class="edit-address-form__shipping-button" type="submit">Сохранить адрес</button>
+			</form>
+			<a class="edit-address-form__back" href="account-profile.html">&laquo;Вернуться назад</a>
 		</div>
 	</div>
 </div>

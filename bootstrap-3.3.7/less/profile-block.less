@@ -191,3 +191,53 @@
     	color: @orange-color;
     }
 }
+
+.edit-address-form {
+
+	&__field {
+		width: 100%;
+		margin-bottom: 10px;
+		border: 1px solid #eee;
+		outline: none;
+    	height: 33px;
+    	padding: 6px 12px;
+    	font-size: 14px;
+    	line-height: 1;
+
+		&:focus {
+			border-color: #ccc;
+			outline: none;
+		}
+	}
+
+	&__edit-shipping-address {
+		margin-top: 42px;
+	}
+
+	&__shipping-button {
+        padding-left: 22px;
+        padding-right: 22px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border: none;
+        color: white;
+        background-color: @orange-color;
+        border-radius: 3px;
+        font-family: 'Roboto Condensed', Arial, sans-serif !important;
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        outline-color: @orange-color;
+        transition: all 250ms ease-in-out;
+        margin-top: 17px;
+    }
+
+    &__shipping-button:hover {
+        background-color: #de8026;
+        transition: all 250ms ease-in-out;
+    }
+
+    &__back {
+    	color: @orange-color;
+    }
+}
