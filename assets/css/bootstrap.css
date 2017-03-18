@@ -7091,28 +7091,31 @@ h4 {
 .big-card-container {
   margin-top: 20px;
 }
-.big-card {
-  display: flex;
-  flex-flow: column nowrap;
+.big-card__image {
+  max-width: 100%;
+  height: auto;
 }
 .big-card__image-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 358px;
+  margin-bottom: 10px;
   height: 358px;
   background-color: #efefef;
 }
 .big-card__blocks {
-  flex-basis: 92px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  word-spacing: 10px;
+  font-size: 0;
 }
 .big-card__block {
-  width: 82px;
+  display: inline-block;
+  line-height: 1;
   height: 82px;
+  width: 82px;
+  margin-bottom: 10px;
   background-color: #efefef;
+  word-spacing: normal;
+  font-size: 14px;
 }
 .big-block {
   display: flex;
@@ -8319,9 +8322,7 @@ input[type=checkbox]:focus {
   font-family: 'Roboto Condensed', Arial, sans-serif !important;
   font-size: 14px;
   margin-top: 10px;
-
   margin-bottom: 30px;
-
   outline-color: #fd9444;
   transition: all 250ms ease-in-out;
   margin-top: 17px;
@@ -8344,7 +8345,6 @@ input[type=checkbox]:focus {
 .settings-form__back {
   color: #fd9444;
 }
-
 .edit-address-form__field {
   width: 100%;
   margin-bottom: 10px;
@@ -8386,5 +8386,4 @@ input[type=checkbox]:focus {
 .edit-address-form__back {
   color: #fd9444;
 }
-
 /*# sourceMappingURL=bootstrap.css.map */
