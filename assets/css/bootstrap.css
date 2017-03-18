@@ -7604,6 +7604,9 @@ h4 {
 .order-make__delivery {
   padding-top: 32px;
 }
+.order-make__delivery--fixed {
+  padding-top: 10px;
+}
 .order-make__address {
   color: #b5b5b5;
   margin-top: 20px;
@@ -7620,7 +7623,7 @@ h4 {
   font-size: 12px;
   font-family: 'Roboto', Arial, sans-serif;
   font-weight: normal;
-  margin-top: 40px;
+  margin-top: 15px;
   margin-left: 10px;
 }
 .radio {
@@ -7687,9 +7690,6 @@ h4 {
 }
 .table-border {
   border-top: 1px solid #ccc;
-}
-.text-top-location {
-  margin-top: -55px;
 }
 .orange-button-location {
   background-color: #fd9444;

@@ -124,8 +124,10 @@
 			<input class="form-control order-make__field" type="phone" name="phone" placeholder="Телефон*" required>
 			<div class="order-make__delivery">
 				<span class="order-make__delivery-text">Доставка</span><br>
-				<input type="radio" class="radio" id="radio">
-				<label class="characters" for="radio">Яндекс. Доставка <a class="orange-color characters" href="#">выбрать точку</a></label>
+				<input type="radio" class="radio" name="delivery" value="yandex" id="radio-yandex">
+				<label class="characters" for="radio-yandex">Яндекс. Доставка <a class="orange-color characters" href="#">выбрать точку</a></label>
+                <input type="radio" class="radio" name="delivery" value="google" id="radio-google">
+				<label class="characters" for="radio-google">Гугл. Доставка <a class="orange-color characters" href="#">выбрать точку</a></label>
 			</div>
 			<div class="order-make__address">
 				<input class="form-control order-make__field" type="text" name="town_user" placeholder="Город*" required autofocus>
@@ -138,10 +140,10 @@
 		</div>
 		<div class="col-md-7 order-pay">
 			<div class="row">
-				<div class="col-md-2">
+				<div class="col-md-3">
 					<span class="order-make__delivery-text order-pay__list">Ваш заказ:</span>
 				</div>
-				<div class="col-md-10">
+				<div class="col-md-9">
 					<table class="table table-border order-pay__location">
 						<tr>
 							<td>Пропитка для камня гидрофобизирующая </td>
@@ -171,11 +173,31 @@
 					<span class="order-make__delivery-text order-pay__list">Способ оплаты:</span>
 				</div>
 				<div class="col-md-9">
-					
+					<div class="order-make__delivery order-make__delivery--fixed">
+<!--                        <span class="order-make__delivery-text">Способ оплаты:</span><br>-->
+                        <input type="radio" class="radio" name="billing" value="courier" id="courier">
+                        <label class="characters" for="courier">Оплата курьеру</label>
+                        <br>
+                        
+                        <input type="radio" class="radio" name="billing" value="bill" id="bill">
+                        <label class="characters" for="bill">Наложенный платеж</label>
+                        <br>
+                        
+                        <input type="radio" class="radio" name="billing" value="credit-card" id="credit-card">
+                        <label class="characters" for="credit-card">Банковская карта</label>
+                        <br>
+                        
+                        <input type="radio" class="radio" name="billing" value="sorry" id="sorry">
+                        <label class="characters" for="sorry">Я не буду платить, извините</label>
+                        
+                        
+                    </div>
 				</div>
 			</div>
 		</div>
-		<button type="submit" class="orange-button-location">Завершить заказ</button>
+        <div class="col-md-12">
+		  <button type="submit" class="orange-button-location">Завершить заказ</button>
+        </div>
 	</div>
 </div>
         <div class="footer">
