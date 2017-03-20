@@ -7206,6 +7206,7 @@ h4 {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 .big-vendor .active {
   position: relative;
@@ -7225,9 +7226,6 @@ h4 {
 }
 .big-vendor .active:hover::after {
   width: 100%;
-}
-.big-vendor__info {
-  margin-top: 20px;
 }
 .big-vendor__button {
   border: none;
