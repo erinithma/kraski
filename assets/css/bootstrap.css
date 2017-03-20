@@ -6991,10 +6991,25 @@ h4 {
   word-spacing: 15px;
 }
 .footer__link {
+  position: relative;
   display: inline-block;
   line-height: 3;
   font-size: 14px;
   word-spacing: initial;
+}
+.footer__link::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 11px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  border-bottom: 1px solid white;
+  transition: width .3s;
+}
+.footer__link:hover::after {
+  width: 100%;
 }
 .footer__link a {
   font-family: "Roboto", "Arial", sans-serif;
@@ -7003,6 +7018,9 @@ h4 {
 .footer__link--small {
   margin: 0;
   font-size: 12px;
+}
+.footer__link--small::after {
+  bottom: 8px;
 }
 .footer__line {
   height: 1px;
