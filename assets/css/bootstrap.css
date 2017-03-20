@@ -7207,6 +7207,25 @@ h4 {
   align-items: center;
   margin-bottom: 20px;
 }
+.big-vendor .active {
+  position: relative;
+}
+.big-vendor .active:hover {
+  color: #fd9444;
+}
+.big-vendor .active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  border-bottom: 1px solid #fd9444;
+  transition: width .3s;
+}
+.big-vendor .active:hover::after {
+  width: 100%;
+}
 .big-vendor__info {
   margin-top: 20px;
 }
