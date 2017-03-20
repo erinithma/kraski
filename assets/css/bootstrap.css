@@ -6543,6 +6543,10 @@ h5,
 h6 {
   color: #333;
 }
+.off-center {
+  position: relative;
+  top: -25px;
+}
 @font-face {
   font-family: "linea-ecommerce-10";
   src: url("../fonts/linea-ecommerce-10.eot");
@@ -8064,6 +8068,7 @@ input[type=checkbox]:focus {
 }
 .catalog-item-card__picture {
   display: block;
+  width: 63%;
   max-width: 100%;
   height: auto;
   margin: 0 auto;
@@ -8113,6 +8118,9 @@ input[type=checkbox]:focus {
 .catalog-item-card__badge--hit {
   background-color: #fc583b;
   text-transform: uppercase;
+}
+.catalog-item-card--narrow {
+  min-height: 360px;
 }
 .catalog-item-card--with-animations {
   transition: background-color 0.3s;
