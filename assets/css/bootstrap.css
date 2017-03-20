@@ -6535,6 +6535,14 @@ a:hover,
 a:focus {
   text-decoration: none;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333;
+}
 @font-face {
   font-family: "linea-ecommerce-10";
   src: url("../fonts/linea-ecommerce-10.eot");
@@ -6723,6 +6731,9 @@ h4 {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
+}
+.sidebar__heading {
+  color: #333;
 }
 .sidebar__search-field {
   padding-top: 9px;
@@ -7141,6 +7152,7 @@ h4 {
 }
 .big-block__info {
   margin-top: 0px;
+  color: #333;
 }
 .big-block__rating {
   display: flex;
@@ -7339,7 +7351,7 @@ h4 {
 }
 .cell-selection__heading {
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  color: #575757;
+  color: #333;
   font-size: 24px;
 }
 .cell-selection__text {
@@ -7361,7 +7373,7 @@ h4 {
   line-height: 1;
   margin-top: 14px;
   font-family: "Roboto", "Arial", sans-serif;
-  color: #575757;
+  color: #333;
   font-size: 14px;
   font-weight: bold;
 }
@@ -7449,7 +7461,7 @@ h4 {
 }
 .cart__heading {
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  color: #575757;
+  color: #333;
   font-size: 24px;
 }
 .cart__promo {
@@ -7596,7 +7608,7 @@ h4 {
 }
 .cart-offer__heading {
   font-family: "Roboto", "Arial", sans-serif;
-  color: #575757;
+  color: #333;
   font-size: 18px;
 }
 .cart-offer__text {
@@ -7753,6 +7765,7 @@ h4 {
   border-bottom: 1px solid #eee;
   padding-bottom: 15px;
   font-family: 'Roboto Condensed', 'Roboto', Arial, sans-serif !important;
+  color: #333;
 }
 .login-form__checkbox {
   font-size: 12px;
@@ -7785,6 +7798,7 @@ h4 {
   border-bottom: 1px solid #eee;
   padding-bottom: 15px;
   font-family: 'Roboto Condensed', 'Roboto', Arial, sans-serif !important;
+  color: #333;
 }
 .reg-form__button {
   padding-left: 22px;
@@ -7875,6 +7889,9 @@ input[type=checkbox]:focus {
 .main-family-block {
   margin-top: -8px;
 }
+.main-family-block h3 {
+  color: #333;
+}
 .big-offer__container {
   position: relative;
   width: 100%;
@@ -7898,7 +7915,7 @@ input[type=checkbox]:focus {
 }
 .big-offer__heading {
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  color: #575757;
+  color: #333;
   text-transform: uppercase;
 }
 .big-offer__text {
@@ -8020,7 +8037,7 @@ input[type=checkbox]:focus {
 }
 .catalog-item-card__heading {
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  color: #575757;
+  color: #333;
   font-size: 16px;
 }
 .catalog-item-card__description {
@@ -8208,6 +8225,9 @@ input[type=checkbox]:focus {
 }
 .user-profile__avatar {
   border-radius: 50%;
+}
+.user-profile__heading {
+  color: #333;
 }
 .user-profile__info {
   padding-top: 10px;
