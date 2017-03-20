@@ -6550,12 +6550,12 @@ h6 {
   font-weight: normal;
   font-style: normal;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .header__menu {
     display: none !important;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 1200px) {
   #mm-menu {
     display: none !important;
   }
@@ -6584,11 +6584,6 @@ h6 {
   align-items: center;
   justify-content: flex-end;
   list-style-type: none;
-}
-@media screen and (max-width: 991px) {
-  .header__menu ul {
-    padding-top: 8px;
-  }
 }
 .header__menu ul li {
   position: relative;
@@ -6644,13 +6639,13 @@ h6 {
   border-radius: 18px;
   background-color: #898989;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .cart-icon__counter {
     right: 6px;
     top: 7px;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 1200px) {
   .cart-icon__counter {
     right: -8px;
     top: -12px;
