@@ -7968,10 +7968,21 @@ input[type=checkbox]:focus {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   color: #575757;
+  transition: color .3s;
 }
 .category__name--narrow {
   padding-left: 15px;
   padding-right: 15px;
+}
+.category__fader {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #efefef;
+  opacity: 0;
+  transition: opacity .3s;
 }
 .category__quantity {
   color: #a2a2a2;
@@ -7983,6 +7994,12 @@ input[type=checkbox]:focus {
 .category__quantity::after {
   content: ")";
   display: inline;
+}
+.category:hover .category__name {
+  color: #fd9444;
+}
+.category:hover .category__fader {
+  opacity: .3;
 }
 .category--paints {
   background-image: url(../img/main-page/paints.jpg);

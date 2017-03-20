@@ -6,7 +6,7 @@
     background-color: #efefef;
     background-repeat: no-repeat;
     background-position: right center;
-    
+
     &__name {
         position: absolute;
         top: 50%;
@@ -21,11 +21,25 @@
         font-family: "Roboto", "Arial", sans-serif;
         font-size: 16px;
         color: #575757;
+
+        transition: color .3s;
         
         &--narrow {
             padding-left: 15px;
             padding-right: 15px;
         }
+    }
+
+    &__fader {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #efefef;
+        opacity: 0;
+
+        transition: opacity .3s;
     }
     
     &__quantity {
@@ -40,6 +54,14 @@
             content: ")";
             display: inline;
         }
+    }
+
+    &:hover &__name {
+        color: @orange-color;
+    }
+
+    &:hover &__fader {
+        opacity: .3;
     }
     
     &--paints {
