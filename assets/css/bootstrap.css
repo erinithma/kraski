@@ -7436,7 +7436,7 @@ h4 {
   transition: all .3s;
 }
 .filter-group__label:hover {
-  background-color: #ddd;
+  background-color: #fafafa;
 }
 .filter-group__radio,
 .filter-group__checkbox {
