@@ -7077,6 +7077,9 @@ h4 {
 .product-card-location {
   margin-top: -17px;
 }
+.recommend-products {
+  margin-bottom: 30px;
+}
 .product-card-table td {
   border: none !important;
   padding-top: 14px !important;
