@@ -7966,7 +7966,7 @@ input[type=checkbox]:focus {
   transform: translate(-50%, -50%);
   white-space: nowrap;
   font-family: "Roboto", "Arial", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #575757;
   transition: color .3s;
 }
@@ -7986,6 +7986,7 @@ input[type=checkbox]:focus {
 }
 .category__quantity {
   color: #a2a2a2;
+  font-size: 14px;
 }
 .category__quantity::before {
   content: "(";
