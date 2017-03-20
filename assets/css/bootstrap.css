@@ -7175,9 +7175,11 @@ h4 {
   list-style-type: none;
 }
 .big-block__rating li {
+  position: relative;
+  top: 5px;
   display: inline-block;
   font-family: 'icomoon' !important;
-  font-size: 22px;
+  font-size: 15px;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
