@@ -7522,8 +7522,8 @@ h4 {
   outline: none;
 }
 .cart__button:hover {
-  color: white;
-  background: #ff9438;
+  background: #fefefe;
+  box-shadow: 0 0 0 1px #333;
 }
 .cart__button:focus {
   box-shadow: 0 0 4px #ff9438;
@@ -7534,6 +7534,7 @@ h4 {
 }
 .cart__button--orange:hover {
   background: #ffa776;
+  box-shadow: none;
 }
 .cart__submit-container {
   text-align: right;
