@@ -6547,6 +6547,10 @@ h6 {
   position: relative;
   top: -25px;
 }
+.off-center-small {
+  position: relative;
+  top: 10px;
+}
 @font-face {
   font-family: "linea-ecommerce-10";
   src: url("../fonts/linea-ecommerce-10.eot");
