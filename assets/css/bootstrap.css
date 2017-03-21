@@ -6576,6 +6576,10 @@ select {
 .header {
   padding-top: 20px;
 }
+.header__logo {
+  position: relative;
+  top: -4px;
+}
 .header__sign span {
   font-size: 28px;
   color: #444444;
