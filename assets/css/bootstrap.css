@@ -8341,6 +8341,9 @@ input[type=checkbox]:focus {
   justify-content: space-between;
   margin-top: 42px;
 }
+.user-profile__message--narrow {
+  margin-top: 0;
+}
 .user-profile__small-text {
   color: white;
 }
