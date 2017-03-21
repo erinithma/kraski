@@ -8321,7 +8321,6 @@ input[type=checkbox]:focus {
   color: white;
 }
 .user-profile__shopping-button {
-  border-radius: 3px;
   transition: all 250ms ease-in-out;
   color: #6a6a6a;
   padding-top: 5px;
@@ -8350,7 +8349,6 @@ input[type=checkbox]:focus {
   justify-content: space-between;
 }
 .user-profile__edit-button {
-  border-radius: 3px;
   color: #898989;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -8397,15 +8395,11 @@ input[type=checkbox]:focus {
   font-family: 'Roboto Condensed', 'Roboto', Arial, sans-serif !important;
 }
 .settings-form__button {
-  padding-left: 22px;
-  padding-right: 22px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding: 12px 22px;
   border: none;
   color: white;
   background-color: #fd9444;
-  border-radius: 3px;
-  font-family: 'Roboto Condensed', Arial, sans-serif !important;
+  font-family: 'Roboto', Arial, sans-serif !important;
   font-size: 14px;
   margin-top: 10px;
   margin-bottom: 30px;
@@ -8449,15 +8443,11 @@ input[type=checkbox]:focus {
   margin-top: 42px;
 }
 .edit-address-form__shipping-button {
-  padding-left: 22px;
-  padding-right: 22px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding: 12px 22px;
   border: none;
   color: white;
   background-color: #fd9444;
-  border-radius: 3px;
-  font-family: 'Roboto Condensed', Arial, sans-serif !important;
+  font-family: 'Roboto', Arial, sans-serif !important;
   font-size: 14px;
   margin-top: 10px;
   margin-bottom: 30px;
