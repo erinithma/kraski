@@ -6550,6 +6550,9 @@ h6 {
 select {
   font-weight: normal;
 }
+.roboto {
+  font-family: "Roboto", "Arial", sans-serif !important;
+}
 @font-face {
   font-family: "linea-ecommerce-10";
   src: url("../fonts/linea-ecommerce-10.eot");
