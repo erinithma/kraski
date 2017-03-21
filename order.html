@@ -117,79 +117,83 @@
 
         <div class="container">
 	<div class="row main-bottom-location">
-		<div class="col-md-5 order-make">
+		<div class="col-md-12">
 			<h3 class="order-make__name">Оформление заказа</h3>
-			<input class="form-control order-make__field" type="text" name="name_user" placeholder="Фамилия, Имя*" required autofocus>
-			<input class="form-control order-make__field" type="email" name="email" placeholder="E-mail*" required>
-			<input class="form-control order-make__field" type="phone" name="phone" placeholder="Телефон*" required>
-			<div class="order-make__delivery">
-				<span class="order-make__delivery-text">Доставка</span><br>
-				<input type="radio" class="radio" name="delivery" value="yandex" id="radio-yandex" checked>
-				<label class="characters" for="radio-yandex">Яндекс. Доставка <a class="orange-color characters" href="#">выбрать точку</a></label>
-			</div>
-			<div class="order-make__address">
-				<input class="form-control order-make__field" type="text" name="town_user" placeholder="Город*" required autofocus>
-				<input class="form-control order-make__field" type="text" name="street_user" placeholder="Улица*" required>
-				<input class="form-control order-make__field" type="text" name="address_user" placeholder="Дом, квартира*" required>
-			</div>
-			<p class="order-make__address-location">
-				<a class="order-make__address order-make__delivery-text" href="#">Создать аккаунт?</a>
-			</p>
 		</div>
-		<div class="col-md-7 order-pay">
-			<div class="row">
-				<div class="col-md-3">
-					<span class="order-make__delivery-text order-pay__list">Ваш заказ:</span>
+		<div class="col-md-5">
+			<div class="order-make">
+				<input class="form-control order-make__field" type="text" name="name_user" placeholder="Фамилия, Имя*" required autofocus>
+				<input class="form-control order-make__field" type="email" name="email" placeholder="E-mail*" required>
+				<input class="form-control order-make__field" type="phone" name="phone" placeholder="Телефон*" required>
+				<div class="order-make__delivery">
+					<span class="order-make__delivery-text">Доставка</span><br>
+					<input type="radio" class="radio" name="delivery" value="yandex" id="radio-yandex" checked>
+					<label class="characters" for="radio-yandex">Яндекс. Доставка <a class="orange-color characters" href="#">выбрать точку</a></label>
 				</div>
-				<div class="col-md-9">
-					<table class="table table-border order-pay__location">
-						<tr>
-							<td>Пропитка для камня гидрофобизирующая </td>
-							<td class="order-pay__grey">(белая, 1.5л)</td>
-							<td>10 000 &#8381;</td>
-						</tr>
-						<tr class="table-border">
-							<td>Пропитка для камня гидрофобизирующая </td>
-							<td></td>
-							<td>4 500 &#8381;</td>
-						</tr>
-						<tr class="table-border">
-							<td>Пропитка для камня гидрофобизирующая </td>
-							<td></td>
-							<td>11 400 &#8381;</td>
-						</tr>
-						<tr class="table-border">
-							<td></td>
-							<td class="order-pay__grey">ИТОГО:</td>
-							<td class="order-pay__bold">25 900 &#8381;</td>
-						</tr>
-					</table>
+				<div class="order-make__address">
+					<input class="form-control order-make__field" type="text" name="town_user" placeholder="Город*" required autofocus>
+					<input class="form-control order-make__field" type="text" name="street_user" placeholder="Улица*" required>
+					<input class="form-control order-make__field" type="text" name="address_user" placeholder="Дом, квартира*" required>
 				</div>
+				<p class="order-make__address-location">
+					<a class="order-make__address order-make__delivery-text" href="#">Создать аккаунт?</a>
+				</p>
 			</div>
-			<div class="row">
-				<div class="col-md-3 text-top-location">
-					<span class="order-make__delivery-text order-pay__list">Способ оплаты:</span>
-				</div>
-				<div class="col-md-9">
-					<div class="order-make__delivery order-make__delivery--fixed">
-<!--                        <span class="order-make__delivery-text">Способ оплаты:</span><br>-->
-                        <input type="radio" class="radio" name="billing" value="courier" id="courier">
-                        <label class="characters" for="courier">Оплата курьеру</label>
-                        <br>
-                        
-                        <input type="radio" class="radio" name="billing" value="bill" id="bill">
-                        <label class="characters" for="bill">Наложенный платеж</label>
-                        <br>
-                        
-                        <input type="radio" class="radio" name="billing" value="credit-card" id="credit-card">
-                        <label class="characters" for="credit-card">Банковская карта</label>
-                        <br>
-                        
-                        <input type="radio" class="radio" name="billing" value="sorry" id="sorry">
-                        <label class="characters" for="sorry">Я не буду платить, извините</label>
-                        
-                        
-                    </div>
+		</div>
+		<div class="col-md-7">
+			<div class="order-pay">
+				<div class="row">
+					<div class="col-md-3">
+						<span class="order-make__delivery-text order-pay__list">Ваш заказ:</span>
+					</div>
+					<div class="col-md-9">
+						<table class="table table-border order-pay__location">
+							<tr>
+								<td>Пропитка для камня гидрофобизирующая </td>
+								<td class="order-pay__grey">(белая, 1.5л)</td>
+								<td>10 000 &#8381;</td>
+							</tr>
+							<tr class="table-border">
+								<td>Пропитка для камня гидрофобизирующая </td>
+								<td></td>
+								<td>4 500 &#8381;</td>
+							</tr>
+							<tr class="table-border">
+								<td>Пропитка для камня гидрофобизирующая </td>
+								<td></td>
+								<td>11 400 &#8381;</td>
+							</tr>
+							<tr class="table-border">
+								<td></td>
+								<td class="order-pay__grey">ИТОГО:</td>
+								<td class="order-pay__bold">25 900 &#8381;</td>
+							</tr>
+						</table>
+					</div>
+					<div class="col-md-3 text-top-location">
+						<span class="order-make__delivery-text order-pay__list">Способ оплаты:</span>
+					</div>
+					<div class="col-md-9">
+						<div class="order-make__delivery order-make__delivery--fixed">
+	<!--                        <span class="order-make__delivery-text">Способ оплаты:</span><br>-->
+	                        <input type="radio" class="radio" name="billing" value="courier" id="courier">
+	                        <label class="characters" for="courier">Оплата курьеру</label>
+	                        <br>
+	                        
+	                        <input type="radio" class="radio" name="billing" value="bill" id="bill">
+	                        <label class="characters" for="bill">Наложенный платеж</label>
+	                        <br>
+	                        
+	                        <input type="radio" class="radio" name="billing" value="credit-card" id="credit-card">
+	                        <label class="characters" for="credit-card">Банковская карта</label>
+	                        <br>
+	                        
+	                        <input type="radio" class="radio" name="billing" value="sorry" id="sorry">
+	                        <label class="characters" for="sorry">Я не буду платить, извините</label>
+	                        
+	                        
+	                    </div>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -7661,9 +7661,6 @@ h4 {
   font-size: 12px;
   font-family: 'Roboto', Arial, sans-serif;
 }
-.order-make__name {
-  margin-bottom: 30px;
-}
 .order-make__delivery-text {
   font-family: 'Roboto Condensed', Arial, sans-serif;
   font-size: 14px;
@@ -7738,15 +7735,11 @@ h4 {
 }
 .order-pay {
   border: 1px solid #ccc;
-  margin-top: 90px;
-  min-height: 403px;
+  padding: 15px;
+  margin-top: 7px;
 }
 .order-pay__list {
   padding-left: 10px;
-}
-.order-pay__location {
-  margin-top: 36px;
-  margin-left: -15px;
 }
 .order-pay__grey {
   color: #ccc;
