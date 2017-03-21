@@ -69,6 +69,10 @@
             });
 		});
 	</script>
+
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
 </head>
     <body>
         <div class="header">
@@ -138,17 +142,32 @@
 	<div class="row big-card-container">
 		<div class="col-md-4">
 			<div class="big-card">
-				<div class="big-card__image-wrapper">
-					<img class="big-card__image" src="assets/img/gidrostop-second.png" width="189" height="214" alt="">
+				<div class="slider-screen">
+					<div class="big-card__image-wrapper">
+						<img class="big-card__image" src="assets/img/gidrostop-second.png" width="189" height="214" alt="">
+					</div>
+					<div class="big-card__image-wrapper">
+						<img class="big-card__image" src="assets/img/gidrostop-second.png" width="189" height="214" alt="">
+					</div>
+					<div class="big-card__image-wrapper">
+						<img class="big-card__image" src="assets/img/gidrostop-second.png" width="189" height="214" alt="">
+					</div>
+					<div class="big-card__image-wrapper">
+						<img class="big-card__image" src="assets/img/gidrostop-second.png" width="189" height="214" alt="">
+					</div>
 				</div>
-				<div class="big-card__blocks">
+				<div class="big-card__blocks slider-nav">
 					<div class="big-card__block">
+						<img class="big-card__thumbnail" src="assets/img/gidrostop-second.png" width="50" height="50" alt="">
 					</div>
 					<div class="big-card__block">
+						<img class="big-card__thumbnail" src="assets/img/gidrostop-second.png" width="50" height="50" alt="">
 					</div>
 					<div class="big-card__block">
+						<img class="big-card__thumbnail" src="assets/img/gidrostop-second.png" width="50" height="50" alt="">
 					</div>
 					<div class="big-card__block">
+						<img class="big-card__thumbnail" src="assets/img/gidrostop-second.png" width="50" height="50" alt="">
 					</div>
 				</div>
 			</div>
@@ -205,7 +224,21 @@
 				</div>
 			</form>
 		</div>
-	</div>	
+	</div>
+	<script>
+		$('.slider-screen').slick({
+			arrows: false,
+			asNavFor: '.slider-nav',
+			touchMove: false,
+			draggable: false
+		});
+
+		$('.slider-nav').slick({
+			slidesToShow: 4,
+			focusOnSelect: true,
+			asNavFor: '.slider-screen'
+		})
+	</script>
 </div>
         <div class="container">
 	<div class="row">
