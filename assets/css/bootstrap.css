@@ -7066,7 +7066,6 @@ h4 {
   list-style-type: none;
   text-align: center;
   font-size: 0;
-  word-spacing: 20px;
 }
 .footer__nav {
   padding: 0;
@@ -7080,6 +7079,10 @@ h4 {
   line-height: 3;
   font-size: 14px;
   word-spacing: initial;
+  margin-left: 20px;
+}
+.footer__link:last-child {
+  margin-left: 0;
 }
 .footer__link::after {
   content: "";
@@ -8201,7 +8204,9 @@ input[type=checkbox]:focus {
 .catalog-item-card__picture {
   display: block;
   width: 63%;
-  max-width: 100%;
+  min-width: 87px;
+  min-height: 98px;
+  max-width: 140px;
   height: auto;
   margin: 0 auto;
   margin-top: 20px;
