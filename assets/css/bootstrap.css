@@ -8424,7 +8424,30 @@ input[type=checkbox]:focus {
   border-bottom: 1px solid #eee;
 }
 .settings-form__back {
+  position: relative;
   color: #fd9444;
+}
+.settings-form__back::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  border-bottom: 1px solid #fd9444;
+  transition: width .3s;
+}
+.settings-form__back:hover {
+  color: #fd9444;
+}
+.settings-form__back:hover::after {
+  width: 100%;
+}
+.settings-form__back::before {
+  content: "< ";
+  display: inline-block;
+  position: absolute;
+  left: -10px;
 }
 .edit-address-form__field {
   width: 100%;

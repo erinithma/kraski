@@ -187,7 +187,35 @@
     }
 
     &__back {
+    	position: relative;
     	color: @orange-color;
+
+    	&::after {
+    		content: "";
+    		display: inline-block;
+    		position: absolute;
+    		bottom: 0;
+    		left: 0;
+    		width: 0;
+    		border-bottom: 1px solid @orange-color;
+
+    		transition: width .3s;
+    	}
+
+    	&:hover {
+	    	color: @orange-color;
+    	}
+
+    	&:hover::after {
+    		width: 100%;
+    	}
+
+    	&::before {
+    		content: "< ";
+    		display: inline-block;
+    		position: absolute;
+    		left: -10px;
+    	}
     }
 }
 
