@@ -7796,7 +7796,6 @@ h4 {
 .login-form__bottom {
   border-bottom: 1px solid #eee;
   padding-bottom: 15px;
-  font-family: 'Roboto Condensed', 'Roboto', Arial, sans-serif !important;
   color: #333;
 }
 .login-form__checkbox {
@@ -7841,7 +7840,6 @@ h4 {
   color: white;
   background-color: #fd9444;
   border-radius: 3px;
-  font-family: 'Roboto Condensed', Arial, sans-serif !important;
   font-size: 14px;
   margin-top: 10px;
   margin-bottom: 37px;
