@@ -7772,7 +7772,7 @@ h4 {
 }
 .order-make__address-location {
   margin-top: 20px;
-  margin-left: 10px;
+  height: 157px;
 }
 .orange-color {
   color: #fd9444;
@@ -7857,6 +7857,27 @@ h4 {
 }
 .main-bottom-location {
   margin-bottom: 150px;
+}
+.create-account-block {
+  position: relative;
+  background-color: #ddd;
+  box-sizing: border-box;
+  width: 70%;
+  margin-top: 30px;
+  height: 0;
+  overflow: hidden;
+  transition: all .3s;
+  opacity: 0;
+}
+.create-account-block input {
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  bottom: 10px;
+}
+#create-account:checked ~ .create-account-block {
+  height: 113px;
+  opacity: 1;
 }
 .form-location {
   margin-top: 30px;

@@ -164,9 +164,18 @@
 					<input class="form-control order-make__field" type="text" name="street_user" placeholder="Улица*" required>
 					<input class="form-control order-make__field" type="text" name="address_user" placeholder="Дом, квартира*" required>
 				</div>
-				<p class="order-make__address-location">
-					<a class="order-make__address order-make__delivery-text" href="#">Создать аккаунт?</a>
-				</p>
+				<div class="order-make__address-location">
+					<input class="radio" type="checkbox" id="create-account">
+					<label class="characters" for="create-account">Создать аккаунт?</label>
+					<div class="create-account-block">
+						<div style="padding: 10px 15px;">
+							<p class="create-account-block__text">
+								Чтобы создать аккаунт, придумайте пароль.
+							</p>
+							<input class="form-control order-make__field" type="password" name="" placeholder="Пароль">
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="col-md-7">
