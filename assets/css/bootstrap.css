@@ -8304,6 +8304,12 @@ input[type=checkbox]:focus {
   padding-bottom: 10px;
   font-family: "Roboto", "Arial", sans-serif;
 }
+.user-profile__link > a {
+  transition: color .3s;
+}
+.user-profile__link > a:hover {
+  color: #fd9444;
+}
 .user-profile__link-color {
   color: #333;
 }
