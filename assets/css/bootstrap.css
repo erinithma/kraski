@@ -7786,8 +7786,26 @@ h4 {
   color: #575757;
 }
 .login-form__href {
+  position: relative;
   float: right;
   margin-top: 28px;
+  transition: color .3s;
+}
+.login-form__href:hover {
+  color: #ffa776;
+}
+.login-form__href::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  border-bottom: 1px solid #ffa776;
+  transition: width .3s;
+}
+.login-form__href:hover::after {
+  width: 100%;
 }
 .login-form__fields > label {
   flex-grow: 2;
@@ -7843,8 +7861,7 @@ h4 {
   margin-top: 17px;
 }
 .reg-form__button:hover {
-  background-color: #de8026;
-  transition: all 250ms ease-in-out;
+  background-color: #ffa776;
 }
 .form-control {
   display: block;
@@ -8338,8 +8355,8 @@ input[type=checkbox]:focus {
   text-align: center;
 }
 .user-profile__shopping-button:hover {
-  background-color: #e1e1e1;
-  transition: all 250ms ease-in-out;
+  background-color: #fafafa;
+  color: #6a6a6a;
 }
 .user-profile__font {
   font-family: 'Roboto', 'Arial', sans-serif !important;
@@ -8415,8 +8432,7 @@ input[type=checkbox]:focus {
   margin-top: 17px;
 }
 .settings-form__button:hover {
-  background-color: #de8026;
-  transition: all 250ms ease-in-out;
+  background-color: #ffa776;
 }
 .settings-form__empty-text {
   font-weight: 400;
@@ -8486,8 +8502,7 @@ input[type=checkbox]:focus {
   margin-top: 17px;
 }
 .edit-address-form__shipping-button:hover {
-  background-color: #de8026;
-  transition: all 250ms ease-in-out;
+  background-color: #ffa776;
 }
 .edit-address-form__back {
   color: #fd9444;
