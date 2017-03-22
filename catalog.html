@@ -58,6 +58,12 @@
 	<script type="text/javascript">
 		jQuery(document).ready(function( $ ) {
 			$("#menu").mmenu({
+                "searchfield": {
+                	"add": true,
+                	"placeholder": "Поиск...",
+                	"noResults": "Ничего не найдено",
+                	"search": false
+                },
 				"extensions": [
 					"pagedim-black"
 				],
@@ -72,6 +78,16 @@
 
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+	    <script>
+    $(document).on('click',function(e) {
+  		//header search field disappear
+		if(e.target.type != "checkbox" && e.target.type != "text" && e.target.type != "button")
+		{
+			$('#header__search-checkbox').attr('checked',false); 
+		}
+	});
+    </script>
 
 </head>
     <body>
@@ -119,7 +135,14 @@
                                 <span class="icon-shopping-cart"></span>
                                 <span class="cart-icon__counter">0</span>
                             </a>
-                            <span class="icon-search--orange"></span>
+                            <form class="header__search">
+                                <input id="header__search-checkbox" type="checkbox">
+                                <label class="icon-search--orange header__search-label" for="header__search-checkbox"></label>
+                                <input class="header__search-field" type="text" name="search" placeholder="Поиск...">
+                                <button class="header__search-button">
+                                    <span class="icon-search--orange"></span>
+                                </button>
+                            </form>
                         </li>
                     </ul>
                 </nav>
@@ -147,8 +170,8 @@
 				<span>Показано 1-12 из 26 результатов</span>
 			</div>
 		</div>
-		<div class="col-md-6"></div>
-		<div class="col-md-3 text-right off-center-small">
+		<!-- <div class="col-md-6"></div> -->
+		<div class="col-md-9 text-right off-center-small">
 			<select class="sort-field" name="sort">
 				<option value="new">Сортировать по новизне</option>
 				<option class="price">Сортировать по цене</option>
@@ -213,8 +236,7 @@
 		</p>
 	</div>
 </div>
-                    <div>
-                        <div class="col-md-3">
+                    <div class="col-md-3 col-sm-4 col-xs-12">
     <a class="catalog-item-card catalog-item-card--with-animations catalog-item-card--narrow" href="#">
         <span class="catalog-item-card__badge catalog-item-card__badge--hit">
             Хит
@@ -239,7 +261,7 @@
     </a>
 </div>
 
-<div class="col-md-3">
+<div class="col-md-3 col-sm-4 col-xs-12">
     <a class="catalog-item-card catalog-item-card--narrow" href="#">
         <span class="catalog-item-card__badge">
             Акция
@@ -264,7 +286,7 @@
     </a>
 </div>
 
-<div class="col-md-3">
+<div class="col-md-3 col-sm-4 col-xs-12">
     <a class="catalog-item-card catalog-item-card--with-animations catalog-item-card--narrow" href="#">
         <div class="catalog-item-card__top">
             <h3 class="catalog-item-card__heading">
@@ -286,7 +308,7 @@
     </a>
 </div>
 
-<div class="col-md-3">
+<div class="col-md-3 col-sm-4 col-xs-12">
     <a class="catalog-item-card catalog-item-card--with-animations catalog-item-card--narrow" href="#">
         <div class="catalog-item-card__top">
             <h3 class="catalog-item-card__heading">
@@ -308,7 +330,7 @@
     </a>
 </div>
 
-<div class="col-md-3">
+<div class="col-md-3 col-sm-4 col-xs-12">
     <a class="catalog-item-card catalog-item-card--with-animations catalog-item-card--narrow" href="#">
         <div class="catalog-item-card__top">
             <h3 class="catalog-item-card__heading">
@@ -330,7 +352,7 @@
     </a>
 </div>
 
-<div class="col-md-3">
+<div class="col-md-3 col-sm-4 col-xs-12">
     <a class="catalog-item-card catalog-item-card--with-animations catalog-item-card--narrow" href="#">
         <div class="catalog-item-card__top">
             <h3 class="catalog-item-card__heading">
@@ -482,7 +504,6 @@
 	</div>
 </div>
  -->
-                    </div>
                 </div>
             </div>
             <div class="container btn-line">

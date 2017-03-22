@@ -58,6 +58,12 @@
 	<script type="text/javascript">
 		jQuery(document).ready(function( $ ) {
 			$("#menu").mmenu({
+                "searchfield": {
+                	"add": true,
+                	"placeholder": "Поиск...",
+                	"noResults": "Ничего не найдено",
+                	"search": false
+                },
 				"extensions": [
 					"pagedim-black"
 				],
@@ -72,6 +78,16 @@
 
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+	    <script>
+    $(document).on('click',function(e) {
+  		//header search field disappear
+		if(e.target.type != "checkbox" && e.target.type != "text" && e.target.type != "button")
+		{
+			$('#header__search-checkbox').attr('checked',false); 
+		}
+	});
+    </script>
 
 </head>
     <body>
@@ -119,7 +135,14 @@
                                 <span class="icon-shopping-cart"></span>
                                 <span class="cart-icon__counter">0</span>
                             </a>
-                            <span class="icon-search--orange"></span>
+                            <form class="header__search">
+                                <input id="header__search-checkbox" type="checkbox">
+                                <label class="icon-search--orange header__search-label" for="header__search-checkbox"></label>
+                                <input class="header__search-field" type="text" name="search" placeholder="Поиск...">
+                                <button class="header__search-button">
+                                    <span class="icon-search--orange"></span>
+                                </button>
+                            </form>
                         </li>
                     </ul>
                 </nav>

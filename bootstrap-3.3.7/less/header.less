@@ -12,12 +12,17 @@
 @width-breakpoint: 1200px;
 
 @media (max-width: @width-breakpoint) {
-   .header__menu { display: none !important; }
+   .header__menu,
+   .header__search { 
+        display: none !important;
+    }
 }
 
 @media (min-width: @width-breakpoint) {
-   #mm-menu { display: none !important; }
-   .header__menu-button { display: none; }
+   #mm-menu,
+   .header__menu-button { 
+        display: none;
+    }
 }
 
 .header {
@@ -170,6 +175,86 @@
 
     &__menu-button {
         position: relative;
+    }
+
+    &__search {
+        position: relative;
+        display: inline;
+    }
+
+    &__search-field {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: -14px;
+        right: -7px;
+        z-index: 10;
+        padding: 10px 15px;
+        padding-right: 38px;
+        border: none;
+        background-color: #efefef;
+
+        color: #303030;
+        font-family: 'Roboto', sans-serif !important;
+        font-size: 14px;
+
+        transition: all .2s;
+
+        &:active, 
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 4px @orange-color;
+        }
+    }
+
+    &__search-button {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        top: -6px;
+        right: 2px;
+        z-index: 11;
+        padding: 0;
+        background: none;
+        border: none;
+
+        transition: all .2s;
+
+        >span {
+            font-size: 20px;
+        }
+
+        &:active, 
+        &:focus {
+            outline: none;
+            filter: drop-shadow(0 0 4px @orange-color);
+        }
+
+    }
+
+    &__search-label {
+        opacity: 1;
+        transition: all .2s;
+    }
+
+    #header__search-checkbox {
+        display: none;
+    }
+
+    #header__search-checkbox:checked ~ &__search-field {
+        // display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    #header__search-checkbox:checked ~ &__search-button {
+        // display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    #header__search-checkbox:checked ~ &__search-label {
+        opacity: 0;
     }
 }
 
