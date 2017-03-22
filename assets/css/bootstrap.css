@@ -6794,6 +6794,15 @@ h4 {
   position: relative;
   top: 10px;
 }
+.sort-field {
+  border: none;
+  padding: 8px 15px;
+  transition: box-shadow 0.3s;
+}
+.sort-field:focus {
+  outline: none;
+  box-shadow: 0 0 4px #fd9444;
+}
 .sidebar__search-form {
   display: flex;
   flex-flow: row nowrap;
