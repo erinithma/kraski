@@ -99,7 +99,8 @@ module.exports = function (grunt) {
             {src: '../layouts/account-profile-address.html', dest: '../account-profile-address.html'},
             {src: '../layouts/account-profile-settings.html', dest: '../account-profile-settings.html'},
             {src: '../layouts/account-profile-edit-address.html', dest: '../account-profile-edit-address.html'},
-            {src: '../layouts/lost-password.html', dest: '../lost-password.html'}
+            {src: '../layouts/lost-password.html', dest: '../lost-password.html'},
+            {src: '../layouts/media.html', dest: '../media.html'}
         ]
 
       }
