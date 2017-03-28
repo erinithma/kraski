@@ -82,6 +82,7 @@
 .icon-search--orange:hover:before {
   color: #ffa776;
   content: "\e904";
+  cursor: pointer;
 }
 
 .icon-shopping-cart:before {
