@@ -8713,4 +8713,9 @@ input[type=checkbox]:focus {
   color: #5d5d5d;
   font-family: 'Roboto', 'Arial', sans-serif;
 }
+.gallery__picture {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
 /*# sourceMappingURL=bootstrap.css.map */
