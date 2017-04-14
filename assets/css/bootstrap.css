@@ -7218,6 +7218,9 @@ h4 {
 .recommend-products {
   margin-bottom: 45px;
 }
+.product-card-table {
+  color: #333333;
+}
 .product-card-table td {
   border: none !important;
   padding-top: 14px !important;
@@ -7227,6 +7230,9 @@ h4 {
 }
 .product-card-table td:nth-child(odd) {
   padding-left: 48px !important;
+}
+.tab-pane {
+  color: #333333;
 }
 .square-button {
   display: inline-block;
@@ -7238,7 +7244,7 @@ h4 {
   color: #6d6d6d;
   font-size: 14px;
 }
-.square-button::last-child {
+.square-button:last-child {
   margin-right: 0;
 }
 .nav-custom {
@@ -7258,10 +7264,10 @@ h4 {
 }
 .nav-custom li.active a,
 .nav-custom li.active a:hover {
-  padding: 15px 30px;
-  border: 1px solid #f6f8f8;
-  color: #6d6d6d;
-  background-color: #f6f8f8;
+  padding: 15px 30px !important;
+  border: 1px solid #f6f8f8 !important;
+  color: #6d6d6d !important;
+  background-color: #f6f8f8 !important;
 }
 .square-button--active {
   background-color: #f6f8f8;
