@@ -10,7 +10,7 @@
     td:nth-child(odd) {
         padding-left: 48px !important;
     }
-    
+
 }
 
 .square-button {
@@ -23,19 +23,43 @@
 	color: #6d6d6d;
 	font-size: 14px;
 
-	&::last-child {
+	&:last-child {
 		margin-right: 0;
 	}
+}
+
+.nav-custom {
+  border-bottom: none;
+
+  li {
+
+    a {
+      margin-right: 5px;
+      padding: 15px 30px;
+      border: 1px solid #f6f8f8;
+      border-radius: 0;
+      color: #6d6d6d;
+      background-color: white;
+
+      &:hover {
+        border-color: #f6f8f8;
+        background-color: #f6f8f8;
+      }
+    }
+
+    &.active a,
+    &.active a:hover {
+      padding: 15px 30px;
+      border: 1px solid #f6f8f8;
+      color: #6d6d6d;
+      background-color: #f6f8f8;
+    }
+  }
 }
 
 .square-button--active {
 	background-color: #f6f8f8;
 	color: #6d6d6d;
-}
-
-.square-bottom {
-	margin-bottom: -12px;
-	margin-top: -14px;
 }
 
 .breadcrumbs {

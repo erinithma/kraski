@@ -7241,13 +7241,31 @@ h4 {
 .square-button::last-child {
   margin-right: 0;
 }
+.nav-custom {
+  border-bottom: none;
+}
+.nav-custom li a {
+  margin-right: 5px;
+  padding: 15px 30px;
+  border: 1px solid #f6f8f8;
+  border-radius: 0;
+  color: #6d6d6d;
+  background-color: white;
+}
+.nav-custom li a:hover {
+  border-color: #f6f8f8;
+  background-color: #f6f8f8;
+}
+.nav-custom li.active a,
+.nav-custom li.active a:hover {
+  padding: 15px 30px;
+  border: 1px solid #f6f8f8;
+  color: #6d6d6d;
+  background-color: #f6f8f8;
+}
 .square-button--active {
   background-color: #f6f8f8;
   color: #6d6d6d;
-}
-.square-bottom {
-  margin-bottom: -12px;
-  margin-top: -14px;
 }
 .breadcrumbs {
   list-style-type: none;
@@ -8714,7 +8732,7 @@ input[type=checkbox]:focus {
   font-family: 'Roboto', 'Arial', sans-serif;
 }
 .gallery__picture {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
