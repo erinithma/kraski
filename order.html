@@ -88,13 +88,31 @@
 		}
 	});
     </script>
-	<script>
-		$(document).ready(function(){
-			if ($('body').height() < $(window).height()) {
-			    $('#sticker').height($(window).height() - $('body').height());
-			}
-        });
-	</script>
+	<style>
+		html, body{
+		    display: flex;
+		    flex-direction: column;
+		}
+
+		html{
+		    min-height: 100%;
+		}
+
+		body{
+		    flex-grow: 1;
+		}
+
+		body > div{
+		    display: flex;
+		    flex-direction: column;
+		}
+
+		.footer{
+		    display: flex;
+		    flex-direction: column;
+		    margin-top: auto;
+		}
+	</style>
     <link rel="stylesheet" href="assets/css/lightbox.css">
 	<script src="assets/js/lightbox.min.js"></script>
 
@@ -289,8 +307,7 @@
     </div>
 </div>
 
-        <div id="sticker"></div>
-<div class="footer">
+        <div class="footer">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
