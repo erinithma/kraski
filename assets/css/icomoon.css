@@ -114,3 +114,27 @@
   color: #e8e5e7;
   content: "\e90a";
 }
+
+
+@font-face {
+  font-family: 'rouble';
+  src:  url('../fonts/rouble.eot?bq7q2h');
+  src:  url('../fonts/rouble.eot?bq7q2h#iefix') format('embedded-opentype'),
+    url('../fonts/rouble.ttf?bq7q2h') format('truetype'),
+    url('../fonts/rouble.woff?bq7q2h') format('woff'),
+    url('../fonts/rouble.svg?bq7q2h#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.rouble {
+  font-family: 'rouble' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
