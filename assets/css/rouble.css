@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'rouble';
-  src:  url('../fonts/rouble.eot?hqav24');
-  src:  url('../fonts/rouble.eot?hqav24#iefix') format('embedded-opentype'),
-    url('../fonts/rouble.ttf?hqav24') format('truetype'),
-    url('../fonts/rouble.woff?hqav24') format('woff'),
-    url('../fonts/rouble.svg?hqav24#icomoon') format('svg');
+  src:  url('../fonts/rouble.eot?bq7q2h');
+  src:  url('../fonts/rouble.eot?bq7q2h#iefix') format('embedded-opentype'),
+    url('../fonts/rouble.ttf?bq7q2h') format('truetype'),
+    url('../fonts/rouble.woff?bq7q2h') format('woff'),
+    url('../fonts/rouble.svg?bq7q2h#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,7 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.rouble:before {
-  content: "\e900";
+/*
+.icon-rouble:before {
+  content: "\420";
 }
 
+*/
