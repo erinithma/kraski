@@ -7,8 +7,13 @@
 // -------------------------
 
 .alert {
-  padding: @alert-padding;
-  margin-bottom: @line-height-computed;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  vertical-align: top;
+  display: inline-block !important;
+
   border: 1px solid transparent;
   border-radius: @alert-border-radius;
 
@@ -57,7 +62,11 @@
 // Generate contextual modifier classes for colorizing the alert.
 
 .alert-success {
-  .alert-variant(@alert-success-bg; @alert-success-border; @alert-success-text);
+  .alert-variant(#fd9444; @alert-success-border; white);
+  a{
+    color: white !important;
+    text-decoration: underline !important;
+  }
 }
 
 .alert-info {

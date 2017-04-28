@@ -4933,8 +4933,12 @@ a.badge:focus {
   margin-left: 3px;
 }
 .alert {
-  padding: 15px;
-  margin-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  vertical-align: top;
+  display: inline-block !important;
   border: 1px solid transparent;
   border-radius: 4px;
 }
@@ -4964,15 +4968,19 @@ a.badge:focus {
   color: inherit;
 }
 .alert-success {
-  background-color: #dff0d8;
+  background-color: #fd9444;
   border-color: #d6e9c6;
-  color: #3c763d;
+  color: white;
 }
 .alert-success hr {
   border-top-color: #c9e2b3;
 }
 .alert-success .alert-link {
-  color: #2b542c;
+  color: #e6e6e6;
+}
+.alert-success a {
+  color: white !important;
+  text-decoration: underline !important;
 }
 .alert-info {
   background-color: #d9edf7;
@@ -5720,18 +5728,18 @@ button.list-group-item-danger.active:focus {
   font-size: 21px;
   font-weight: bold;
   line-height: 1;
-  color: #000;
-  text-shadow: 0 1px 0 #fff;
-  opacity: 0.2;
-  filter: alpha(opacity=20);
+  color: white;
+  margin-left: 8px;
+  /*text-shadow: @close-text-shadow;
+  .opacity(.2);*/
 }
 .close:hover,
 .close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+  opacity: 0.2;
+  filter: alpha(opacity=20);
 }
 button.close {
   padding: 0;
@@ -7576,9 +7584,15 @@ footer {
   text-decoration: line-through;
   color: #c5c5c5;
 }
+.price-block__old + span {
+  color: #c5c5c5;
+}
 .price-block__new {
   color: #fd9444;
   margin-left: 20px;
+}
+.price-block__new + span {
+  color: #fd9444;
 }
 .price-block__choose {
   margin-top: 14px;
