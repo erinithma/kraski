@@ -6863,7 +6863,7 @@ select {
   opacity: 0;
 }
 .bottom-line {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid grey;
 }
 .cart-icon {
   position: relative;
