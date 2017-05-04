@@ -1158,6 +1158,10 @@ hr {
 [role="button"] {
   cursor: pointer;
 }
+.active:active,
+.active:focus {
+  color: #fd9444;
+}
 h1,
 h2,
 h3,
