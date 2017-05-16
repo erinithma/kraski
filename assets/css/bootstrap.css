@@ -8883,4 +8883,11 @@ input[type=checkbox]:focus {
   align-items: center;
   justify-content: center;
 }
+.thumbnail {
+  margin-bottom: 3px;
+  outline: none;
+}
+.gallery-picture {
+  outline: none;
+}
 /*# sourceMappingURL=bootstrap.css.map */

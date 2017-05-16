@@ -35,45 +35,78 @@
 
                 <!-- id is address -->
                 <div id="gallery-home" class="tab-pane fade in active">
-                    <div class="gallery">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="gallery__picture-container">
-                                    <!-- href: big picture
-										 img src: thumbnail -->
-                                    <a class="gallery__picture" href="https://placehold.it/240x320" data-lightbox="gallery">
-                                        <img src="https://placehold.it/176x208" width="176" height="208" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+
+                    <div class="ImageGrid">
+
+                        <a class="gallery-picture" data-fancybox="gallery"
+                            data-width="2048"
+                            data-height="1365"
+                            href="https://farm6.staticflickr.com/5519/9432166677_aefe32aad4_k_d.jpg">
+                            <img class="thumbnail" src="https://farm6.staticflickr.com/5519/9432166677_61aa7e7f90_m_d.jpg" alt="">
+                        </a>
+                                      
+                        <a class="gallery-picture" data-fancybox="gallery"
+                            data-width="2048"
+                            data-height="1365"
+                            href="https://farm6.staticflickr.com/5499/30972532232_9c7db37049_k_d.jpg">
+                            <img class="thumbnail" src="https://farm6.staticflickr.com/5499/30972532232_e9a298a0c5_m_d.jpg" alt="">
+                        </a>
+                                      
+                        <a class="gallery-picture" data-fancybox="gallery"
+                            data-width="1400"
+                            data-height="934"
+                            href="https://farm1.staticflickr.com/560/31434966252_2888c3475a_o_d.jpg">
+                            <img class="thumbnail" src="https://farm1.staticflickr.com/560/31434966252_8e1bc946da_m_d.jpg" alt="">
+                        </a>
+
+                        <a class="gallery-picture" data-fancybox="gallery"
+                            data-width="1400"
+                            data-height="934"
+                            href="https://farm1.staticflickr.com/560/31434966252_2888c3475a_o_d.jpg">
+                            <img class="thumbnail" src="https://farm1.staticflickr.com/560/31434966252_8e1bc946da_m_d.jpg" alt="">
+                        </a>
+
+                        <a class="gallery-picture" data-fancybox="gallery"
+                            data-width="1400"
+                            data-height="934"
+                            href="https://farm1.staticflickr.com/560/31434966252_2888c3475a_o_d.jpg">
+                            <img class="thumbnail" src="https://farm1.staticflickr.com/560/31434966252_8e1bc946da_m_d.jpg" alt="">
+                        </a>
+
+                        <!-- video example.
+                            data-src should be unique and should be an id of the video div
+                            img class="thumbnail" is video thumbnail -->
+                        <a class="gallery-picture" data-fancybox="gallery"
+                            data-src="#video1"
+                            href="javascript:;">
+                            <img class="thumbnail" src="https://farm1.staticflickr.com/560/31434966252_8e1bc946da_m_d.jpg" alt="">
+                        </a>
+
+                        <a class="gallery-picture" data-fancybox="gallery"
+                            data-src="#video2"
+                            href="javascript:;">
+                            <img class="thumbnail" src="https://farm1.staticflickr.com/560/31434966252_8e1bc946da_m_d.jpg" alt="">
+                        </a>
+                  
                     </div>
-                </div>
+
+                    <!-- actual videos.
+                        id should be the same as the video thumbnail's id in the gallery
+                        div content may be either the <video> tag or embedded iframe -->
+
+                    <div style="display: none;" id="video1">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/q6EoRBvdVPQ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+
+                    <div style="display: none;" id="video2">
+                        <video src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" autoplay controls></video>
+                    </div>
 
                 <!-- template for other tabs -->
                 <div id="gallery-1" class="tab-pane fade">
-                    <div class="gallery">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="gallery__picture-container">
-                                    <!-- href: big picture
-										 img src: thumbnail -->
-                                    <a class="gallery__picture" href="https://placehold.it/240x320" data-lightbox="gallery">
-                                        <img src="https://placehold.it/176x208" width="176" height="208" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- another fancybox here -->
                 </div>
-
-
             </div>
-
-
-
-
-
             </div>
         </div>
     </div>
